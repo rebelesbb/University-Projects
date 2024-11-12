@@ -1,2 +1,2 @@
 # University-Projects
-Projects completed during univeristy
+Projects completed during university
