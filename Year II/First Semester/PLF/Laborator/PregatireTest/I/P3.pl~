@@ -1,0 +1,21 @@
+%reverseList(L: list, PartialL:list, ReversedL: list)
+reverseList([], Res, Res).
+reverseList([H | T], PartL, Res):-
+    reverseList(T, [H | PartL], Res).
+
+isMember(X, [X | _]):-!.
+isMember(X, [_ | T]):-
+    isMember(X, T).
+
+%convert(L: list, PartialRes: list, Res: list)
+convert([], Res, Res).
+convert([H | T], PartRes, Res):-
+    not(isMember(H, PartRes)),
+    !,
+    convert(T, [H | PartRes], Res).
+convert([_ | T], PartRes, Res):-
+    convert(T, PartRes, Res).
+
+toSet(L, Res):-
+    convert(L, [], ReversedRes),
+    reverseList(ReversedRes,[], Res).

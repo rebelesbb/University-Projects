@@ -1,0 +1,6 @@
+sterge_aparitii(E,[],[]).
+sterge_aparitii(E,[H|T],[H|Rez]) :-
+    H\=E,
+    sterge_aparitii(E,T,Rez),
+    !.
+sterge_aparitii(E,[_|T],Rez) :- sterge_aparitii(E,T,Rez).

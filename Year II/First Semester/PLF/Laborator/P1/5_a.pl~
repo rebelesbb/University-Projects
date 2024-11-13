@@ -1,0 +1,12 @@
+%sterge_aparitii(E : atom, L : lista, Rez : Lista)
+%E : atomul de sters
+%L : lista din care il stergem
+%Rez : lista rezultata in urma stergerii aparitiilor atomului
+% Predicatul presupune parcurgerea listei si construirea in rez a listei
+% atomilor diferiti de atomul dat E
+sterge_aparitii(_,[],[]):-!.
+sterge_aparitii(E,[H|T],[H|Rez]) :-
+    H\=E,
+    !,
+    sterge_aparitii(E,T,Rez).
+sterge_aparitii(E,[E|T],Rez) :- sterge_aparitii(E,T,Rez).

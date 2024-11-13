@@ -1,0 +1,17 @@
+% addAfter(Elem: int, Count: int, positionToAdd: int, L: list,
+% ModifiedList: list, Res: list)
+
+addAfter(_, _, _, [], Res, Res):-!.
+addAfter(E, Count, Pos, [H | T], [H, E | LModified], Res):-
+    Count =:= Pos,
+    !,
+    NewCount is Count + 1,
+    NewPos is 2 * Pos + 1,
+    addAfter(E, NewCount, NewPos, T, LModified, Res).
+addAfter(E, Count, Pos, [H | T], [H | LModified], Res):-
+    NewCount is Count + 1,
+    addAfter(E, NewCount, Pos, T, LModified, Res).
+
+
+addElementAfter(E, L, Res):-
+    addAfter(E, 1, 1, L, [],Res).
