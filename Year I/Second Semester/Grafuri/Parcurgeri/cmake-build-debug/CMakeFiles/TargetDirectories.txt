@@ -1,0 +1,3 @@
+C:/Users/Bogdan Rebeles/Desktop/Grafuri/Parcurgeri/cmake-build-debug/CMakeFiles/Parcurgeri.dir
+C:/Users/Bogdan Rebeles/Desktop/Grafuri/Parcurgeri/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Bogdan Rebeles/Desktop/Grafuri/Parcurgeri/cmake-build-debug/CMakeFiles/rebuild_cache.dir

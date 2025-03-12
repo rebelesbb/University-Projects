@@ -1,0 +1,3 @@
+C:/Users/Bogdan Rebeles/Desktop/Grafuri/Conversii/cmake-build-debug/CMakeFiles/Conversii.dir
+C:/Users/Bogdan Rebeles/Desktop/Grafuri/Conversii/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Bogdan Rebeles/Desktop/Grafuri/Conversii/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,67 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\HuffmanDecode\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F6339DB-7BF5-4FE5-8481-A595520D1713}|HuffmanDecode\\HuffmanDecode.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\HuffmanDecode\\HuffmanDecode\\HuffmanDecode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0F6339DB-7BF5-4FE5-8481-A595520D1713}|HuffmanDecode\\HuffmanDecode.vcxproj|solutionrelative:HuffmanDecode\\HuffmanDecode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\Huffman\\Huffman\\Huffman.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 191,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Huffman.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\Huffman\\Huffman\\Huffman.cpp",
+              "RelativeDocumentMoniker": "..\\Huffman\\Huffman\\Huffman.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\Huffman\\Huffman\\Huffman.cpp",
+              "RelativeToolTip": "..\\Huffman\\Huffman\\Huffman.cpp",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-26T11:20:12.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HuffmanDecode.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\HuffmanDecode\\HuffmanDecode\\HuffmanDecode.cpp",
+              "RelativeDocumentMoniker": "HuffmanDecode\\HuffmanDecode.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\HuffmanDecode\\HuffmanDecode\\HuffmanDecode.cpp",
+              "RelativeToolTip": "HuffmanDecode\\HuffmanDecode.cpp",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAAAK0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-26T11:13:33.933Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 191,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

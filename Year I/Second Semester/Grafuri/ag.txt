@@ -1,0 +1,632 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+
+using namespace std;
+
+ifstream f("grafuri.txt");
+
+const int max_nod = 100;
+
+int MatriceAdiacenta[max_nod][max_nod];
+vector<vector<int>> ListaAdiacenta;
+int MatriceIncidenta[max_nod][max_nod];
+
+int nr_noduri, nr_muchii;
+
+void citesteGraf(){
+    f>>nr_noduri;
+    for(int i=0; i<nr_noduri; ++i){
+        for(int j=0; j<nr_noduri; ++j){
+            MatriceAdiacenta[i][j] = 0;
+            MatriceIncidenta[i][j] = 0;
+        }
+    }
+    ListaAdiacenta.resize(nr_noduri+1);
+    nr_muchii = 0;
+    int nod1, nod2;
+    while(f>>nod1>>nod2){
+        MatriceAdiacenta[nod1][nod2] = 1;
+        MatriceAdiacenta[nod2][nod1] = 1;
+
+        ListaAdiacenta[nod1].push_back(nod2);
+        ListaAdiacenta[nod2].push_back(nod1);
+        MatriceIncidenta[nod1][nod2] = 1;
+        MatriceIncidenta[nod2][nod1] = -1;
+        nr_muchii ++;
+    }
+
+}
+
+void afisareMatriceAdiacenta(){
+    cout<<"Matricea de adiacenta: \n";
+    for(int i=1; i<=nr_noduri; ++i){
+        for(int j=1; j<=nr_noduri;++j){
+            cout<<MatriceAdiacenta[i][j]<< " ";
+        }
+        cout<<'\n';
+    }
+}
+
+void afisareListaAdiacenta(){
+    cout<<"\nLista de adiacenta: \n";
+    for(int i=1; i<=nr_noduri;++i){
+        cout<<i<< ":";
+        for(int j:ListaAdiacenta[i]){
+            cout<<j<<" ";
+        }
+        cout<<'\n';
+    }
+}
+
+void afisareMatriceIncidenta(){
+    cout<<"\nMatricea de incidenta: \n";
+    for(int i=1; i<=nr_noduri;++i){
+        for(int j=1; j<=nr_noduri; ++j){
+            cout<<MatriceIncidenta[i][j]<< " ";
+        }
+        cout<<'\n';
+    }
+}
+
+int main(){
+    citesteGraf();
+    int optiune;
+
+    do{
+        cout<<"\nAlege o optiune: \n";
+        cout<<"1.Matricea de adiacenta\n";
+        cout<<"2.Lista de adiacenta:\n";
+        cout<<"3.Matricea de incidenta:\n";
+        cout<<"0.Iesire";
+        cin>>optiune;
+
+        switch (optiune) {
+            case 1:
+                afisareMatriceAdiacenta();
+                break;
+            case 2:
+                afisareListaAdiacenta();
+                break;
+            case 3:
+                afisareMatriceIncidenta();
+                break;
+            case 0:
+                cout<<"Out";
+                break;
+            default:
+                cout<<"Optiune invalida!\n";
+                break;
+        }
+    }while(optiune!=0);
+    return 0;
+}
+---------------------------------------------------------------------------------
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+void citeste_graf(const char* nume_fisier, int matrice[][100], int&n){
+    int i, j;
+    ifstream fisier(nume_fisier);
+    if(!fisier.is_open()){
+        cout<<"Nu am putut deschide fisierul!\n";
+        return;
+    }
+
+    fisier>>n;
+    for(i=0; i<n; ++i){
+        for(j=0; j<n; ++j){
+            fisier>>matrice[i][j];
+        }
+    }
+    fisier.close();
+}
+
+bool este_izolat(int nod, int matrice[][100], int n){
+    int i;
+    for(i=0; i<n; ++i){
+        if(matrice[nod][i] == 1 || matrice[i][nod] == 1){
+            return false;
+        }
+    }
+    return true;
+}
+
+bool este_regualt(int matrice[][100], int n){
+    int grad = 0;
+    int i, j;
+    for(i=0; i<n; ++i){
+        int grad_nod = 0;
+        for(j=0; j<n; ++j){
+            grad_nod += matrice[i][j];
+        }
+        if(i == 0){
+            grad = grad_nod;
+        }
+        else if(grad != grad_nod){
+            return false;
+        }
+    }
+    return true;
+}
+
+void matricea_distantelor(int matrice[][100], int n){
+    int distanta[100][100];
+    for(int i=0; i<n; ++i){
+        for(int j=0; j<n; ++j){
+            if(i==j){
+                distanta[i][j] =0;
+            }
+            else if(matrice[i][j] == 0){
+                distanta[i][j] = INT_MAX;
+            }
+            else{
+                distanta[i][j] = matrice[i][j];
+            }
+        }
+    }
+
+    for(int k=0; k<n; ++k){
+        for(int i=0; i<n; ++i){
+            for(int j=0; j<n; ++j){
+                if(distanta[i][k] != INT_MAX && distanta[k][j] !=INT_MAX && distanta[i][k] +distanta[k][j] <distanta[i][j]){
+                    distanta[i][j] = distanta[i][k] + distanta[k][j];
+                }
+            }
+        }
+    }
+
+    cout<<"\nMatricea distantelor: \n";
+    for(int i=0; i<n; ++i){
+        for(int j=0; j<n; ++j){
+            if(distanta[i][j] == INT_MAX)
+                cout<<"INF"<<" ";
+            else
+                cout<<distanta[i][j] << " ";
+        }
+        cout<<"\n";
+    }
+}
+
+bool este_conex(int matrice[][100], int n){
+    bool vizitat[100] = {false};
+    vizitat[0] = true;
+
+    for(int i=0; i<n; ++i){
+        for(int j=0; j<n; ++j){
+            if(matrice[i][j] == 1){
+                vizitat[i] = true;
+                vizitat[j] = true;
+            }
+        }
+    }
+
+    for(int i=0; i<n; ++i){
+        if(!vizitat[i]){
+            return false;
+        }
+    }
+    return true;
+}
+
+int main(){
+    int matrice[100][100], n;
+    citeste_graf("graf.txt", matrice, n);
+
+    cout<<"Nodurile izolate sunt: ";
+    bool exista_nod_izolat = false;
+    for(int i=0; i<n; ++i){
+        if(este_izolat(i, matrice, n)){
+            cout<<i<<" ";
+            exista_nod_izolat = true;
+        }
+    }
+    if(!exista_nod_izolat){
+        cout<<"Nu exista noduri izolate!";
+    }
+    cout<<'\n';
+
+    if(este_regualt(matrice, n)){
+        cout<<"Graful este regulat!\n";
+    }
+    else
+        cout<<"Graful nu este regulat!\n";
+
+    matricea_distantelor(matrice, n);
+
+    if(este_conex(matrice, n)){
+        cout<<"Graful este conex!\n";
+    }
+    else
+        cout<<"Graful nu este conex!\n";
+    return 0;
+}
+---------------------------------------------------------------------------------
+// Funcția Moore pentru găsirea celui mai scurt drum într-un graf
+int moore(int a[20][20], int n, int u)
+{
+    int x;
+    i[u]=0;
+    for(int z=1;z<=n;z++)
+        if(z!=u) i[z]=10000;
+
+    q[20]={0}; // coada
+    int j=0,nr=0;
+    j=1;
+    q[++nr]=u; // introducem nodul sursa in coada
+    while(j<=nr) // cat timp coada nu e vida
+    {
+        x=q[j]; // scoatem un element din coada
+        for(int z=1;z<=n;z++)
+        {
+            if(a[x][z]==1) // vecinii
+                if(i[z]==10000)
+                {
+                    p[z]=x;
+                    i[z]=i[x]+1;
+                    q[++nr]=z; // introducem vecinul in coada
+                }
+        }
+        j++; // scoatem elementul din coada
+    }
+    for(int z=1;z<=n;z++){
+        if(z!=u && i[z]!=10000){
+            return 1;
+        }
+    }
+    return 2;
+}
+// Funcție pentru reconstruirea drumului minim
+void moore_drum(int i[20], int p[20], int dest)
+{
+    int x, c;
+    x=i[dest];
+    c=x;
+    d[x]=dest;
+    while(x)
+    {
+        d[x-1]=p[d[x]];
+        x--;
+    }
+    cout<<"drumul minim este: ";
+    for(int l=0;l<=c;l++)
+        cout<<d[l]<<" ";
+}
+---------------------------------------------------------------------------------
+//Arborele descoperit
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <queue>
+#include <set>
+
+using namespace std;
+
+ifstream in("graf.in");
+
+const int MAX=105;
+const int INF =1<<30;
+
+vector<vector<int>>G(MAX);
+
+int n, m;
+
+struct solution{
+    vector<int> D;
+    set<int>S;
+};
+
+void citeste(){
+    in>>n>>m;
+    while(m--){
+        int x, y;
+        in>>x>>y;
+        G[x].push_back(y);
+    }
+}
+
+auto BFS(int sursa){
+    vector<int>D(n+1);
+    set<int>S;
+    for(int i=1; i<=n; i++)
+        D[i]=INF;
+    D[sursa]=0;
+    queue<int>q;
+    q.push(sursa);
+    S.insert(sursa);
+
+    while(!q.empty()){
+        int e = q.front();
+        q.pop();
+        for(auto x:G[e]){
+            if(D[x]>D[e]+1){
+                D[x] =D[e]+1;
+                q.push(x);
+                S.insert(x);
+            }
+        }
+    }
+    return solution{D, S};
+}
+
+int main(){
+    int sursa;
+    citeste();
+
+    cout<<"Introduceti nodul sursa: ";
+    cin>>sursa;
+
+    solution sol;
+    sol = BFS(sursa);
+
+    cout<<"Varfurile acoperite prin BFS sunt: \n";
+    for(auto x:sol.S){
+        cout<<x<<" ";
+    }
+
+    cout<<"\nIar distantele sunt: \n";
+    for(auto x:sol.S){
+        int val = sol.D[x];
+        cout<<val<<" ";
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------
+//Matricea inchiderii tranzitive
+void floyd(int matr[n][n], int tr[n][n], int m){
+    for(int i=0; i<m; i++){
+        for(int j=0; j<m; j++){
+            for(int k=0; k<m; k++){
+                if(tr[i][j] == 0 && tr[k][j] == 1 && tr[i][k] == 1)
+                    tr[i][j] = 1;
+            }
+        }
+    }
+}
+---------------------------------------------------------------------------------
+
+const int MAX =105;
+
+vector<vector<int>>G(MAX);
+
+bool viz[MAX];
+
+void citeste_garf(const string& filename, int &n, int &m){
+    ifstream f(filename);
+    if(!f.is_open()){
+        cerr<<"Eroare la deschiderea fisierului";
+        exit(EXIT_FAILURE);
+    }
+    f>>n>>m;
+    while(m--){
+        int x, y;
+        f>>x>>y;
+        G[x].push_back(y);
+    }
+    f.close();
+}
+void DFS_VISIT(int sursa, set<int>& S){
+    viz[sursa]=true;
+    S.insert(sursa);
+    for(auto x:G[sursa]){
+        if(!viz[x]){
+            DFS_VISIT(x, S);
+        }
+    }
+}
+
+void solve(){
+    int n, m, sursa;
+    citeste_garf("graf.txt", n, m);
+
+    cout<<"Introduceti nodul sursa: ";
+    cin>>sursa;
+
+    if(sursa<1||sursa>n){
+        cerr<<"Nodul sursa introdus este invalid! \n";
+        exit(EXIT_FAILURE);
+    }
+    set<int>S;
+    DFS_VISIT(sursa, S);
+    cout<<"\nValorile descoperite de DFS_VISIT sunt: ";
+    for(auto x:S){
+        cout<<x<<" ";
+    }
+    cout<<"\n";
+}
+---------------------------------------------------------------------------------
+//Drum cost minim cu DJIKSTRA
+#define inf 100000
+
+std::ifstream f("1.txt");  // Deschiderea fișierului de intrare pentru citire
+std::ofstream g("2.txt");  // Deschiderea fișierului de ieșire pentru scriere
+
+std::vector<std::pair<int,int>> v[10005];  // Vector de vectori de perechi pentru reprezentarea grafului
+std::priority_queue<std::pair<int,int>, std::vector<std::pair<int,int>>, std::greater<std::pair<int,int>>> q;  // Coadă de priorități pentru algoritmul lui Dijkstra
+
+int n,m,s,x,y,c,d[10005],viz[10005];  // Variabile pentru numărul de noduri, numărul de muchii, nodul sursă, variabile auxiliare și vectori pentru distanțe și vizitare
+
+void dijkstra(int s) {
+    int nod,cost;
+    for(int i=0;i<=n;i++) d[i]=inf;  // Inițializez toate distanțele cu infinit
+    q.push({0,s});  // Adaug nodul sursă în coadă cu distanța 0
+    d[s]=0;  // Distanța de la sursă la sursă este 0
+
+    while(!q.empty()) {
+        nod=q.top().second;  // Extrage nodul cu cea mai mică distanță
+        cost=q.top().first;  // Extrage costul asociat acestui nod
+        q.pop();  // Scoate nodul extras din coadă
+
+        if(!viz[nod]) {  // Dacă nodul nu a fost vizitat încă
+            viz[nod]=1;  // Marchează nodul ca vizitat
+            for(int i=0;i<v[nod].size();i++) {
+                // Pentru fiecare vecin al nodului curent
+                if(v[nod][i].second+cost<d[v[nod][i].first]) {
+                    // Dacă costul muchiei adunat cu costul până la nodul curent este mai mic decât distanța minimă cunoscută până acum către vecinul respectiv
+                    d[v[nod][i].first]=v[nod][i].second+cost;  // Actualizează distanța minimă către vecin
+                    q.push({d[v[nod][i].first],v[nod][i].first});  // Adaugă vecinul în coadă
+                }
+            }
+        }
+    }
+}
+
+int main() {
+    // Citirea datelor și construirea listei de vecini
+    f>>n>>m>>s;
+    for(int i=1;i<=m;i++) {
+        f>>x>>y>>c;
+        v[x].push_back({y,c});  // Adaugă muchia în lista de vecini a nodului x
+    }
+
+    dijkstra(s);  // Apelul algoritmului Dijkstra pentru a calcula distanțele minime
+
+    // Scrierea rezultatelor în fișierul de ieșire
+    for(int i=0;i<n;i++) {
+        if(d[i]!=inf)
+            g<<d[i]<<" ";  // Dacă există un drum către nodul i, scrie distanța în fișier
+        else g<<"INF ";  // Altfel, scrie "INF"
+    }
+
+    f.close();  // Închide fișierul de intrare
+    g.close();  // Închide fișierul de ieșire
+    return 0;
+}
+---------------------------------------------------------------------------------
+//Drum cost minim Johnson
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <queue>
+#include <algorithm>
+#define inf 100000000
+std::ifstream f("in.txt");
+std::ofstream g("out.txt");
+int n,m,d[10005],viz[10005],h[10005];
+std::vector<std::pair<int,int>>v[10005],vnou[10005];
+std::priority_queue< std::pair<int,int>, std::vector<std:: pair<int,int> >,std:: greater<std::pair<int,int> > >q;
+struct bellman
+{
+    int x,y,c;
+}muchie[10005];
+
+void relax(int u, int v, int c)
+{
+    if(d[v]>d[u]+c)
+        d[v]=d[u]+c;
+}
+
+bool bellman_ford(int s)
+{
+    for(int i=0;i<n;i++) d[i]=inf;
+    d[s]=0;
+    for(int i=0;i<n;i++)
+        for(int j=1;j<=m;j++)
+            relax(muchie[j].x, muchie[j].y, muchie[j].c);
+    for(int j=1;j<=m;j++)
+    {
+        if(d[muchie[j].y]>d[muchie[j].x]+muchie[j].c)
+            return false;
+    }
+    return true;
+}
+
+void dijkstra(int s)
+{
+    int i,nod,cost;
+    for(i=0;i<=n;i++) {d[i]=inf;viz[i]=0;}
+    //am un priority queue in care am nodurile sortate in funcite de costul de ajunge la ele;
+    q.push({0,s});
+    d[s]=0;
+    while(!q.empty())
+    {
+        nod=q.top().second;
+        cost=q.top().first;
+        q.pop();
+        if(!viz[nod])
+        {
+            viz[nod]=1;
+            for(int i=0;i<vnou[nod].size();i++)
+            {
+                //daca costul muchiei adunat cu costul de pana atunci este mai mic decat costul vecinului
+                if(vnou[nod][i].second+cost<d[vnou[nod][i].first])
+                {
+                    d[vnou[nod][i].first]=vnou[nod][i].second+cost;
+                    q.push({d[vnou[nod][i].first],vnou[nod][i].first});
+                }
+            }
+        }
+
+    }
+
+}
+
+void johnson()
+{
+    int M=m;
+    //adaug noul arc cu ponderi 0
+    for(int i=0;i<n;i++)
+    {
+        v[n].push_back({i,0});
+        muchie[++m].x=n;
+        muchie[m].y=i;
+        muchie[m].c=0;
+    }
+    //aplic bellman ford pentru noul nod adaugat si verific sa nu am cicluri negative
+    if(!bellman_ford(n)) {g<<"-1";exit(0);}
+    else
+    {
+        //copiez rezultatele din bellman ford
+        for(int i=0;i<n;i++) h[i]=d[i];
+        for(int j=1;j<=M;j++) {
+            //reponderez
+            muchie[j].c = muchie[j].c + h[muchie[j].x] - h[muchie[j].y];
+            g<<muchie[j].x<<" "<<muchie[j].y<<" "<<muchie[j].c<<'\n';
+            vnou[muchie[j].x].push_back({muchie[j].y,muchie[j].c});
+        }
+        //dijkstra din fiecare nod
+        for(int i=0;i<n;i++)
+        {
+            dijkstra(i);
+            for(int j=0;j<n;j++) {
+                if(d[j]==inf) g<<"INF"<<" ";
+                else
+                {
+                    //renunt la reponderare
+                    d[j]=d[j]+h[j]-h[i];
+                    g << d[j] << " ";
+                }
+            }
+            g<<'\n';
+        }
+
+    }
+
+}
+int main() {
+
+
+    //citesc datele si construiesc lista de vecini
+    f>>n>>m;
+    for(int i=1;i<=m;i++)
+    {
+        f>>muchie[i].x>>muchie[i].y>>muchie[i].c;
+        v[muchie[i].x].push_back({muchie[i].y,muchie[i].c});
+    }
+    johnson();
+    return 0;
+}
+
+---------------------------------------------------------------------------
+floyd-warshal nr drumuri
+i,j,k <-1,n
+aij=aij+aik*akj
+---------------------------------------------------------------------------
+bellman kalaba
+drum cost minim 
+---------------------------------------------------------------------------
+roy floyd cost minim de la fiecare la fiecare
+---------------------------------------------------------------------------
+roy-warshall daca exista drum de la unu la altu(pt toate)

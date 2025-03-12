@@ -1,0 +1,67 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\PruferDecode\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B5DA212-3618-4390-A8C5-C08183589CDA}|PruferDecode\\PruferDecode.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\PruferDecode\\PruferDecode\\PruferDecode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8B5DA212-3618-4390-A8C5-C08183589CDA}|PruferDecode\\PruferDecode.vcxproj|solutionrelative:PruferDecode\\PruferDecode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B5DA212-3618-4390-A8C5-C08183589CDA}|PruferDecode\\PruferDecode.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\PROFESSIONAL\\VC\\TOOLS\\MSVC\\14.39.33519\\INCLUDE\\VECTOR||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 191,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "vector",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
+              "ViewState": "AQIAAFsIAAAAAAAAAAAIwGYIAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-25T21:56:04.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PruferDecode.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\PruferDecode\\PruferDecode\\PruferDecode.cpp",
+              "RelativeDocumentMoniker": "PruferDecode\\PruferDecode.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\PruferDecode\\PruferDecode\\PruferDecode.cpp",
+              "RelativeToolTip": "PruferDecode\\PruferDecode.cpp",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAcwEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-25T21:29:33.814Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 191,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

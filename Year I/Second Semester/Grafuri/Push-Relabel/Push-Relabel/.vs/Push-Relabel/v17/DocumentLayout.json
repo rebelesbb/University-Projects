@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\Push-Relabel\\Push-Relabel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D36F8024-C830-401F-BFFE-012F0F3E2DF2}|Push-Relabel\\Push-Relabel.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\Push-Relabel\\Push-Relabel\\Push-Relabel\\Push-Relabel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D36F8024-C830-401F-BFFE-012F0F3E2DF2}|Push-Relabel\\Push-Relabel.vcxproj|solutionrelative:Push-Relabel\\Push-Relabel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 191,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Push-Relabel.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\Push-Relabel\\Push-Relabel\\Push-Relabel\\Push-Relabel.cpp",
+              "RelativeDocumentMoniker": "Push-Relabel\\Push-Relabel.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\Push-Relabel\\Push-Relabel\\Push-Relabel\\Push-Relabel.cpp",
+              "RelativeToolTip": "Push-Relabel\\Push-Relabel.cpp",
+              "ViewState": "AQIAALUAAAAAAAAAAAAkwJIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-17T06:56:34.85Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 191,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# ninja log v5
+2	373	7345304250243929	CMakeFiles/Parcurgeri.dir/BFS.cpp.obj	63bfa34e3a4b4309
+7	636	7345316229477597	CMakeFiles/Parcurgeri.dir/main.cpp.obj	bd3f6c3a2e23f0aa
+297	360	7345314432722137	Parcurgeri.exe	206aa22912b1763a
+12	634	7345316229448646	CMakeFiles/Parcurgeri.dir/DFS.cpp.obj	b41f9cee7db22fed
+10	320	7345317284479916	CMakeFiles/Parcurgeri.dir/DFS.cpp.obj	11b6d41e0ba9c732
+6	345	7345317284718725	CMakeFiles/Parcurgeri.dir/main.cpp.obj	9a138e24715dbaff
+2	409	7345317285348353	CMakeFiles/Parcurgeri.dir/BFS.cpp.obj	63bfa34e3a4b4309
+409	470	7345317285938340	Parcurgeri.exe	206aa22912b1763a
+2	300	7345317607352229	CMakeFiles/Parcurgeri.dir/DFS.cpp.obj	11b6d41e0ba9c732
+302	369	7345317608017170	Parcurgeri.exe	206aa22912b1763a

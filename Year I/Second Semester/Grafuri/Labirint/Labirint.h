@@ -1,0 +1,6 @@
+#ifndef LABIRINT_LABIRINT_H
+#define LABIRINT_LABIRINT_H
+
+int run();
+
+#endif //LABIRINT_LABIRINT_H

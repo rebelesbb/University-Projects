@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\Kruska\\Kruskal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6D9A17F-C441-40F2-ACB4-F504EB474307}|Kruskal\\Kruskal.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\Kruska\\Kruskal\\Kruskal\\Kruskal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6D9A17F-C441-40F2-ACB4-F504EB474307}|Kruskal\\Kruskal.vcxproj|solutionrelative:Kruskal\\Kruskal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 191,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Kruskal.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\Kruska\\Kruskal\\Kruskal\\Kruskal.cpp",
+              "RelativeDocumentMoniker": "Kruskal\\Kruskal.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\Grafuri\\Kruska\\Kruskal\\Kruskal\\Kruskal.cpp",
+              "RelativeToolTip": "Kruskal\\Kruskal.cpp",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-31T08:38:12.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

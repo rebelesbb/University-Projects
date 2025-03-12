@@ -1,0 +1,13 @@
+# ninja log v5
+2	59	7345285898269268	CMakeFiles/Conversii.dir/main.cpp.obj	a5bf8d6b26f65089
+2	326	7345250310835056	CMakeFiles/Conversii.dir/MatriceAdiacenta.cpp.obj	a933bc14ae2e5e71
+335	431	7345286712729174	Conversii.exe	6ffd771b70a57fc8
+5	317	7345270655499037	CMakeFiles/Conversii.dir/MatriceIncidenta.cpp.obj	c577a8c6623df929
+8	499	7345253527589442	CMakeFiles/Conversii.dir/ListaAdiacenta.cpp.obj	151db6cb454c1bda
+7	327	7345264504476706	CMakeFiles/Conversii.dir/MatriceAdiacenta_MatriceIncidenta.cpp.obj	a055b0573046941a
+2	483	7345264425856855	CMakeFiles/Conversii.dir/MatriceAdiacenta_ListaAdiacenta.cpp.obj	4dfcaf2990d910c
+2	308	7345267522519970	CMakeFiles/Conversii.dir/MatriceIncidenta_MatriceAdiacenta.cpp.obj	f3637225491b2942
+9	469	7345276261303213	CMakeFiles/Conversii.dir/MatriceIncidenta_ListaAdiacenta.cpp.obj	2a8d4a44f5564f04
+3	479	7345278870756932	CMakeFiles/Conversii.dir/ListaAdiacenta_MatriceAdiacenta.cpp.obj	f030c491273271e0
+6	450	7345280468743140	CMakeFiles/Conversii.dir/ListaAdiacenta_MatriceIncidenta.cpp.obj	671a9754c6882582
+3	335	7345286711803919	CMakeFiles/Conversii.dir/GOrientat_MatriceIncidenta.cpp.obj	f2da646466bacd04

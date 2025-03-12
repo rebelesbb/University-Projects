@@ -1,0 +1,4 @@
+﻿  Huffman.cpp
+C:\Users\Bogdan Rebeles\Desktop\Grafuri\Huffman\Huffman\Huffman.cpp(78,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Bogdan Rebeles\Desktop\Grafuri\Huffman\Huffman\Huffman.cpp(164,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Huffman.vcxproj -> C:\Users\Bogdan Rebeles\Desktop\Grafuri\Huffman\x64\Debug\Huffman.exe
