@@ -1,0 +1,45 @@
+;;path: "C:/Users/Bogdan Rebeles/Desktop/University-Projects/Year II/First Semester/PLF/Laborator/L2/parcurgereNivele.txt"
+;; Pentru reprezentarea sub forma de lista liniara
+;; radacina nr-arbori arb-stang arb-drept
+
+(defun parcurgereStanga (arb nrVf nrM)
+	(cond
+	((NULL arb) '())
+	((= nrVf (+ nrM 1)) '())
+	(T(CONS (CAR arb) (CONS (CADR arb) (parcurgereStanga (CDDR arb) (+ nrVf 1) (+ nrM (CADR arb) ) ))))
+	)
+)
+
+(defun parcurgereDreapta (arb nrVf nrM)
+	(cond
+	((NULL arb) '())
+	((= nrVf (+ nrM 1)) arb)
+	(T(parcurgereDreapta (CDDR arb) (+ nrVf 1) (+ nrM (CADR arb) ) ))
+	)
+)
+
+(defun stang (arb)
+	(parcurgereStanga (CDDR arb) 0 0)
+)
+
+(defun drept (arb)
+	(parcurgereDreapta (CDDR arb) 0 0)
+)
+
+(defun parcurgereNivel (arb nivelCurent nivel rezultat)
+	(cond
+	((NULL arb) '())
+	((= nivelCurent nivel) (APPEND (LIST (CAR arb)) rezultat))
+	(T (APPEND
+		(parcurgereNivel (stang arb) (+ nivelCurent 1) nivel rezultat) 
+		(parcurgereNivel (drept arb) (+ nivelCurent 1) nivel rezultat))
+	   )
+	)
+)
+
+(defun parcurgerePeNivel (arb nivelCurent)
+	(cond
+	((NULL (parcurgereNivel arb 0 nivelCurent '())) '())
+	(T(APPEND (parcurgereNivel arb 0 nivelCurent '()) (parcurgerePeNivel arb (+ nivelCurent 1))))
+	)
+)

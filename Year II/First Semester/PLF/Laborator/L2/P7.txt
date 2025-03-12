@@ -1,0 +1,142 @@
+;;path: "C:/Users/Bogdan Rebeles/Desktop/University-Projects/Year II/First Semester/PLF/Laborator/L2/P7.txt"
+;; Pentru reprezentarea sub forma de lista liniara
+;; radacina nr-arbori arb-stang arb-drept
+
+
+#|
+parcurgereStanga(arb: list, nrVf: int, nrM:int)
+Parcurge lista nodurilor unui arbore binar reprezentat sub forma de lista liniara
+(radacina nr-arbori subarbore-st subarbore-dr)
+si returneaza o lista reprezentand radacina arborelui si nodurile subarborelui stang al acestuia.
+
+arb: lista liniara care contine nodurile arborelui
+nrVf: numarul curent de varfuri parcurse
+nrM: numarul curent de muchii parcurse
+|#
+(defun parcurgereStanga (arb nrVf nrM)
+	(cond
+	((NULL arb) '())
+	((= nrVf (+ nrM 1)) '())
+	(T(CONS (CAR arb) (CONS (CADR arb) (parcurgereStanga (CDDR arb) (+ nrVf 1) (+ nrM (CADR arb) ) ))))
+	)
+)
+
+
+#|
+parcurgereDreapta(arb: list, nrVf: int, nrM:int)
+Parcurge lista nodurilor unui arbore binar reprezentat sub forma de lista liniara
+(radacina nr-arbori subarbore-st subarbore-dr)
+si returneaza o lista reprezentand radacina arborelui si nodurile subarborelui drept al acestuia.
+
+arb: lista liniara care contine nodurile arborelui
+nrVf: numarul curent de varfuri parcurse
+nrM: numarul curent de muchii parcurse
+|#
+(defun parcurgereDreapta (arb nrVf nrM)
+	(cond
+	((NULL arb) '())
+	((= nrVf (+ nrM 1)) arb)
+	(T(parcurgereDreapta (CDDR arb) (+ nrVf 1) (+ nrM (CADR arb) ) ))
+	)
+)
+
+
+#|
+stang(arb: list)
+Determina subarborele stang al unui arbore dat, reprezentat sub forma de lista liniara
+(radacina nr-arbori subarbore-st subarbore-dr)
+returnand lista nodurilor subarborelui stang.
+
+arb: lista liniara care contine nodurile arborelui
+|#
+(defun stang (arb)
+	(parcurgereStanga (CDDR arb) 0 0)
+)
+
+
+#|
+drept(arb: list)
+Determina subarborele drept al unui arbore dat, reprezentat sub forma de lista liniara
+(radacina nr-arbori subarbore-st subarbore-dr)
+returnand lista nodurilor subarborelui drept.
+
+arb: lista liniara care contine nodurile arborelui
+|#
+(defun drept (arb)
+	(parcurgereDreapta (CDDR arb) 0 0)
+)
+
+
+#|
+parcurgereNivel(arb: list, nivelCurent: int, nivel: int, rezultat: list)
+Determina nodurile de pe un nivel (parcurgerea respectivului nivel)
+al unui arbore reprezentat sub forma de lista liniara
+(radacina nr-arbori subarbore-st subarbore-dr)
+returnand lista formata din aceste noduri.
+
+arb: lista liniara care contine nodurile arborelui
+nivelCurent: nivelul curent pe care ne aflam (functia parcurge arborele pe nivele)
+nivel: nivelul a carui noduri dorim sa le determinam
+rezultat: lista folosita pentru construirea parcurgerii nivelului
+|#
+(defun parcurgereNivel (arb nivelCurent nivel rezultat)
+	(cond
+	((NULL arb) '())
+	((= nivelCurent nivel) (APPEND (LIST (CAR arb)) rezultat))
+	(T (APPEND
+		(parcurgereNivel (stang arb) (+ nivelCurent 1) nivel rezultat) 
+		(parcurgereNivel (drept arb) (+ nivelCurent 1) nivel rezultat))
+	   )
+	)
+)
+
+#|
+estePeNivel(listaNivel: list, x: atom)
+Verifica existenta unui nod pe un nivel al unui arbore reprezentat sub forma de lista liniara
+(radacina nr-arbori subarbore-st subarbore-dr)
+returnand True (T) daca nodul exista pe respectivul nivel, False (NIL) altfel
+
+listaNivel: lista nodurilor de pe nivelul dat al arborelui
+x: nodul a carui existenta pe nivel dorim sa o verificam
+|#
+(defun estePeNivel (listaNivel x)
+	(cond
+	((NULL listaNivel) NIL)
+	((EQUAL (CAR listaNivel) x) T)
+	(T(estePeNivel (CDR listaNivel) x))
+	)
+)
+
+#|
+verificareNivele(arb: list, x: atom, nivel: int)
+Verifica existenta unui nod pe oricare dintre nivelele unui arbore
+reprezentat sub forma de lista liniara
+(radacina nr-arbori subarbore-st subarbore-dr)
+returnand nivelul pe care acesta a fost gasit, daca a fost gasit
+nil altfel.
+
+arb: lista liniara care contine nodurile arborelui
+x: nodul a carui existenta in arbore, si a carui nivel in arbore dorim sa il determinam
+nivel: nivelul curent pe care se face verificarea
+|#
+(defun verificareNivele (arb x nivel)
+	(cond
+	((NULL (parcurgereNivel arb 0 nivel '())) NIL)
+	((estePeNivel (parcurgereNivel arb 0 nivel '()) x) nivel)
+	(T(verificareNivele arb x (+ nivel 1)))
+	)
+)
+
+#|
+nivelNod(arg: list, x: atom)
+Determina nivelul la care un nod se afla intr-un arbore, reprezentat sub forma de lista liniara
+(radacina nr-arbori subarbore-st subarbore-dr)
+returnand nivelul la care nodul se afla in arbore, daca acesta exista in arbore,
+nil altfel.
+
+arb: lista liniara care contine nodurile arborelui
+x: nodul a carui nivel dorim da il determinam
+|#
+(defun nivelNod (arb x)
+	(verificareNivele arb x 0)
+)

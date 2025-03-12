@@ -1,0 +1,35 @@
+CREATE DATABASE ParereNotaSansaDB;
+GO
+USE ParereNotaSansaDB;
+
+CREATE TABLE Tipuri
+(
+cod_t INT IDENTITY PRIMARY KEY,
+nume VARCHAR(100),
+descriere VARCHAR(200)
+);
+
+CREATE TABLE Orase
+(
+cod_o INT IDENTITY PRIMARY KEY,
+nume VARCHAR(100)
+);
+
+CREATE TABLE Restaurante
+(
+cod_r INT IDENTITY PRIMARY KEY,
+nume VARCHAR(100),
+adresa VARCHAR(100),
+nr_tel VARCHAR(20),
+cod_t INT FOREIGN KEY REFERENCES Tipuri(cod_t),
+cod_o INT FOREIGN KEY REFERENCES Orase(cod_o)
+);
+
+CREATE TABLE Utilizator
+(
+cod_u INT IDENTITY PRIMARY KEY,
+nume VARCHAR(100),
+email VARCHAR(50),
+parola VARCHAR(50)
+);
+

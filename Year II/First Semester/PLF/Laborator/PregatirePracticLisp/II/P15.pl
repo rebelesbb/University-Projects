@@ -1,0 +1,47 @@
+% longestSeq(L: list, IsSeq: int, currentLength: list, currentSeq,
+% longestLength: int, longestSeq: list, Result: list)
+
+%isSeq: 0 if we are not currently following a sequence of even nums
+%       1 otherwise
+%
+
+longestSeq([], 1, CurrentLen, CurrentSeq, LongestLen, _, CurrentSeq):-
+    LongestLen < CurrentLen,
+    !.
+
+longestSeq([], _, _, _, _, LongestSeq, LongestSeq):-
+    !.
+
+longestSeq([H | T], 1, CurrentLen, CurrentSeq, LongestLen, LongestSeq, Res):-
+    H mod 2 =:= 0,
+    !,
+    NewCurrentLen is CurrentLen + 1,
+    longestSeq(T, 1, NewCurrentLen, [H | CurrentSeq], LongestLen, LongestSeq, Res).
+
+longestSeq([H | T], 1, CurrentLen, CurrentSeq, LongestLen, _, Res):-
+    H mod 2 =\=0,
+    CurrentLen > LongestLen,
+    !,
+    longestSeq(T, 0, _, _, CurrentLen, CurrentSeq, Res).
+
+longestSeq([H | T], 0, _, _, LongestLen, LongestSeq, Res):-
+    H mod 2 =:= 0,
+    !,
+    longestSeq(T, 1, 1, [H], LongestLen, LongestSeq, Res).
+
+longestSeq([_ | T], _, _, _, LongestLen, LongestSeq, Res):-
+    !,
+    longestSeq(T, 0, _, _, LongestLen, LongestSeq, Res).
+
+
+
+
+reverseList([], ReversedList, ReversedList):-!.
+reverseList([H | T], PReversedList, ReversedList):-
+    reverseList(T, [H | PReversedList], ReversedList).
+
+
+% main predicate
+longestEvenSequence(L, Result):-
+    longestSeq(L, 0, _, _, 0, [], ReversedResult),
+    reverseList(ReversedResult, [], Result).
