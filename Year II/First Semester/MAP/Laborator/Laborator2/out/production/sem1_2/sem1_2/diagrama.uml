@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>sem1_2.model.BubbleSorter</OriginalElement>
+  <nodes>
+    <node x="515.344160994741" y="779.1534221144422">sem1_2.model.AbstractTaskContainer</node>
+    <node x="84.67174522286086" y="61.55540815289609">sem1_2.model.MessageTask</node>
+    <node x="109.1850597033268" y="615.3860891733215">sem1_2.model.BubbleSorter</node>
+    <node x="280.73136943703605" y="382.2595453118684">sem1_2.model.MergeSorter</node>
+    <node x="686.5284923127085" y="1084.2241976903758">sem1_2.model.StackContainer</node>
+    <node x="420.56932906604106" y="1624.9768997798137">sem1_2.decorator.DelayTaskRunner</node>
+    <node x="604.5457774848009" y="-13.507422203105392">sem1_2.model.Task</node>
+    <node x="88.54220619488248" y="1798.9293163803313">sem1_2.decorator.PrinterTaskRunner</node>
+    <node x="627.7614146330444" y="451.27843532880576">sem1_2.model.SortingTask</node>
+    <node x="74.50720905389511" y="1550.3219685806537">sem1_2.decorator.AbstractTaskRunner</node>
+    <node x="255.85300547390153" y="789.2343403584538">sem1_2.factory.Strategy</node>
+    <node x="404.18743291734876" y="581.1951292184762">sem1_2.model.Container</node>
+    <node x="-48.715463319673404" y="989.8706520471374">sem1_2.model.SortingStrategy</node>
+    <node x="349.80983328332" y="1176.8328078328545">sem1_2.factory.TaskContainerFactory</node>
+    <node x="-113.10713542858932" y="439.588421593152">sem1_2.model.AbstractSorter</node>
+    <node x="366.2298526455705" y="1027.1946042803943">sem1_2.model.QueueContainer</node>
+    <node x="13.528031016956618" y="1213.1887745013416">sem1_2.factory.Factory</node>
+    <node x="396.9154352296912" y="1377.0395773307407">sem1_2.decorator.StrategyTaskRunner</node>
+    <node x="94.80354624681536" y="1354.1016253819803">sem1_2.decorator.TaskRunner</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="sem1_2.model.MessageTask" target="sem1_2.model.Task" relationship="GENERALIZATION">
+      <point x="213.00025477713916" y="-4.0815289609241745E-4" />
+      <point x="558.0" y="191.055" />
+      <point x="558.0" y="139.993" />
+      <point x="-108.9997774848008" y="4.222031053924269E-4" />
+    </edge>
+    <edge source="sem1_2.model.BubbleSorter" target="sem1_2.model.AbstractSorter" relationship="GENERALIZATION">
+      <point x="-92.5000597033268" y="-8.917332149849244E-5" />
+      <point x="89.0" y="671.886" />
+      <point x="89.0" y="497.088" />
+      <point x="90.50013542858932" y="-4.2159315199796765E-4" />
+    </edge>
+    <edge source="sem1_2.decorator.AbstractTaskRunner" target="sem1_2.decorator.TaskRunner" relationship="REALIZATION">
+      <point x="-2.0905389510517125E-4" y="-93.49996858065379" />
+      <point x="205.507" y="1520.0" />
+      <point x="191.304" y="1520.0" />
+      <point x="4.5375318464380143E-4" y="67.5003746180198" />
+    </edge>
+    <edge source="sem1_2.model.StackContainer" target="sem1_2.model.AbstractTaskContainer" relationship="GENERALIZATION">
+      <point x="-4.923127085021406E-4" y="-44.500197690375785" />
+      <point x="771.528" y="997.0" />
+      <point x="630.344" y="997.0" />
+      <point x="-1.6099474089514842E-4" y="93.49957788555787" />
+    </edge>
+    <edge source="sem1_2.model.MergeSorter" target="sem1_2.model.AbstractSorter" relationship="GENERALIZATION">
+      <point x="-114.00036943703606" y="4.546881315832252E-4" />
+      <point x="89.0" y="450.76" />
+      <point x="89.0" y="497.088" />
+      <point x="90.50013542858932" y="-4.2159315199796765E-4" />
+    </edge>
+    <edge source="sem1_2.decorator.StrategyTaskRunner" target="sem1_2.decorator.TaskRunner" relationship="REALIZATION">
+      <point x="-120.00043522969116" y="4.226692592510517E-4" />
+      <point x="307.028" y="1470.54" />
+      <point x="307.028" y="1520.0" />
+      <point x="191.304" y="1520.0" />
+      <point x="4.5375318464380143E-4" y="67.5003746180198" />
+    </edge>
+    <edge source="sem1_2.factory.TaskContainerFactory" target="sem1_2.factory.Factory" relationship="REALIZATION">
+      <point x="-138.0" y="-1.644033331512901" />
+      <point x="138.0" y="0.0" />
+    </edge>
+    <edge source="sem1_2.decorator.PrinterTaskRunner" target="sem1_2.decorator.AbstractTaskRunner" relationship="GENERALIZATION">
+      <point x="142.9997938051175" y="-3.1638033124181675E-4" />
+      <point x="398.0" y="1856.429" />
+      <point x="398.0" y="1643.822" />
+      <point x="130.9997909461049" y="3.1419346214534016E-5" />
+    </edge>
+    <edge source="sem1_2.model.AbstractTaskContainer" target="sem1_2.model.Container" relationship="REALIZATION">
+      <point x="-107.5" y="-93.5" />
+      <point x="37.15672807739219" y="67.5" />
+    </edge>
+    <edge source="sem1_2.model.QueueContainer" target="sem1_2.model.AbstractTaskContainer" relationship="GENERALIZATION">
+      <point x="1.4735442954361133E-4" y="-44.499604280394124" />
+      <point x="455.23" y="997.0" />
+      <point x="630.344" y="997.0" />
+      <point x="-1.6099474089514842E-4" y="93.49957788555787" />
+    </edge>
+    <edge source="sem1_2.model.SortingTask" target="sem1_2.model.Task" relationship="GENERALIZATION">
+      <point x="-181.00041463304444" y="-4.35328805735935E-4" />
+      <point x="558.0" y="532.778" />
+      <point x="558.0" y="139.993" />
+      <point x="-108.9997774848008" y="4.222031053924269E-4" />
+    </edge>
+    <edge source="sem1_2.decorator.DelayTaskRunner" target="sem1_2.decorator.AbstractTaskRunner" relationship="GENERALIZATION">
+      <point x="-122.00032906604105" y="1.0022018636846042E-4" />
+      <point x="398.0" y="1669.477" />
+      <point x="398.0" y="1643.822" />
+      <point x="130.9997909461049" y="3.1419346214534016E-5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.43441991786447637" showDependencies="false" x="555.902511078287" y="696.2" />
+  <SelectedNodes>
+    <node>sem1_2.model.SortingTask</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

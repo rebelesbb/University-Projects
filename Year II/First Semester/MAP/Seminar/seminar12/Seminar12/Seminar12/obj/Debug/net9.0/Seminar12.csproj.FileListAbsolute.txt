@@ -1,0 +1,14 @@
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/bin/Debug/net9.0/Seminar12
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/bin/Debug/net9.0/Seminar12.deps.json
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/bin/Debug/net9.0/Seminar12.runtimeconfig.json
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/bin/Debug/net9.0/Seminar12.dll
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/bin/Debug/net9.0/Seminar12.pdb
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/obj/Debug/net9.0/Seminar12.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/obj/Debug/net9.0/Seminar12.AssemblyInfoInputs.cache
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/obj/Debug/net9.0/Seminar12.AssemblyInfo.cs
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/obj/Debug/net9.0/Seminar12.csproj.CoreCompileInputs.cache
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/obj/Debug/net9.0/Seminar12.dll
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/obj/Debug/net9.0/refint/Seminar12.dll
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/obj/Debug/net9.0/Seminar12.pdb
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/obj/Debug/net9.0/Seminar12.genruntimeconfig.cache
+/Users/lauradiana/Desktop/MAP 2024-2025/Seminar/Seminar12/Seminar12/obj/Debug/net9.0/ref/Seminar12.dll

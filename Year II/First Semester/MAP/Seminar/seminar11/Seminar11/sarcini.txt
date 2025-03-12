@@ -1,0 +1,3 @@
+﻿1,Usoara,2
+2,Medie,4
+3,Grea,6

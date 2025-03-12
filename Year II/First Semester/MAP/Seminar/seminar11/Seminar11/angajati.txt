@@ -1,0 +1,3 @@
+﻿1,Nume1,Junior,1200
+2,Nume2,Medium,2000
+3,Nume3,Senior,1700 
