@@ -1,0 +1,78 @@
+400001; 2023-11-15; 2023-12-01; returnata
+100016; Midnight Reverie; Isabella Campbell; A cursed book alters destinies.
+200012; Debra Smith; 5824940540317
+400002; 2023-11-15; 2023-12-01; returnata
+100029; Chronicles of the Celestial Isles; Roger Jensen; Parallel worlds collide, chaos ensues.
+200017; Richard Emery; 6539890477519
+400003; 2023-11-16; 2023-12-03; returnata
+100033; Fragments of Fate; Christina Gibson; Family secrets unveil haunting past.
+200025; Sallie Tyree; 6365280428583
+400004; 2023-11-16; 2023-12-03; returnata
+100022; Aurora's Embrace; Grace Howard; Love blossoms amid wartime chaos.
+200027; Janet Mills; 6089002625179
+400005; 2023-11-16; 2023-12-03; returnata
+100017; Chronicles of the Celestial Isles; Melissa Philson; Time traveler prevents catastrophic event.
+200020; Samuel Turner; 5200467639382
+400006; 2023-11-18; 2023-12-04; returnata
+100030; The Enigma of Ember Falls; Sarah Ulrich; Unexpected journey changes fate's course.
+200007; Frank Thomas; 6578701575062
+400007; 2023-11-18; 2023-12-04; returnata
+100040; Midnight Reverie; Stephen Pilling; A cursed book alters destinies.
+200011; Thomas Tang; 6852418860852
+400008; 2023-11-19; 2023-12-05; returnata
+100038; The Enigma of Ember Falls; Kathrine Crumrine; Quest for lost enchanted artifacts.
+200004; Michael Mason; 5126907068715
+400009; 2023-11-20; 2023-12-05; returnata
+100023; The Midnight Garden; Cynthia Janczewski; Parallel worlds collide, chaos ensues.
+200032; Thomas Osgood; 6022277894429
+400010; 2023-11-16; 2023-12-05; returnata
+100010; The Midnight Garden; Justine Erhardt; Love blossoms amid wartime chaos.
+200018; Michael Dick; 5194350426387
+400011; 2023-11-24; 2023-12-06; returnata
+100036; The Midnight Garden; Erna Reyes; Alien encounter reshapes human civilization.
+200020; Samuel Turner; 5200467639382
+400012; 2023-11-28; 2023-12-06; returnata
+100019; Aurora's Embrace; Charles Ryder; Forbidden magic disrupts peaceful realm.
+200040; Deborah Reid; 6963126196685
+400013; 2023-11-30; 2023-12-06; returnata
+100018; The Alchemy of Dreams; Brian Fernandez; Parallel worlds collide, chaos ensues.
+200015; Patrick Giles; 6879949903629
+400014; 2023-11-30; 2023-12-06; returnata
+100003; Silent Symphony; Joseph Grace; Time traveler prevents catastrophic event.
+200013; George Weaver; 5551571059906
+400015; 2023-12-01; 2023-12-06; returnata
+100001; Aurora's Embrace; Sharon Oliver; Unexpected journey changes fate's course.
+200037; Leslie Adkins; 6245483109748
+400016; 2023-12-01; 2023-12-07; returnata
+100026; Serpents and Stardust; Courtney Oliver; Quest for lost enchanted artifacts.
+200027; Janet Mills; 6089002625179
+400017; 2023-12-02; 2023-12-07; returnata
+100037; Crimson Horizon; Virgie Crow; Alien encounter reshapes human civilization.
+200038; Nadine Mcdaniel; 5912801634524
+400018; 2023-12-02; 2023-12-07; returnata
+100014; Aurora's Embrace; Aja Xie; Parallel worlds collide, chaos ensue, but the heroes are ready to stop it.
+200019; Jade Fowler; 5799157313606
+400019; 2023-12-04; 2023-12-07; returnata
+100040; Midnight Reverie; Stephen Pilling; A cursed book alters destinies.
+200023; Summer Luker; 5183940995210
+400020; 2023-12-06; 2023-12-07; returnata
+100023; The Midnight Garden; Cynthia Janczewski; Parallel worlds collide, chaos ensues.
+200029; Jeffrey Smolik; 5968357987186
+400021; 2023-12-03; None; inchiriata
+100005; Whispers in the Mist; Vera Herbst; Quest for lost enchanted artifacts.
+200007; Frank Thomas; 6578701575062
+400022; 2023-12-03; None; inchiriata
+100009; The Alchemy of Dreams; Micheal Marcum; Love blossoms amid wartime chaos.
+200008; John Neely; 6680605329592
+400023; 2023-12-04; None; inchiriata
+100017; Chronicles of the Celestial Isles; Melissa Philson; Time traveler prevents catastrophic event.
+200020; Samuel Turner; 5200467639382
+400024; 2023-12-05; None; inchiriata
+100013; Crimson Horizon; Johnnie Cass; Time traveler prevents catastrophic event.
+200007; Frank Thomas; 6578701575062
+400025; 2023-12-06; None; inchiriata
+100002; The Midnight Garden; Jeffery Kuttner; A cursed book alters destinies.
+200020; Samuel Turner; 5200467639382
+400026; 2023-12-07; None; inchiriata
+100015; The Alchemy of Dreams; Timothy Renolds; Time traveler prevents catastrophic event.
+200020; Samuel Turner; 5200467639382
