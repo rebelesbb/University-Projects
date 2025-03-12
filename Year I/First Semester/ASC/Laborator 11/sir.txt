@@ -1,0 +1,1 @@
+Minimul din sir este: -3

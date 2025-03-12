@@ -1,0 +1,74 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  segment data use32 class=data
+     6                                  ;a - byte, b - word, c - double word, d - qword
+     7                                  ;Interpretare fara semn
+     8 00000000 21                      a db 21h
+     9 00000001 D375                    b dw 75D3h
+    10 00000003 9CFD3490                c dd 9034FD9Ch
+    11 00000007 9E91B3F601F39A43        d dq 439AF301F6B3919Eh 
+    12 0000000F <res 00000008>          rezultat resq 1
+    13                                  segment code use32 class=code
+    14                                  ;(c+d)-(a+d)+b
+    15                                  start:
+    16                                  
+    17 00000000 A1[03000000]            mov eax, [c]
+    18 00000005 BA00000000              mov edx, 0
+    19                                  ;edx:eax=c
+    20 0000000A 8B1D[07000000]          mov ebx, [d+0]
+    21 00000010 8B0D[0B000000]          mov ecx, [d+4] 
+    22                                  ;ecx:ebx=d
+    23 00000016 F8                      clc
+    24 00000017 01D8                    add eax, ebx
+    25 00000019 11CA                    adc edx, ecx
+    26                                  ;edx:eax=c+d
+    27 0000001B A3[0F000000]            mov [rezultat+0], eax
+    28 00000020 8915[13000000]          mov [rezultat+4], edx
+    29                                  ;rezultat=edx:eax=c+d=43 9A F3 02 86 E8 8F 3A
+    30                                  
+    31                                  
+    32 00000026 B800000000              mov eax, 0
+    33 0000002B A0[00000000]            mov al, [a]
+    34                                  ;eax=a
+    35 00000030 BA00000000              mov edx, 0
+    36                                  ;edx:eax=a
+    37 00000035 01D8                    add eax, ebx
+    38 00000037 11CA                    adc edx, ecx
+    39                                  ;edx:eax=a+d=43 9A F3 01 F6 B3 91 BF
+    40                                  
+    41                                  
+    42                                  
+    43 00000039 8B1D[0F000000]          mov ebx, [rezultat+0]
+    44 0000003F 8B0D[13000000]          mov ecx, [rezultat+4]
+    45                                  ;ecx:ebx=c+d
+    46 00000045 F8                      clc
+    47 00000046 29C3                    sub ebx, eax
+    48 00000048 19D1                    sbb ecx, edx
+    49                                  ;ecx:ebx=(c+d)-(a+d)=00 00 00 00 90 34 FD 7B
+    50 0000004A 891D[0F000000]          mov [rezultat+0], ebx
+    51 00000050 890D[13000000]          mov [rezultat+4], ecx
+    52                                  ;rezultat=edx:eax=(c+d)-(a+d)=00 00 00 00 90 34 FD 7B
+    53                                  
+    54                                  
+    55 00000056 B900000000              mov ecx, 0
+    56 0000005B BB00000000              mov ebx, 0
+    57 00000060 668B1D[01000000]        mov bx, [b]
+    58                                  ;ecx:ebx=b
+    59 00000067 A1[0F000000]            mov eax, [rezultat+0]
+    60 0000006C 8B15[13000000]          mov edx, [rezultat+4]
+    61                                  ;edx:eax=(c+d)-(a+d)
+    62                                  
+    63                                  
+    64 00000072 F8                      clc
+    65 00000073 01D8                    add eax, ebx
+    66 00000075 11CA                    adc edx, ecx
+    67                                  ;edx:eax=(c+d)-(a+d)+b = 00 00 00 00 90 35 73 4E
+    68                                  
+    69                                  
+    70 00000077 A3[0F000000]            mov [rezultat+0], eax
+    71 0000007C 8915[13000000]          mov [rezultat+4], edx
+    72                                  ;rezultat=(c+d)-(a+d)+b=00 00 00 00 90 35 73 4E
+    73 00000082 6A00                    push dword 0
+    74 00000084 FF15[00000000]          call [exit]

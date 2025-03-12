@@ -1,0 +1,73 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  segment data use32 class = data
+     6 00000000 2B34326138345835        s1 db '+', '4', '2', 'a', '8', '4', 'X', '5'
+     7                                  l1 equ $-s1
+     8 00000008 613435                  s2 db 'a', '4', '5'
+     9                                  l2 equ $-s2
+    10                                  lungime equ $-s1 ;=l1+l2 ,deoarece s2 e pus in continuarea lui s1
+    11 0000000B <res 0000000B>          d resb lungime
+    12                                  segment code use32 class = code
+    13                                  ;Se dau doua siruri de caractere S1 si S2. Sa se construiasca sirul D prin concatenarea elementelor 
+    14                                  ;de pe pozitiile multiplu de 3 din sirul S1 cu elementele sirului S2 in ordine inversa.
+    15                                  ;Exemplu:
+    16                                  ;S1: '+', '4', '2', 'a', '8', '4', 'X', '5'
+    17                                  ;S2: 'a', '4', '5'
+    18                                  ;D: '+', 'a', 'X', '5', '4', 'a'
+    19                                  start:
+    20                                      ;punem elementele de pe pozitie multiplu de 3 din s1 in d 
+    21                                          
+    22                                          ;am calculat cate elemente sunt pe pozitie multiplu de 3
+    23 00000000 B808000000                      mov eax, l1
+    24 00000005 BA00000000                      mov edx, 0
+    25 0000000A BB03000000                      mov ebx, 3 
+    26 0000000F F7F3                            div ebx 
+    27                                          
+    28 00000011 83FA00                          cmp edx, 0
+    29 00000014 7403                            je continua
+    30 00000016 83C001                          add eax, 1 
+    31                                          
+    32                                          continua:
+    33                                          
+    34                                          ;adaugarea elementelor in d
+    35 00000019 89C1                            mov ecx, eax ;ecx = contor = cate elemente sunt pe pozitii multiplu de 3
+    36                                          
+    37 0000001B E338                            jecxz final ;daca s2 e gol nu se intra in loop
+    38                                          
+    39 0000001D BE00000000                      mov esi, 0 ;index pentru s1
+    40 00000022 BA00000000                      mov edx, 0 ; index penru d 
+    41                                          
+    42                                          adaugare_s1:
+    43 00000027 8A8476[00000000]                    mov al, [s1+3*esi]
+    44 0000002E 8882[0B000000]                      mov [d+edx], al
+    45 00000034 42                                  inc edx
+    46 00000035 46                                  inc esi
+    47                                              
+    48 00000036 E2EF                            loop adaugare_s1
+    49                                      
+    50                                      ;punem in d elementele din s2 in ordine inversa
+    51                                          
+    52 00000038 B903000000                      mov ecx, l2
+    53                                          
+    54 0000003D E316                            jecxz final ;daca s2 e gol nu se intra in loop
+    55                                          
+    56 0000003F BE03000000                      mov esi, l2 ;indexul pentru s2
+    57 00000044 4E                              dec esi ; esi ia valori de la l2-1 la 0
+    58                                          
+    59                                          ;nu modificam indexul pentru d, adica edx, 
+    60                                          ;pentru ca elementele sa fie puse in continuare
+    61                                          
+    62                                          adaugare_s2:
+    63 00000045 8A86[08000000]                      mov al, [s2+esi]
+    64 0000004B 8882[0B000000]                      mov [d+edx], al
+    65 00000051 42                                  inc edx
+    66 00000052 4E                                  dec esi
+    67                                          
+    68 00000053 E2F0                            loop adaugare_s2
+    69                                  
+    70                                  final:
+    71                                  
+    72 00000055 6A00                    push dword 0
+    73 00000057 FF15[00000000]          call [exit]

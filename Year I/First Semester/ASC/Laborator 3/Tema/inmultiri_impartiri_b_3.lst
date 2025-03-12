@@ -1,0 +1,57 @@
+     1                                  bits 32  
+     2                                  global start
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  segment data use32 class=data
+     6                                  ; a,b,d-byte; c-doubleword; x-qword
+     7 00000000 14                      a db 20 ;14h
+     8 00000001 CE                      b db -50 ; CEh    (256-50=206)
+     9 00000002 08270000                c dd 9992 ;00 00 27 08h
+    10 00000006 64                      d db 100 ;64h
+    11 00000007 C471FE286B0C243A        x dq 3A240C6B28FE71C4h
+    12 0000000F <res 00000004>          aux resd 1
+    13 00000013 <res 00000008>          rezultat resq 1
+    14                                  segment code use32 calss=code
+    15                                  start:
+    16                                  ;(8-a*b*100+c)/d+x
+    17                                  ;interpretare cu semn
+    18                                  
+    19                                  ;a*b*100
+    20 00000000 A0[00000000]            mov al, [a]
+    21 00000005 F62D[01000000]          imul byte [b] ;ax=a*b= -1000 = FC 18h
+    22                                  
+    23 0000000B 66BB6400                mov bx, 100 
+    24 0000000F 66F7EB                  imul bx ;dx:ax=a*b*100 = -100000 = FF FE 79 60h
+    25                                  
+    26 00000012 6652                    push dx
+    27 00000014 6650                    push ax 
+    28 00000016 5B                      pop ebx ;ebx = FF FE 79 60h
+    29                                  
+    30                                  ;8-a*b*100+c 
+    31 00000017 B808000000              mov eax, 8
+    32 0000001C 29D8                    sub eax, ebx ; eax = 8-a*b*100 = 8+100000 = 100008 = 00 01 86 A8h
+    33 0000001E 0305[02000000]          add eax, [c] ; eax = 8-a*b*100+c = 110000 = 00 01 AD B0h
+    34 00000024 99                      cdq ; edx:eax = 8-a*b*100+c = 110000 = 00 00 00 00 00 01 AD B0h
+    35 00000025 89C3                    mov ebx, eax
+    36 00000027 89D1                    mov ecx, edx ;ecx:ebx = (8-a*b*100+c) 
+    37                                  
+    38                                  ;(8-a*b*100+c)/d 
+    39 00000029 A0[06000000]            mov al, [d]
+    40 0000002E 6698                    cbw
+    41 00000030 98                      cwde ;eax = d = 100 = 00 00 00 64h
+    42 00000031 A3[0F000000]            mov [aux], eax
+    43 00000036 89D8                    mov eax, ebx
+    44 00000038 89CA                    mov edx, ecx ;edx:eax = (8-a*b*100+c) = 110000
+    45 0000003A F73D[0F000000]          idiv dword [aux] ; eax = (8-a*b*100+c)/d = 1100 = 00 00 04 4Ch 
+    46                                  
+    47                                  ;(8-a*b*100+c)/d+x
+    48 00000040 99                      cdq ;edx:eax = 00 00 00 00 00 00 04 4Ch
+    49 00000041 F8                      clc 
+    50 00000042 0305[07000000]          add eax, [x]
+    51 00000048 1315[0B000000]          adc edx, [x+4] ; edx:eax = (8-a*b*100+c)/d + x = 3A 24 0C 6B 28 FE 76 10h
+    52                                  
+    53 0000004E A3[13000000]            mov [rezultat], eax
+    54 00000053 8915[17000000]          mov [rezultat+4], edx
+    55                                  
+    56 00000059 6A00                    push dword 0
+    57 0000005B FF15[00000000]          call [exit] 

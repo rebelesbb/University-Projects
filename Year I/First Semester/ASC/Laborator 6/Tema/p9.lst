@@ -1,0 +1,62 @@
+     1                                  bits 32 
+     2                                  global start
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  segment data use32 class=data
+     6 00000000 785634124D3C2C1A76-     s dd 12345678h, 1A2C3C4Dh, 98FCDD76h, 12783A2Bh
+     6 00000009 DDFC982B3A7812     
+     7                                  
+     8                                  ;s dd 142DA763h, 13392710h, 10AACC14h, 9A304015h
+     9                                  ;s dd 22222222h, 22222222h, 22222222h, 22222222h, 44444444h
+    10                                  ;s dd 17171717h, 19191919h, 202121AAh, 99999999h, 14141414h
+    11                                  
+    12                                  len equ ($-s)/4 
+    13 00000010 FFFFFFFF                d dd 0FFFFFFFFh
+    14                                  
+    15                                  segment code use32 class=code
+    16                                  ;Se da un sir de dublucuvinte. Sa se obtina, incepand cu partea inferioara a dublucuvantului, ;dublucuvantul format din octetii
+    17                                  ;superiori pari ai cuvintelor inferioare din elementele sirului de dublucuvinte. Daca nu sunt ;indeajuns octeti
+    18                                  ;se va completa cu octetul FFh.
+    19                                  ;   EXEMPLU:
+    20                                  ;   Se da sirul de dublucuvinte:
+    21                                  ;   s DD 12345678h, 1A2C3C4Dh, 98FCDD76h, 12783A2Bh
+    22                                  ;   Sa se obtina dublucuvant
+    23                                  ;   d DD FF3A3C56h.
+    24                                  start:
+    25 00000000 B904000000                  mov ecx, len
+    26                                      
+    27 00000005 BE[00000000]                mov esi, s 
+    28 0000000A BF[10000000]                mov edi, d 
+    29 0000000F BA00000000                  mov edx, 0
+    30                                      
+    31 00000014 E313                        jecxz final
+    32                                      
+    33                                      parcurgere:
+    34                                      
+    35                                          
+    36 00000016 AD                              lodsd ;ax = dword din s, inc esi+4
+    37 00000017 88E3                            mov bl, ah
+    38                                          
+    39 00000019 F6C301                          test bl, 01h
+    40                                          
+    41 0000001C 7503                            jnz nu_se_adauga ; jnz = jne <=> zf = 0 adica bl & 01h != 0 deci nu e par
+    42                                          
+    43                                          ;tratam cazul in care octetul este par
+    44                                          ;se adauga in d octetul
+    45                                          
+    46 0000001E 88D8                            mov al, bl 
+    47 00000020 AA                              stosb      ;adaugam in d
+    48                                          
+    49                                          nu_se_adauga:
+    50                                          
+    51 00000021 42                              inc edx
+    52 00000022 83FA04                          cmp edx, 4
+    53 00000025 7402                            je final
+    54                                          
+    55                                          
+    56 00000027 E2ED                        loop parcurgere;
+    57                                      
+    58                                      final:
+    59                                  
+    60 00000029 6A00                    push dword 0
+    61 0000002B FF15[00000000]          call [exit]

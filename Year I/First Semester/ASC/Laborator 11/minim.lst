@@ -1,0 +1,38 @@
+     1                                  bits 32
+     2                                  segment code use32 public code
+     3                                  global minim
+     4                                  
+     5                                  minim:
+     6                                  
+     7 00000000 8B742404                    mov esi, [esp + 4] ; in stiva punem in main offsetul sirului
+     8                                                         ; apoi il punem in esi pt a folosi op pe siruri
+     9 00000004 8B4C2408                    mov ecx, [esp + 8]
+    10                                      
+    11 00000008 AD                          lodsd 
+    12 00000009 89C3                        mov ebx, eax ;initializam minimul cu prima valoare din sir
+    13                                      
+    14 0000000B 49                          dec ecx        ; ca sa nu comparam primul element cu el insusi
+    15 0000000C E309                        jecxz return
+    16                                      
+    17                                      
+    18                                      
+    19                                      .cautare_minim:
+    20 0000000E AD                              lodsd     ; punem in eax urmatorul dword din sir
+    21                                          
+    22 0000000F 39D8                            cmp eax, ebx
+    23 00000011 7D02                            jnl .nu_e_mai_mic
+    24                                          
+    25 00000013 89C3                            mov ebx, eax
+    26                                          
+    27                                          .nu_e_mai_mic:
+    28                                          
+    29 00000015 E2F7                            loop .cautare_minim
+    30                                      
+    31                                      return:
+    32 00000017 C20800                      ret 4 * 2
+    33                                  
+    34                                      
+    35                                      
+    36                                      
+    37                                      
+    38                                      

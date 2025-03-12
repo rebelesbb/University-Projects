@@ -1,0 +1,85 @@
+     1                                  bits 32 glogal 
+     2                                  global start 
+     3                                  extern exit, printf
+     4                                  import exit msvcrt.dll
+     5                                  import printf msvcrt.dll
+     6                                  segment data use32 class = data
+     7                                  ;s db 'a','b','c','d','b','c','d'
+     8 00000000 626364636462636472-     s db 'b','c','d','c','d','b','c','d','r','b','c','d'
+     8 00000009 626364             
+     9                                  len_s equ $-s
+    10 0000000C 626364                  d db 'b','c','d'
+    11                                  len_d equ $-d
+    12 0000000F 00000000                aux dd 0
+    13                                  
+    14 00000013 00<rept>                pozitii times len_s db 0  ;folosim precum un vector de aparitii
+    15 0000001F 00<rept>                indici_pozitii times len_s db 0 
+    16                                  segment code use32 class = code
+    17                                  ;19.Dandu-se doua siruri de octeti sa se calculeze toate pozitiile unde al doilea sir apare ca subsir in primul sir.
+    18                                  start:
+    19                                      ;mov byte [pozitii], 73h
+    20                                      ;mov byte [pozitii], 00h
+    21                                      
+    22 00000000 BE[00000000]                mov esi, s
+    23 00000005 B90C000000                  mov ecx, len_s
+    24 0000000A BB00000000                  mov ebx, 0    ;folosim ebx pe post de contor pentru sirul pozitii
+    25 0000000F E34D                        jecxz final
+    26                                      
+    27                                      parcurgere:
+    28 00000011 890D[0F000000]                  mov [aux], ecx ; aux = len_s
+    29 00000017 89F2                            mov edx, esi ; edx = esi = initial, offset s, ulterior o pozitie din s
+    30                                                       ; in felul asta pastram in edx pozitia din s de la care am inceput 
+    31                                                       ; sa verificam daca d e subsir, pentru a reveni la ea cand terminam verificarea
+    32                                                       ; si a trece la urmatoarea 
+    33                                                       
+    34 00000019 B903000000                      mov ecx, len_d ;ecx = len_d
+    35 0000001E BF[0C000000]                    mov edi, d ; edi = offset d
+    36                                  
+    37 00000023 E339                            jecxz final
+    38                                          
+    39                                          verif_subsir:
+    40                                          
+    41 00000025 A6                                  cmpsb           ; comparam cate un caracter din s cu cate unul din d 
+    42 00000026 7509                                jne nu_e_subsir ; daca nu sunt egale inseamna ca nu e subsir, mergem mai departe
+    43                                              
+    44 00000028 E2FB                            loop verif_subsir
+    45                                          
+    46 0000002A C683[13000000]01                mov byte [pozitii + ebx], 01h  ; daca ajungem aici inseamna ca d e subsir in s 
+    47                                                                         ; punem 1 in pozitii la pozitia de inceput a lui d in s
+    48                                          
+    49                                          nu_e_subsir:
+    50                                          
+    51 00000031 43                              inc ebx     
+    52                                          
+    53 00000032 89D6                            mov esi, edx ; punem inapoi in esi offsetul lui s
+    54 00000034 46                              inc esi      ; incrementam pentru a verifica urmatoarele 3 elemente din s
+    55                                          
+    56 00000035 8B0D[0F000000]                  mov ecx, [aux] ; ecx = cat a mai ramas din len_s
+    57                                      
+    58 0000003B E2D4                        loop parcurgere    
+    59                                      
+    60 0000003D B90C000000                  mov ecx, len_s
+    61 00000042 E31A                        jecxz final
+    62 00000044 BF[1F000000]                mov edi, indici_pozitii
+    63 00000049 BB00000000                  mov ebx, 0
+    64                                      
+    65                                      ;determinam pozitiile efective
+    66                                      indici:
+    67 0000004E B001                            mov al, 01h
+    68 00000050 3A83[13000000]                  cmp al, [pozitii + ebx]
+    69                                          
+    70 00000056 7503                            jne sari
+    71                                          
+    72 00000058 88D8                            mov al, bl
+    73                                          
+    74 0000005A AA                              stosb 
+    75                                          
+    76                                      sari:  
+    77 0000005B 43                              inc ebx
+    78 0000005C E2F0                            loop indici
+    79                                              
+    80                                      final:
+    81                                              
+    82                                           
+    83 0000005E 6A00                    push dword 0
+    84 00000060 FF15[00000000]          call [exit]

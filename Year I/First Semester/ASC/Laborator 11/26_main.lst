@@ -1,0 +1,109 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  extern exit, fopen, fprintf, scanf, printf
+     4                                  import exit msvcrt.dll
+     5                                  import fopen msvcrt.dll
+     6                                  import fprintf msvcrt.dll
+     7                                  import scanf msvcrt.dll
+     8                                  import printf msvcrt.dll
+     9                                  
+    10                                  extern minim
+    11                                  
+    12                                  segment data use32 class=data
+    13 00000000 496E74726F64756365-     mesaj_citire_lungime db "Introduceti lungimea sirului: ", 0
+    13 00000009 7469206C756E67696D-
+    13 00000012 656120736972756C75-
+    13 0000001B 693A2000           
+    14 0000001F 496E74726F64756365-     mesaj_citire_numar db "Introduceti un numar: ", 0
+    14 00000028 746920756E206E756D-
+    14 00000031 61723A2000         
+    15 00000036 256400                  format_numar db '%d', 0
+    16 00000039 2564202000              format_afisare_ecran db '%d  ', 0
+    17 0000003E 4D696E696D756C2064-     format_afisare_minim db "Minimul din sir este: %d",0
+    17 00000047 696E20736972206573-
+    17 00000050 74653A20256400     
+    18                                  
+    19 00000057 FFFFFFFF                lungime_sir dd -1
+    20                                  
+    21 0000005B 7369722E74787400        nume_fisier db "sir.txt", 0
+    22 00000063 7700                    mod_acces db 'w', 0
+    23 00000065 FFFFFFFF                descriptor_fisier dd -1
+    24                                  
+    25 00000069 00000000                aux dd 0
+    26 0000006D 00000000                numar dd 0
+    27 00000071 FFFFFFFF                sir dd -1
+    28                                  
+    29                                  
+    30                                  segment code use32 class=code
+    31                                      citire_sir:
+    32                                          ;afisam mesaj pentru citirea lungimii sirului
+    33 00000000 68[00000000]                    push dword mesaj_citire_lungime
+    34 00000005 FF15[00000000]                  call [printf]
+    35 0000000B 83C404                          add esp, 4 * 1
+    36                                          
+    37                                          ;citim lungimea sirului
+    38 0000000E 68[57000000]                    push dword lungime_sir
+    39 00000013 68[36000000]                    push dword format_numar
+    40 00000018 FF15[00000000]                  call [scanf]
+    41 0000001E 83C408                          add esp, 4 * 2
+    42                                          
+    43 00000021 8B0D[57000000]                  mov ecx, [lungime_sir]
+    44 00000027 E365                            jecxz final_proc
+    45                                          
+    46 00000029 BF[71000000]                    mov edi, sir  ; folosesc operatii pe siruri ca sa citesc pun 
+    47                                                        ; in variabila sir numerele
+    48 0000002E FC                              cld
+    49                                          .citire_numar:
+    50 0000002F 890D[69000000]                      mov [aux], ecx                ; salvez ecx in aux ca sa nu pierd valoarea in
+    51                                                                            ; timpul apelurilor de functii
+    52                                              
+    53 00000035 68[1F000000]                        push dword mesaj_citire_numar ; afiseaza mesaj ca sa citeasca un numar
+    54 0000003A FF15[00000000]                      call [printf]
+    55 00000040 83C404                              add esp, 4 * 1
+    56                                              
+    57 00000043 68[6D000000]                        push dword numar              ; citeste un numar
+    58 00000048 68[36000000]                        push dword format_numar
+    59 0000004D FF15[00000000]                      call [scanf]
+    60 00000053 83C408                              add esp, 4 * 2
+    61                                              
+    62 00000056 A1[6D000000]                        mov eax, [numar]              ; pune in sir numarul
+    63 0000005B AB                                  stosd
+    64                                              
+    65 0000005C 8B0D[69000000]                      mov ecx, [aux]
+    66 00000062 E2CB                                loop .citire_numar
+    67                                          
+    68                                          
+    69 00000064 BE[71000000]                    mov esi, sir    
+    70 00000069 8B0D[57000000]                  mov ecx, [lungime_sir]
+    71 0000006F FC                              cld
+    72                                          .afisare_sir_ecran: ; am facut o afisare pe ecran pentru a verifica 
+    73 00000070 890D[69000000]                      mov [aux], ecx  ; ca sirul a fost citit corect
+    74                                          
+    75 00000076 AD                                  lodsd
+    76 00000077 50                                  push eax
+    77 00000078 68[39000000]                        push dword format_afisare_ecran
+    78 0000007D FF15[00000000]                      call [printf]
+    79 00000083 83C408                              add esp, 4 * 2
+    80                                   
+    81 00000086 8B0D[69000000]                      mov ecx, [aux]
+    82 0000008C E2E2                                loop .afisare_sir_ecran
+    83                                              
+    84                                      final_proc:
+    85 0000008E C20400                      ret 4
+    86                                      
+    87                                      start:
+    88 00000091 E86AFFFFFF                  call citire_sir      ;citim sirul
+    89                                      
+    90 00000096 FF35[57000000]              push dword [lungime_sir]
+    91 0000009C 68[71000000]                push dword sir
+    92 000000A1 FF15[00000000]              call [minim]
+    93                                      
+    94 000000A7 50                          push eax
+    95 000000A8 68[3E000000]                push format_afisare_minim
+    96 000000AD FF15[00000000]              call [printf]
+    97 000000B3 83C408                      add esp, 4 * 2
+    98                                      
+    99                                  final:
+   100                                  
+   101 000000B6 6A00                    push dword 0
+   102 000000B8 FF15[00000000]          call  [exit]

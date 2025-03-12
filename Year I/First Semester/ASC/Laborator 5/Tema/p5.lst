@@ -1,0 +1,50 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  segment data use32 class = data
+     6 00000000 61416242322578          s db 'a', 'A', 'b', 'B', '2', '%', 'x'
+     7                                  l equ $-s ; lungimea sirului
+     8 00000007 <res 00000007>          d resb l 
+     9                                  segment code use32 class = code
+    10                                  ;Se da un sir de caractere S. Sa se construiasca sirul D care sa contina toate literele mici din ;sirul S.
+    11                                  ;Exemplu:
+    12                                  ;S: 'a', 'A', 'b', 'B', '2', '%', 'x'
+    13                                  ;D: 'a', 'b', 'x'
+    14                                  
+    15                                  start:
+    16                                      
+    17 00000000 B907000000                  mov ecx, l 
+    18 00000005 BE00000000                  mov esi, 0
+    19 0000000A BA00000000                  mov edx, 0
+    20                                      
+    21 0000000F E31C                        jecxz final
+    22                                      
+    23                                      inceput_loop:
+    24                                          
+    25 00000011 8A86[00000000]                  mov al, [s+esi]
+    26                                          
+    27 00000017 3C61                            cmp al, 'a' 
+    28                                          
+    29 00000019 7D02                            jge compara_z ; daca caracterul e >= 'a' verificam daca e si <= 'z' (daca e litera mica)
+    30 0000001B EB0D                            jmp continua  ; altfel trecem la urmatorul element
+    31                                          
+    32                                          compara_z:
+    33                                              
+    34 0000001D 3C7A                                cmp al, 'z' 
+    35 0000001F 7E02                                jle adauga   ; daca caracterul e <= 'z' il adaugam in d
+    36 00000021 EB07                                jmp continua ; altfel trecem la urmatorul element
+    37                                              
+    38                                              adauga:
+    39 00000023 8882[07000000]                      mov [d+edx], al
+    40 00000029 42                                  inc edx
+    41                                          
+    42                                          continua:
+    43 0000002A 46                                  inc esi
+    44                                              
+    45 0000002B E2E4                        loop inceput_loop
+    46                                      
+    47                                  final:
+    48                                  
+    49 0000002D 6A00                    push dword 0
+    50 0000002F FF15[00000000]          call [exit]

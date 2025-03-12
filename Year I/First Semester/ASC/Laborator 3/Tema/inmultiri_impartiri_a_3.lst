@@ -1,0 +1,57 @@
+     1                                  bits 32 ;modificare conversii la fara semn
+     2                                  global start
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  segment data use32 class=data
+     6                                  ; a,b,d-byte; c-doubleword; x-qword
+     7 00000000 48                      a db 48h
+     8 00000001 02                      b db 02h
+     9 00000002 6B420000                c dd 426Bh 
+    10 00000006 07                      d db 07h
+    11 00000007 C471FE286B0C243A        x dq 3A240C6B28FE71C4h
+    12 0000000F <res 00000004>          aux resd 1
+    13 00000013 <res 00000008>          rezultat resq 1
+    14                                  segment code use32 calss=code
+    15                                  start:
+    16                                  ;(8-a*b*100+c)/d+x
+    17                                  
+    18                                  ;a*b*100
+    19 00000000 A0[00000000]            mov al, [a]
+    20 00000005 F625[01000000]          mul byte [b] ;ax=a*b= 90
+    21                                  
+    22 0000000B 66BB6400                mov bx, 100 
+    23 0000000F 66F7E3                  mul bx ;dx:ax=a*b*100 = 00 00 38 40 
+    24                                  
+    25 00000012 6652                    push dx
+    26 00000014 6650                    push ax 
+    27 00000016 5B                      pop ebx ;ebx = 00 00 38 40
+    28                                  
+    29                                  ;8-a*b*100+c 
+    30 00000017 A1[02000000]            mov eax, [c]
+    31 0000001C 29D8                    sub eax, ebx ;eax = c-(a*b*100) = 00 00 0A 2B
+    32                                  
+    33 0000001E B908000000              mov ecx, 8
+    34 00000023 01C8                    add eax, ecx 
+    35 00000025 BA00000000              mov edx, 0 ;edx:eax = 8-a*b*100+c = 00 00 00 00 00 00 0A 33
+    36 0000002A 89C3                    mov ebx, eax
+    37 0000002C 89D1                    mov ecx, edx ;ecx:ebx = (8-a*b*100+c) = 00 00 00 00 00 00 0A 33
+    38                                  
+    39                                  ;(8-a*b*100+c)/d 
+    40 0000002E B800000000              mov eax, 0
+    41 00000033 A0[06000000]            mov al, [d] ; eax = d
+    42 00000038 A3[0F000000]            mov [aux], eax
+    43 0000003D 89D8                    mov eax, ebx
+    44 0000003F 89CA                    mov edx, ecx ;edx:eax = (8-a*b*100+c)
+    45 00000041 F735[0F000000]          div dword [aux] ; eax = (8-a*b*100+c)/d = 00 00 01 75h
+    46                                  
+    47                                  ;(8-a*b*100+c)/d+x
+    48 00000047 BA00000000              mov edx, 0 ; edx:eax = (8-a*b*100+c)/d = 00 00 00 00 00 00 01 75h
+    49 0000004C F8                      clc
+    50 0000004D 0305[07000000]          add eax, [x]
+    51 00000053 1315[0B000000]          adc edx, [x+4] ; edx:eax = (8-a*b*100+c)/d + x = 3A 24 0C 6B 28 FE 73 39h
+    52                                  
+    53 00000059 A3[13000000]            mov [rezultat], eax
+    54 0000005E 8915[17000000]          mov [rezultat+4], edx
+    55                                  
+    56 00000064 6A00                    push dword 0
+    57 00000066 FF15[00000000]          call [exit] 

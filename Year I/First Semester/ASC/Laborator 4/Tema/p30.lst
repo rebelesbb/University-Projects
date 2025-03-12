@@ -1,0 +1,59 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  segment data use32 class = data
+     6 00000000 EDB5                    a dw 1011010111101101b
+     7                                  
+     8                                  
+     9                                  segment code use32 class = code
+    10                                  ;Se da cuvantul A. Sa se formeze doublewordul B in felul urmator:
+    11                                  ;bitii 0-3 ai lui B sunt bitii 1-4 ai rezultatului A XOR 0Ah
+    12                                  ;bitii 4-11 ai lui B sunt bitii 7-14 ai lui A
+    13                                  ;bitii 12-19 ai lui B au valoarea 0
+    14                                  ;bitii 20-25 ai lui B au valoarea 1
+    15                                  ;bitii 26-31 ai lui C sunt bitii 3-8 ai lui A complementati
+    16                                  start:
+    17                                  ;bitii 0-3 ai lui B sunt bitii 1-4 ai rezultatului A XOR 0Ah
+    18 00000000 B800000000                  mov eax, 0 ;in eax il construim pe b
+    19                                      
+    20 00000005 BB00000000                  mov ebx, 0
+    21 0000000A 668B1D[00000000]            mov bx, [a]
+    22 00000011 6683F30A                    xor bx, 0Ah ;a xor 0Ah
+    23                                      
+    24 00000015 6683E31E                    and bx, 0000000000011110b ;izolam bitii 1-4 a lui a xor 0Ah
+    25 00000019 66D1EB                      shr bx, 1 ; mutam bitii 1-4 a lui a pe 0-3
+    26                                  
+    27 0000001C 09D8                        or eax, ebx ;  copiem bitii 1-4 a lui a xor 0Ah pe pozitiile  0-3 in b 
+    28                                      ;b = 00 00 00 03h
+    29                                  
+    30                                  ;bitii 4-11 ai lui B sunt bitii 7-14 ai lui A
+    31 0000001E BB00000000                  mov ebx, 0
+    32 00000023 668B1D[00000000]            mov bx, [a]
+    33                                      
+    34 0000002A 6681E3807F                  and bx, 0111111110000000b
+    35 0000002F 66C1EB03                    shr bx, 3
+    36                                      
+    37 00000033 09D8                        or eax, ebx
+    38                                      ;b = 00 00 06 B3h
+    39                                   
+    40                                  ;bitii 12-19 ai lui B au valoarea 0
+    41                                      ; nu e necesar sa facem vreo schimbare, au deja valoarea 0
+    42                                    
+    43                                  ;bitii 20-25 ai lui B au valoarea 1
+    44 00000035 0D0000F003                  or eax, 03F00000h ; punem 1 pe pozitiile 20-25 in b 
+    45                                      ;b = 03 F0 06 B3h
+    46                                      
+    47                                  ;bitii 26-31 ai lui C sunt bitii 3-8 ai lui A complementati
+    48 0000003A BB00000000                  mov ebx, 0
+    49 0000003F 668B1D[00000000]            mov bx, [a]
+    50 00000046 66F7D3                      not bx ; complementam bitii lui a 
+    51                                      
+    52 00000049 6681E3F801                  and bx, 0000000111111000b
+    53 0000004E C1E317                      shl ebx, 23 ; mutam bitii complementati 3-8 ai lui a pe 26-31
+    54                                      
+    55 00000051 09D8                        or eax, ebx ; mutam bitii 3-8 complementati ai lui a pe pozitiile 26-31 in b
+    56                                      ;b = 0B F0 06 B3h
+    57                                  
+    58 00000053 6A00                    push dword 0
+    59 00000055 FF15[00000000]          call [exit]

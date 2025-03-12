@@ -1,0 +1,36 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  extern exit, printf, scanf
+     4                                  import exit msvcrt.dll
+     5                                  import printf msvcrt.dll
+     6                                  import scanf msvcrt.dll
+     7                                  
+     8                                  segment data use32 class=data
+     9 00000000 256400                  format_scan db '%d', 0
+    10 00000003 61203D202564202862-     format_print db "a = %d (baza 10), a = %x (baza 16)", 0
+    10 0000000C 617A61203130292C20-
+    10 00000015 61203D202578202862-
+    10 0000001E 617A612031362900   
+    11 00000026 00000000                a dd 0
+    12                                  
+    13                                  segment code use32 class=code
+    14                                  
+    15                                  ;Se da un numar natural negativ a (a: dword). Sa se afiseze valoarea lui in baza 10 si in baza 16, in urmatorul format: "a = <base_10> (baza 10), a = <base_16> (baza 16)"
+    16                                  
+    17                                  start:
+    18                                      ;mov eax, -7
+    19                                  
+    20 00000000 68[26000000]                push dword a
+    21 00000005 68[00000000]                push format_scan
+    22 0000000A FF15[00000000]              call [scanf]
+    23 00000010 83C408                      add esp, 4 * 2
+    24                                   
+    25 00000013 FF35[26000000]              push dword [a]
+    26 00000019 FF35[26000000]              push dword [a]
+    27 0000001F 68[03000000]                push format_print
+    28 00000024 FF15[00000000]              call [printf]
+    29 0000002A 83C40C                      add esp, 4 * 3
+    30                                      
+    31                                  
+    32 0000002D 6A00                    push dword 0
+    33 0000002F FF15[00000000]          call [exit]

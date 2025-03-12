@@ -1,0 +1,40 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  extern exit, fopen, scanf, fprintf, printf
+     4                                  import exit msvcrt.dll
+     5                                  import fopen msvcrt.dll
+     6                                  import scanf msvcrt.dll
+     7                                  import fprintf msvcrt.dll
+     8                                  import printf msvcrt.dll
+     9                                  
+    10                                  segment data use32 class=data
+    11 00000000 00                      nume_fisier db 0
+    12 00000001 00000000                numar dd 0
+    13 00000005 257300                  format_citire_fisier db "%s", 0
+    14 00000008 256400                  format_citire_numar db "%d", 0
+    15 0000000B 257300                  format_afisare db "%s", 0
+    16 0000000E 256400                  format_scriere_numar db "%d", 0
+    17 00000011 7700                    mod_acces db "w", 0
+    18 00000013 496E74726F64756365-     mesaj1 db "Introduceti numele fisierului: ", 0
+    18 0000001C 7469206E756D656C65-
+    18 00000025 20666973696572756C-
+    18 0000002E 75693A2000         
+    19 00000033 496E74726F64756365-     mesaj2 db "Introduceti numarul: ", 0
+    19 0000003C 7469206E756D617275-
+    19 00000045 6C3A2000           
+    20                                  
+    21                                  segment code use32 class=code
+    22                                  start:
+    23                                  
+    24 00000000 68[33000000]                    push dword mesaj2
+    25 00000005 68[0B000000]                    push dword format_afisare
+    26 0000000A FF15[00000000]                  call [printf]
+    27 00000010 83C408                          add esp, 2*4
+    28                                          
+    29 00000013 68[01000000]                    push dword numar
+    30 00000018 68[08000000]                    push dword format_citire_numar
+    31 0000001D FF15[00000000]                  call [scanf]
+    32 00000023 83C408                          add esp, 2*4
+    33                                          
+    34 00000026 6A00                        push dword 0
+    35 00000028 FF15[00000000]              call [exit]

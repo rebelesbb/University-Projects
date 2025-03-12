@@ -1,0 +1,51 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  segment data use32 class=data
+     6 00000000 010203040506            s db 1,2,3,4,5,6 ; declaram sirul, fiecare litera are dimensiunea unui byte
+     7                                  l equ $-s ;cati bytes alocam in sirul s
+     8 00000006 <res 00000006>          d resb l
+     9                                  segment code use32 class=code
+    10                                  start:
+    11                                  ;Se da un sir de numere
+    12                                  ;Dublam numere pare, triplam impare
+    13 00000000 B906000000                   mov ecx, l
+    14 00000005 E341                         jecxz final
+    15 00000007 BE00000000                   mov esi, 0
+    16                                       
+    17                                       start_loop:
+    18                                       
+    19 0000000C 8A86[00000000]                   mov al, [s+esi]
+    20 00000012 6698                             cbw ;ax = elementul
+    21 00000014 B302                             mov bl, 2
+    22 00000016 F6FB                             idiv bl ; ah= [s+esi] % 2
+    23                                           
+    24 00000018 80FC00                           cmp ah, 0
+    25                                           
+    26 0000001B 7402                             je dublare
+    27 0000001D 750E                             jne triplare
+    28                                           
+    29                                           dublare: 
+    30 0000001F 8A86[00000000]                       mov al, [s+esi]
+    31 00000025 0286[00000000]                       add al, [s+esi]
+    32 0000002B EB12                                 jmp adaugare
+    33                                               
+    34                                           triplare:
+    35 0000002D 8A86[00000000]                       mov al, [s+esi]
+    36 00000033 0286[00000000]                       add al, [s+esi]
+    37 00000039 0286[00000000]                       add al, [s+esi]
+    38                                               
+    39                                           adaugare:
+    40 0000003F 8886[06000000]                       mov [d+esi], al
+    41                                               
+    42 00000045 46                               inc esi
+    43                                               
+    44 00000046 E2C4                         loop start_loop
+    45                                           
+    46                                             
+    47                                  
+    48                                  final:
+    49                                  
+    50 00000048 6A00                    push dword 0
+    51 0000004A FF15[00000000]          call [exit]

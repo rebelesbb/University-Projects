@@ -1,0 +1,43 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  segment data use32 class=data
+     6 00000000 61424364                s db 'a', 'B', 'C', 'd' ; declaram sirul, fiecare litera are dimensiunea unui byte
+     7                                  l equ $-s ;cati bytes alocam in sirul s
+     8 00000004 <res 00000004>          d resb l
+     9                                  segment code use32 class=code
+    10                                  start:
+    11                                  ;Se da un sir de caractere (litere mari/mici)
+    12                                  ;Facem din litere mici, litere mari 
+    13 00000000 8B0D04000000                 mov ecx, [l]
+    14 00000006 BE00000000                   mov esi, 0 ;index
+    15                                       
+    16 0000000B E317                         jecxz final
+    17                                       
+    18                                       inceput_loop:
+    19                                       
+    20 0000000D 8A86[00000000]                   mov al, [s+esi]
+    21                                           
+    22 00000013 3C5A                             cmp al, 'Z'
+    23                                           
+    24 00000015 7604                             jbe pune
+    25 00000017 7700                             ja transforma
+    26                                           
+    27                                           transforma:
+    28 00000019 2C20                                 sub al, 'a'-'A' ;transformam din l.mica in mare
+    29                                           
+    30                                           pune:
+    31 0000001B 8886[04000000]                       mov [d+esi], al
+    32                                            
+    33 00000021 46                               inc esi ;esi++ 
+    34                                           ;dec esi  <=> esi--
+    35                                           
+    36                                           
+    37 00000022 E2E9                        loop inceput_loop
+    38                                       
+    39                                  
+    40                                  final:
+    41                                  
+    42 00000024 6A00                    push dword 0
+    43 00000026 FF15[00000000]          call [exit]

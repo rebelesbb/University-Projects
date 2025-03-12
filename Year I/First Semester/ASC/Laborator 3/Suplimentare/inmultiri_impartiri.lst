@@ -1,0 +1,50 @@
+     1                                  ;x-(a*a+b)/(a+c/a); a,c-byte; b-doubleword; x-qword
+     2                                  bits 32 
+     3                                  global start
+     4                                  extern exit 
+     5                                  import exit msvcrt.dll
+     6                                  segment data use32 class=data
+     7 00000000 11                      a db 17 ;11h
+     8 00000001 24                      c db 36 ;24h
+     9 00000002 A7AA0100                b dd 109223 ;00 01 AA A7h
+    10 00000006 02C8F39F2D32B619        x dq 19B6322D9FF3C802h
+    11 0000000E <res 00000008>          rez resq 1
+    12                                  segment code use32 class=code
+    13                                  start:
+    14                                  ;a*a+b
+    15                                  
+    16 00000000 A0[00000000]            mov al, [a]
+    17 00000005 F62D[00000000]          imul byte [a] ;ax=a*a
+    18 0000000B 98                      cwde ;eax = a*a
+    19 0000000C 0305[02000000]          add eax, [b] ; eax = a*a+b = 289 + 109223 = 109512
+    20 00000012 89C3                    mov ebx, eax ; ebx = a*a+b
+    21                                  
+    22                                  ;a+c/a
+    23 00000014 A0[01000000]            mov al, [c]
+    24 00000019 6698                    cbw ; ax = c
+    25 0000001B F63D[00000000]          idiv byte [a] ;al= ax/c = a/c,   ah = ax%c = a%c 
+    26 00000021 0205[00000000]          add al, [a] ; al=a+a/c
+    27 00000027 6698                    cbw ;ax=a+a/c
+    28 00000029 6689C1                  mov cx, ax
+    29                                  
+    30                                  ;(a*a+b)/(a+c/a)
+    31 0000002C 89D8                    mov eax, ebx
+    32 0000002E 50                      push eax
+    33 0000002F 6658                    pop ax
+    34 00000031 665A                    pop dx
+    35 00000033 66F7F9                  idiv cx ; ax = (a*a+b)/(a+c/a) = 5763 = 16 83h
+    36                                  
+    37                                  ;x+(a*a+b)/(a+c/a)
+    38 00000036 98                      cwde
+    39 00000037 99                      cdq ; edx:eax = (a*a+b)/(a+c/a)
+    40 00000038 8B1D[06000000]          mov ebx, [x]
+    41 0000003E 8B0D[0A000000]          mov ecx, [x+4]
+    42 00000044 F8                      clc
+    43 00000045 01D8                    add eax, ebx
+    44 00000047 11CA                    adc edx, ecx
+    45                                  
+    46 00000049 A3[0E000000]            mov [rez], eax
+    47 0000004E 8915[12000000]          mov [rez+4], edx
+    48                                  
+    49 00000054 6A00                    push dword 0
+    50 00000056 FF15[00000000]          call [exit]
