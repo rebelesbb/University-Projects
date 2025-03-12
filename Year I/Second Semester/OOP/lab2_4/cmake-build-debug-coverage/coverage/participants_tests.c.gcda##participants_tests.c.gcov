@@ -1,0 +1,1605 @@
+        -:    0:Source:C:/Users/Bogdan Rebeles/Desktop/OOP/lab2_4/participants_tests.c
+        -:    0:Graph:C:\Users\Bogdan Rebeles\Desktop\OOP\lab2_4\cmake-build-debug-coverage\CMakeFiles\lab2_4.dir\participants_tests.c.gcno
+        -:    0:Data:C:\Users\Bogdan Rebeles\Desktop\OOP\lab2_4\cmake-build-debug-coverage\CMakeFiles\lab2_4.dir\participants_tests.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "participants_functions.h"
+        -:    2:#include "participants_tests.h"
+        -:    3:#include "list.h"
+        -:    4:#include <assert.h>
+        -:    5:#include <string.h>
+        -:    6:#include <crtdbg.h>
+        -:    7:#include <stdio.h>
+        -:    8:#include <stdlib.h>
+        -:    9:
+        -:   10:///list and participant
+        -:   11:
+function test_create_list called 1 returned 100% blocks executed 86%
+        1:   12:void test_create_list()
+        -:   13:{
+        1:   14:    ElementsList participants = create_list();
+        1:   14-block  0
+call    0 returned 1
+        -:   15:
+       1*:   16:    assert(get_size(&participants) == 0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   16-block  0
+call    3 never executed
+        1:   16-block  1
+       1*:   17:    assert(get_capacity(&participants) == 10);
+        1:   17-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   17-block  1
+call    3 never executed
+        1:   17-block  2
+       11:   18:    for(int index = 0; index < participants.capacity; index++)
+        1:   18-block  0
+       10:   18-block  1
+       11:   18-block  2
+branch  0 taken 10
+branch  1 taken 1 (fallthrough)
+        -:   19:        assert(sizeof(participants.nr) == sizeof(Participant*));
+        -:   20:
+        1:   21:    free_list(&participants);
+        1:   21-block  0
+call    0 returned 1
+        1:   22:}
+        -:   23:
+function test_create_participant called 1 returned 100% blocks executed 80%
+        1:   24:void test_create_participant()
+        -:   25:{
+        1:   26:    Participant* participant = create_participant("Prenume", "Nume", 150);
+        1:   26-block  0
+call    0 returned 1
+        -:   27:
+       1*:   28:    assert(strcmp(get_first_name(participant),"Prenume") == 0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   28-block  0
+call    3 never executed
+        1:   28-block  1
+       1*:   29:    assert(strcmp(get_last_name(participant),"Nume") == 0);
+        1:   29-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   29-block  1
+call    3 never executed
+        1:   29-block  2
+       1*:   30:    assert(get_score(participant) == 150);
+        1:   30-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   30-block  1
+call    3 never executed
+        1:   30-block  2
+        -:   31:
+        1:   32:    free_participant(participant);
+        1:   32-block  0
+call    0 returned 1
+        1:   33:}
+        -:   34:
+function test_equal called 1 returned 100% blocks executed 85%
+        1:   35:void test_equal()
+        -:   36:{
+        -:   37:    Participant *participant1, *participant2, *participant3;
+        1:   38:    participant1 = create_participant("Prenume","Nume", 150);
+        1:   38-block  0
+call    0 returned 1
+        1:   39:    participant2 = create_participant("Prenume", "Nume", 150);
+call    0 returned 1
+        1:   40:    participant3 = create_participant("Prenume3", "Nume3", 150);
+call    0 returned 1
+        -:   41:
+       1*:   42:    assert(equal(*participant1, *participant2));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   42-block  0
+call    3 never executed
+        1:   42-block  1
+       1*:   43:    assert(!equal(*participant1,*participant3));
+        1:   43-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   43-block  1
+call    3 never executed
+        1:   43-block  2
+        -:   44:
+        1:   45:    set_first_name(participant2,"Prenumele");
+        1:   45-block  0
+call    0 returned 1
+       1*:   46:    assert(!equal(*participant1,*participant2));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   46-block  0
+call    3 never executed
+        1:   46-block  1
+        -:   47:
+        1:   48:    set_first_name(participant2,"Prenume");
+        1:   48-block  0
+call    0 returned 1
+        1:   49:    set_score(participant2,151);
+call    0 returned 1
+       1*:   50:    assert(!equal(*participant2, *participant1));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   50-block  0
+call    3 never executed
+        1:   50-block  1
+        -:   51:
+        1:   52:    free_participant(participant2);
+        1:   52-block  0
+call    0 returned 1
+        1:   53:    free_participant(participant1);
+call    0 returned 1
+        1:   54:    free_participant(participant3);
+call    0 returned 1
+        1:   55:}
+        -:   56:
+function test_valid called 1 returned 100% blocks executed 80%
+        1:   57:void test_valid()
+        -:   58:{
+        1:   59:    ElementsList participants = create_list();
+        1:   59-block  0
+call    0 returned 1
+        -:   60:    Participant* participant;
+        -:   61:    char err[5][100];
+        -:   62:    int len;
+        1:   63:    participant = create_participant("prenume","nume",20);
+call    0 returned 1
+       1*:   64:    assert(valid(&participants,*participant, err, &len));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   64-block  0
+call    3 never executed
+        1:   64-block  1
+       1*:   65:    assert(len == 0);
+        1:   65-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   65-block  1
+call    2 never executed
+        1:   65-block  2
+        -:   66:
+        1:   67:    store(&participants,participant);
+        1:   67-block  0
+call    0 returned 1
+       1*:   68:    assert(!valid(&participants,*participant, err, &len));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   68-block  0
+call    3 never executed
+        1:   68-block  1
+       1*:   69:    assert(len == 1);
+        1:   69-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   69-block  1
+call    2 never executed
+        1:   69-block  2
+        -:   70:
+        2:   71:    for(int i = 0; i < strlen(err[0]); i++)
+        1:   71-block  0
+        2:   71-block  1
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        1:   72:        err[0][i] = '\0';
+        1:   72-block  0
+        -:   73:
+        1:   74:    participant = create_participant("jav3", "ashj4", 101);
+        1:   74-block  0
+call    0 returned 1
+       1*:   75:    assert(!valid(&participants,*participant,err,&len));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   75-block  0
+call    3 never executed
+        1:   75-block  1
+       1*:   76:    assert(len == 3);
+        1:   76-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   76-block  1
+call    2 never executed
+        1:   76-block  2
+        1:   77:    free_participant(participant);
+        1:   77-block  0
+call    0 returned 1
+        -:   78:
+        1:   79:    participant = create_participant("jav3", "ashj4", -3);
+call    0 returned 1
+       1*:   80:    assert(!valid(&participants, *participant, err, &len));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   80-block  0
+call    3 never executed
+        1:   80-block  1
+       1*:   81:    assert(len == 3);
+        1:   81-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   81-block  1
+call    2 never executed
+        1:   81-block  2
+        -:   82:
+        1:   83:    free_list(&participants);
+        1:   83-block  0
+call    0 returned 1
+        1:   84:    free_participant(participant);
+call    0 returned 1
+        1:   85:}
+        -:   86:
+function test_resize called 1 returned 100% blocks executed 82%
+        1:   87:void test_resize()
+        -:   88:{
+        1:   89:    ElementsList participants = create_list();
+        1:   89-block  0
+call    0 returned 1
+        1:   90:    unsigned long long total_capacity = 0;
+       11:   91:    for(int i = 0; i < participants.capacity; i++)
+       11:   91-block  0
+branch  0 taken 10
+branch  1 taken 1 (fallthrough)
+       10:   92:        total_capacity += sizeof(participants.nr[i]);
+       10:   92-block  0
+        -:   93:
+        1:   94:    Participant* participant = create_participant("name", "last_name", 40);
+        1:   94-block  0
+call    0 returned 1
+        1:   95:    store(&participants, participant);
+call    0 returned 1
+        -:   96:
+       1*:   97:    assert(equal(*get_element(&participants, 0), *participant));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:   97-block  0
+call    4 never executed
+        1:   97-block  1
+       1*:   98:    assert(participants.capacity == 10);
+        1:   98-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   98-block  1
+call    2 never executed
+        1:   98-block  2
+       1*:   99:    assert(total_capacity == participants.capacity * sizeof(Participant*));
+        1:   99-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   99-block  1
+call    2 never executed
+        1:   99-block  2
+        1:  100:    resize(&participants);
+        1:  100-block  0
+call    0 returned 1
+        -:  101:
+        -:  102:
+        1:  103:    total_capacity = 0;
+       21:  104:    for(int i = 0; i < participants.capacity; i++)
+       21:  104-block  0
+branch  0 taken 20
+branch  1 taken 1 (fallthrough)
+       20:  105:        total_capacity += sizeof(participants.nr[i]);
+       20:  105-block  0
+        -:  106:
+       1*:  107:    assert(participants.capacity == 20);
+        1:  107-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  107-block  1
+call    2 never executed
+        1:  107-block  2
+       1*:  108:    assert(total_capacity == participants.capacity * sizeof(Participant*));
+        1:  108-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  108-block  1
+call    2 never executed
+        1:  108-block  2
+       1*:  109:    assert(equal(*get_element(&participants, 0), *participant));
+        1:  109-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  109-block  1
+call    4 never executed
+        1:  109-block  2
+        1:  110:    free_list(&participants);
+        1:  110-block  0
+call    0 returned 1
+        -:  111:
+        1:  112:}
+        -:  113:
+function test_store called 1 returned 100% blocks executed 87%
+        1:  114:void test_store()
+        -:  115:{
+        1:  116:    ElementsList participants = create_list();
+        1:  116-block  0
+call    0 returned 1
+        -:  117:    Participant *participant1, *participant2, *participant3;
+        1:  118:    participant1 = create_participant("Prenume","Nume", 150);
+call    0 returned 1
+        1:  119:    participant2 = create_participant("Prenume", "Nume", 160);
+call    0 returned 1
+        1:  120:    participant3 = create_participant("Prenume3", "Nume3", 150);
+call    0 returned 1
+        -:  121:
+        1:  122:    store(&participants, participant1);
+call    0 returned 1
+        1:  123:    store(&participants, participant2);
+call    0 returned 1
+        1:  124:    store(&participants, participant3);
+call    0 returned 1
+        1:  125:    store(&participants, create_participant("Prenume3", "Nume3", 150));
+call    0 returned 1
+call    1 returned 1
+        1:  126:    store(&participants, create_participant("Prenume3", "Nume3", 150));
+call    0 returned 1
+call    1 returned 1
+        1:  127:    store(&participants, create_participant("Prenume3", "Nume3", 150));
+call    0 returned 1
+call    1 returned 1
+        1:  128:    store(&participants, create_participant("Prenume3", "Nume3", 150));
+call    0 returned 1
+call    1 returned 1
+        1:  129:    store(&participants, create_participant("Prenume3", "Nume3", 150));
+call    0 returned 1
+call    1 returned 1
+        1:  130:    store(&participants, create_participant("Prenume3", "Nume3", 150));
+call    0 returned 1
+call    1 returned 1
+        1:  131:    store(&participants, create_participant("Prenume3", "Nume3", 150));
+call    0 returned 1
+call    1 returned 1
+        -:  132:
+       1*:  133:    assert(participants.capacity == 10);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  133-block  0
+call    2 never executed
+        1:  133-block  1
+        1:  134:    store(&participants, create_participant("Prenume3", "Nume3", 150));
+        1:  134-block  0
+call    0 returned 1
+call    1 returned 1
+       1*:  135:    assert(participants.nr != NULL);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  135-block  0
+call    2 never executed
+        1:  135-block  1
+       1*:  136:    assert(participants.capacity == 20);
+        1:  136-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  136-block  1
+call    2 never executed
+        1:  136-block  2
+        -:  137:
+        -:  138:
+       1*:  139:    assert(equal(*get_element(&participants, 0), *participant1));
+        1:  139-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  139-block  1
+call    4 never executed
+        1:  139-block  2
+       1*:  140:    assert(equal(*get_element(&participants, 1), *participant2));
+        1:  140-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  140-block  1
+call    4 never executed
+        1:  140-block  2
+       1*:  141:    assert(equal(*get_element(&participants, 2), *participant3));
+        1:  141-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  141-block  1
+call    4 never executed
+        1:  141-block  2
+       1*:  142:    assert(participants.capacity == 20);
+        1:  142-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  142-block  1
+call    2 never executed
+        1:  142-block  2
+        -:  143:
+        1:  144:    free_list(&participants);
+        1:  144-block  0
+call    0 returned 1
+        1:  145:}
+        -:  146:
+function test_find called 1 returned 100% blocks executed 85%
+        1:  147:void test_find()
+        -:  148:{
+        1:  149:    ElementsList participants = create_list();
+        1:  149-block  0
+call    0 returned 1
+        -:  150:    Participant *participant1, *participant2, *participant3;
+        1:  151:    participant1 = create_participant("Prenume","Nume", 150);
+call    0 returned 1
+        1:  152:    participant2 = create_participant("Prenume", "Nume", 160);
+call    0 returned 1
+        1:  153:    participant3 = create_participant("Prenume3", "Nume3", 150);
+call    0 returned 1
+        1:  154:    store(&participants, participant1);
+call    0 returned 1
+        1:  155:    store(&participants, participant2);
+call    0 returned 1
+        1:  156:    store(&participants, participant3);
+call    0 returned 1
+        -:  157:
+       1*:  158:    assert(find(&participants,*participant1) == 0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  158-block  0
+call    3 never executed
+        1:  158-block  1
+       1*:  159:    assert(find(&participants,*participant3) == 2);
+        1:  159-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  159-block  1
+call    3 never executed
+        1:  159-block  2
+       1*:  160:    assert(find(&participants,*participant2) == 1);
+        1:  160-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  160-block  1
+call    3 never executed
+        1:  160-block  2
+        1:  161:    participant3 = create_participant("asd","asd",20);
+        1:  161-block  0
+call    0 returned 1
+       1*:  162:    assert(find(&participants, *participant3) == -1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  162-block  0
+call    3 never executed
+        1:  162-block  1
+        -:  163:
+        1:  164:    free_list(&participants);
+        1:  164-block  0
+call    0 returned 1
+        1:  165:    free_participant(participant3);
+call    0 returned 1
+        1:  166:}
+        -:  167:
+function test_delete called 1 returned 100% blocks executed 86%
+        1:  168:void test_delete()
+        -:  169:{
+        1:  170:    ElementsList participants = create_list();
+        1:  170-block  0
+call    0 returned 1
+        -:  171:    Participant *participant1, *participant2, *participant3, *participant4;
+        1:  172:    participant1 = create_participant("Prenume","Nume", 150);
+call    0 returned 1
+        1:  173:    participant2 = create_participant("Prenume", "Nume", 160);
+call    0 returned 1
+        1:  174:    participant3 = create_participant("Prenume3", "Nume3", 150);
+call    0 returned 1
+        1:  175:    store(&participants, participant1);
+call    0 returned 1
+        1:  176:    store(&participants, participant2);
+call    0 returned 1
+        1:  177:    store(&participants, participant3);
+call    0 returned 1
+        -:  178:
+       1*:  179:    assert(get_size(&participants) == 3);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  179-block  0
+call    3 never executed
+        1:  179-block  1
+        -:  180:
+        1:  181:    int position = find(&participants,*participant1);
+        1:  181-block  0
+call    0 returned 1
+        1:  182:    delete(&participants,position);
+call    0 returned 1
+       1*:  183:    assert(get_size(&participants) == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  183-block  0
+call    3 never executed
+        1:  183-block  1
+        -:  184:
+        1:  185:    participant4 = create_participant("Prenume","Nume", 150);
+        1:  185-block  0
+call    0 returned 1
+       1*:  186:    assert(!equal(*get_element(&participants, position), *participant4));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  186-block  0
+call    4 never executed
+        1:  186-block  1
+        1:  187:    free_participant(participant4);
+        1:  187-block  0
+call    0 returned 1
+        -:  188:
+        -:  189:    //participant4 = create_participant("Prenume", "Nume", 160);
+       1*:  190:    assert(equal(*get_element(&participants, position), *participant2));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  190-block  0
+call    4 never executed
+        1:  190-block  1
+        -:  191:    //free_participant(participant4);
+        -:  192:
+        1:  193:    position = find(&participants, *participant2);
+        1:  193-block  0
+call    0 returned 1
+        1:  194:    delete(&participants,position);
+call    0 returned 1
+       1*:  195:    assert(get_size(&participants) == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  195-block  0
+call    3 never executed
+        1:  195-block  1
+        -:  196:
+        1:  197:    position = find(&participants, *participant3);
+        1:  197-block  0
+call    0 returned 1
+        1:  198:    delete(&participants,position);
+call    0 returned 1
+       1*:  199:    assert(get_size(&participants) == 0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  199-block  0
+call    3 never executed
+        1:  199-block  1
+        1:  200:    free_list(&participants);
+        1:  200-block  0
+call    0 returned 1
+        1:  201:}
+        -:  202:
+function test_update called 1 returned 100% blocks executed 89%
+        1:  203:void test_update()
+        -:  204:{
+        1:  205:    ElementsList participants = create_list();
+        1:  205-block  0
+call    0 returned 1
+        -:  206:    Participant *participant1, *participant2, *participant3, *participant4;
+        1:  207:    participant1 = create_participant("Prenume1","Nume1", 150);
+call    0 returned 1
+        1:  208:    participant2 = create_participant("Prenume2", "Nume2", 160);
+call    0 returned 1
+        1:  209:    store(&participants, participant1);
+call    0 returned 1
+        1:  210:    store(&participants, participant2);
+call    0 returned 1
+        -:  211:
+        1:  212:    participant3 = create_participant("Prenume1","Nume1", 200); // = initial participant1
+call    0 returned 1
+        1:  213:    participant4 = create_participant("Prenume4", "Nume4", 200);
+call    0 returned 1
+        -:  214:
+        1:  215:    update(&participants,participant4,find(&participants, *participant1));
+call    0 returned 1
+call    1 returned 1
+       1*:  216:    assert(equal(*get_element(&participants, 0), *participant4));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  216-block  0
+call    4 never executed
+        1:  216-block  1
+       1*:  217:    assert(!equal(*get_element(&participants, 0), *participant3));
+        1:  217-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  217-block  1
+call    4 never executed
+        1:  217-block  2
+        1:  218:    free_participant(participant3);
+        1:  218-block  0
+call    0 returned 1
+        -:  219:
+        1:  220:    participant3 = create_participant("Prenum3", "Num3", 20); // = initial participant1
+call    0 returned 1
+        1:  221:    update(&participants,participant3,0);
+call    0 returned 1
+        -:  222:
+        1:  223:    participant4 = create_participant("Prenume","Nume", 150);
+call    0 returned 1
+       1*:  224:    assert(!equal(*get_element(&participants, 0), *participant4));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  224-block  0
+call    4 never executed
+        1:  224-block  1
+        1:  225:    free_participant(participant4);
+        1:  225-block  0
+call    0 returned 1
+        -:  226:
+        1:  227:    participant4 = create_participant("Prenume","Nume", 160); // = initial participant2
+call    0 returned 1
+       1*:  228:    assert(!equal(*get_element(&participants, 0), *participant4));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  228-block  0
+call    4 never executed
+        1:  228-block  1
+        1:  229:    free_participant(participant4);
+        1:  229-block  0
+call    0 returned 1
+        1:  230:    free_list(&participants);
+call    0 returned 1
+        1:  231:}
+        -:  232:
+        -:  233:///participants_function
+        -:  234:
+function test_add_participant called 1 returned 100% blocks executed 84%
+        1:  235:void test_add_participant()
+        -:  236:{
+        1:  237:    ElementsList participants = create_list();
+        1:  237-block  0
+call    0 returned 1
+        -:  238:    Participant *participant;
+        -:  239:    char err[5][100];
+        1:  240:    int i, j, len = 0;
+        -:  241:
+        -:  242:
+        1:  243:    add_participant(&participants, "Prenume", "Nume", 50, err, &len);
+call    0 returned 1
+       1*:  244:    assert(get_size(&participants) == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  244-block  0
+call    3 never executed
+        1:  244-block  1
+        -:  245:
+        1:  246:    participant = create_participant("Prenume", "Nume", 50);
+        1:  246-block  0
+call    0 returned 1
+       1*:  247:    assert(equal(*get_element(&participants, 0), *participant));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  247-block  0
+call    4 never executed
+        1:  247-block  1
+        1:  248:    free_participant(participant);
+        1:  248-block  0
+call    0 returned 1
+        -:  249:
+       1*:  250:    assert(len == 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  250-block  0
+call    2 never executed
+        1:  250-block  1
+        -:  251:
+        1:  252:    add_participant(&participants, "Prenume", "Nume", 50, err, &len);
+        1:  252-block  0
+call    0 returned 1
+       1*:  253:    assert(get_size(&participants) == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  253-block  0
+call    3 never executed
+        1:  253-block  1
+       1*:  254:    assert(len == 1);
+        1:  254-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  254-block  1
+call    2 never executed
+        1:  254-block  2
+        -:  255:
+        1:  256:    len = 0;
+        2:  257:    for(i = 0; i < strlen(err[0]); i++)
+        1:  257-block  0
+        2:  257-block  1
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        1:  258:        err[0][i] = '\0';
+        1:  258-block  0
+        -:  259:
+        1:  260:    add_participant(&participants, "Prenume2", "Nume2", 101, err, &len);
+        1:  260-block  0
+call    0 returned 1
+       1*:  261:    assert(get_size(&participants) == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  261-block  0
+call    3 never executed
+        1:  261-block  1
+       1*:  262:    assert(len == 3);
+        1:  262-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  262-block  1
+call    2 never executed
+        1:  262-block  2
+        -:  263:
+        4:  264:    for(j = 0; j < len; j++)
+        1:  264-block  0
+        3:  264-block  1
+        4:  264-block  2
+branch  0 taken 3
+branch  1 taken 1 (fallthrough)
+        6:  265:        for(i = 0; i < strlen(err[j]); i++)
+        3:  265-block  0
+        6:  265-block  1
+branch  0 taken 3
+branch  1 taken 3 (fallthrough)
+        3:  266:            err[j][i] = '\0';
+        3:  266-block  0
+        1:  267:    len = 0;
+        -:  268:
+        1:  269:    add_participant(&participants, "asd", "asd", 100, err, &len);
+        1:  269-block  0
+call    0 returned 1
+       1*:  270:    assert(get_size(&participants) == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  270-block  0
+call    3 never executed
+        1:  270-block  1
+        -:  271:
+        1:  272:    participant = create_participant("asd", "asd", 100);
+        1:  272-block  0
+call    0 returned 1
+       1*:  273:    assert(equal(*get_element(&participants, 1), *participant));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  273-block  0
+call    4 never executed
+        1:  273-block  1
+        1:  274:    free_participant(participant);
+        1:  274-block  0
+call    0 returned 1
+        1:  275:    free_list(&participants);
+call    0 returned 1
+        1:  276:}
+        -:  277:
+function test_delete_participant called 1 returned 100% blocks executed 82%
+        1:  278:void test_delete_participant()
+        -:  279:{
+        1:  280:    ElementsList participants = create_list();
+        1:  280-block  0
+call    0 returned 1
+        -:  281:    Participant *participant1, *participant2, *participant3, *participant_copy;
+        1:  282:    participant1 = create_participant("Ion","Popescu", 50);
+call    0 returned 1
+        1:  283:    participant2 = create_participant("Ion", "Popescu", 60);
+call    0 returned 1
+        1:  284:    participant3 = create_participant("Ana", "Georgescu", 100);
+call    0 returned 1
+        1:  285:    store(&participants, participant1);
+call    0 returned 1
+        1:  286:    store(&participants, participant2);
+call    0 returned 1
+        1:  287:    store(&participants, participant3);
+call    0 returned 1
+        -:  288:
+        -:  289:    char err[5][100];
+        1:  290:    int i, j, len = 0;
+        -:  291:
+       1*:  292:    assert(get_size(&participants) == 3);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  292-block  0
+call    3 never executed
+        1:  292-block  1
+        -:  293:
+        1:  294:    participant_copy = create_participant("Ion","Popescu", 60);
+        1:  294-block  0
+call    0 returned 1
+        1:  295:    delete_participant(&participants, "Ion", "Popescu", 60, err, &len);
+call    0 returned 1
+       1*:  296:    assert(get_size(&participants) == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  296-block  0
+call    3 never executed
+        1:  296-block  1
+       1*:  297:    assert(len == 0);
+        1:  297-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  297-block  1
+call    2 never executed
+        1:  297-block  2
+        -:  298:
+        1:  299:    delete_participant(&participants, "Nume", "Prenume", 20, err, &len);
+        1:  299-block  0
+call    0 returned 1
+       1*:  300:    assert(get_size(&participants) == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  300-block  0
+call    3 never executed
+        1:  300-block  1
+       1*:  301:    assert(find(&participants, *participant_copy) == -1);
+        1:  301-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  301-block  1
+call    3 never executed
+        1:  301-block  2
+       1*:  302:    assert(len == 1);
+        1:  302-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  302-block  1
+call    2 never executed
+        1:  302-block  2
+        1:  303:    free_participant(participant_copy);
+        1:  303-block  0
+call    0 returned 1
+        -:  304:
+        -:  305:
+        2:  306:    for(j = 0; j < len; j++)
+        1:  306-block  0
+        2:  306-block  1
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        2:  307:        for(i = 0; i < strlen(err[j]); i++)
+        1:  307-block  0
+        2:  307-block  1
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        1:  308:            err[j][i] = '\0';
+        1:  308-block  0
+        1:  309:    len = 0;
+        -:  310:
+        1:  311:    participant_copy = create_participant("Ion","Popescu", 50);
+        1:  311-block  0
+call    0 returned 1
+        1:  312:    delete_participant(&participants, "Ion", "Popescu", 50, err, &len);
+call    0 returned 1
+       1*:  313:    assert(get_size(&participants) == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  313-block  0
+call    3 never executed
+        1:  313-block  1
+       1*:  314:    assert(find(&participants, *participant_copy) == -1);
+        1:  314-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  314-block  1
+call    3 never executed
+        1:  314-block  2
+       1*:  315:    assert(len == 0);
+        1:  315-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  315-block  1
+call    2 never executed
+        1:  315-block  2
+        1:  316:    free_participant(participant_copy);
+        1:  316-block  0
+call    0 returned 1
+        -:  317:
+        1:  318:    participant_copy = create_participant("Ana", "Georgescu", 100);
+call    0 returned 1
+        1:  319:    delete_participant(&participants, "Ana", "Georgescu", 100, err, &len);
+call    0 returned 1
+       1*:  320:    assert(get_size(&participants) == 0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  320-block  0
+call    3 never executed
+        1:  320-block  1
+       1*:  321:    assert(find(&participants, *participant_copy) == -1);
+        1:  321-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  321-block  1
+call    3 never executed
+        1:  321-block  2
+       1*:  322:    assert(len == 0);
+        1:  322-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  322-block  1
+call    2 never executed
+        1:  322-block  2
+        1:  323:    free_participant(participant_copy);
+        1:  323-block  0
+call    0 returned 1
+        -:  324:
+        1:  325:    delete_participant(&participants, "Ion", "Popescu", 20, err, &len);
+call    0 returned 1
+       1*:  326:    assert(len == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  326-block  0
+call    2 never executed
+        1:  326-block  1
+        1:  327:    free_list(&participants);
+        1:  327-block  0
+call    0 returned 1
+        1:  328:}
+        -:  329:
+function test_update_participant called 1 returned 100% blocks executed 86%
+        1:  330:void test_update_participant()
+        -:  331:{
+        -:  332:    char err[5][100];
+        1:  333:    int len = 0, i ,j;
+        1:  334:    ElementsList participants = create_list();
+        1:  334-block  0
+call    0 returned 1
+        -:  335:
+        1:  336:    update_participant(&participants, 0, "Gheorghe", "Gheorghescu", 100, err, &len);
+call    0 returned 1
+       1*:  337:    assert(len == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  337-block  0
+call    2 never executed
+        1:  337-block  1
+        2:  338:    for(j = 0; j < len; j++)
+        1:  338-block  0
+        1:  338-block  1
+        2:  338-block  2
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        2:  339:        for(i = 0; i < strlen(err[j]); i++)
+        1:  339-block  0
+        2:  339-block  1
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        1:  340:            err[j][i] = '\0';
+        1:  340-block  0
+        1:  341:    len = 0;
+        -:  342:
+        -:  343:    Participant *participant1, *participant2;
+        1:  344:    participant1 = create_participant("Ion","Popescu", 50);
+        1:  344-block  0
+call    0 returned 1
+        1:  345:    participant2 = create_participant("Ion","Popescu", 50);
+call    0 returned 1
+        1:  346:    store(&participants, participant1);
+call    0 returned 1
+        -:  347:
+        -:  348:
+        1:  349:    update_participant(&participants, 0, "Gheorghe", "Gheorghescu", 100, err, &len);
+call    0 returned 1
+       1*:  350:    assert(find(&participants, *participant2) == -1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  350-block  0
+call    3 never executed
+        1:  350-block  1
+       1*:  351:    assert(len == 0);
+        1:  351-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  351-block  1
+call    2 never executed
+        1:  351-block  2
+        1:  352:    free_participant(participant2);
+        1:  352-block  0
+call    0 returned 1
+        -:  353:
+        1:  354:    participant2 = create_participant("Gheorghe", "Gheorghescu", 100);
+call    0 returned 1
+        -:  355:
+        1:  356:    update_participant(&participants, 0, "Ghe0rghe", "Gheorgh2", 101, err, &len);
+call    0 returned 1
+       1*:  357:    assert(find(&participants, *participant2) == 0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  357-block  0
+call    3 never executed
+        1:  357-block  1
+       1*:  358:    assert(len == 3);
+        1:  358-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  358-block  1
+call    2 never executed
+        1:  358-block  2
+        1:  359:    free_participant(participant2);
+        1:  359-block  0
+call    0 returned 1
+        -:  360:
+        -:  361:
+        4:  362:    for(j = 0; j < len; j++)
+        3:  362-block  0
+        4:  362-block  1
+branch  0 taken 3
+branch  1 taken 1 (fallthrough)
+        6:  363:        for(i = 0; i < strlen(err[j]); i++)
+        3:  363-block  0
+        6:  363-block  1
+branch  0 taken 3
+branch  1 taken 3 (fallthrough)
+        3:  364:            err[j][i] = '\0';
+        3:  364-block  0
+        1:  365:    len = 0;
+        -:  366:
+        1:  367:    participant2 = create_participant("Gheorghe", "Gheorghescu", 100);
+        1:  367-block  0
+call    0 returned 1
+        1:  368:    update_participant(&participants, 0, "-1", "-1", -1, err, &len);
+call    0 returned 1
+       1*:  369:    assert(len == 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  369-block  0
+call    2 never executed
+        1:  369-block  1
+       1*:  370:    assert(find(&participants, *participant2) == 0);
+        1:  370-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  370-block  1
+call    3 never executed
+        1:  370-block  2
+        -:  371:
+        1:  372:    free_participant(participant2);
+        1:  372-block  0
+call    0 returned 1
+        1:  373:    free_list(&participants);
+call    0 returned 1
+        1:  374:}
+        -:  375:
+function test_sort_list called 1 returned 100% blocks executed 93%
+        1:  376:void test_sort_list()
+        -:  377:{
+        -:  378:    char err[5][100];
+        1:  379:    int len = 0;
+        1:  380:    ElementsList participants = create_list();
+        1:  380-block  0
+call    0 returned 1
+        -:  381:
+        1:  382:    sort_list(&participants, "scor", false, err, &len);
+call    0 returned 1
+       1*:  383:    assert(len == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  383-block  0
+call    2 never executed
+        1:  383-block  1
+        -:  384:
+        -:  385:    Participant *participant1, *participant2, *participant3, *participant5, *participant6, *participant7;
+        1:  386:    participant1 = create_participant("Ion","Popescu", 50);
+        1:  386-block  0
+call    0 returned 1
+        1:  387:    participant2 = create_participant("Ion", "Popescu", 60);
+call    0 returned 1
+        1:  388:    participant3 = create_participant("Ana", "Georgescu", 100);
+call    0 returned 1
+        1:  389:    participant5 = create_participant("Rares","Rares", 60);
+call    0 returned 1
+        1:  390:    participant6 = create_participant("Ion", "Anghel", 40);
+call    0 returned 1
+        1:  391:    participant7 = create_participant("Ana", "Zenobia", 90);
+call    0 returned 1
+        1:  392:    store(&participants, participant1);
+call    0 returned 1
+        1:  393:    store(&participants, participant2);
+call    0 returned 1
+        1:  394:    store(&participants, participant3);
+call    0 returned 1
+        1:  395:    store(&participants, participant5);
+call    0 returned 1
+        1:  396:    store(&participants, participant6);
+call    0 returned 1
+        1:  397:    store(&participants, participant7);
+call    0 returned 1
+        -:  398:
+        1:  399:    ElementsList sorted_list = create_list();
+call    0 returned 1
+        1:  400:    participant1 = create_participant("Ion", "Anghel", 40);
+call    0 returned 1
+        1:  401:    participant3 = create_participant("Ana", "Georgescu", 100);
+call    0 returned 1
+        1:  402:    participant2 = create_participant("Rares","Rares", 60);
+call    0 returned 1
+        1:  403:    participant5 = create_participant("Ion", "Popescu", 60);
+call    0 returned 1
+        1:  404:    participant6 = create_participant("Ion","Popescu", 50);
+call    0 returned 1
+        1:  405:    participant7 = create_participant("Ana", "Zenobia", 90);
+call    0 returned 1
+        1:  406:    store(&sorted_list,participant1);
+call    0 returned 1
+        1:  407:    store(&sorted_list,participant3);
+call    0 returned 1
+        1:  408:    store(&sorted_list,participant6);
+call    0 returned 1
+        1:  409:    store(&sorted_list,participant5);
+call    0 returned 1
+        1:  410:    store(&sorted_list,participant2);
+call    0 returned 1
+        1:  411:    store(&sorted_list,participant7);
+call    0 returned 1
+        -:  412:
+        1:  413:    sort_list(&participants, "nume", false, err, &len);
+call    0 returned 1
+        -:  414:
+        1:  415:    int size = get_size(&participants);
+call    0 returned 1
+        7:  416:    for(int i = 0; i < size; i++)
+        6:  416-block  0
+        7:  416-block  1
+branch  0 taken 6
+branch  1 taken 1 (fallthrough)
+        6:  417:        if(!equal(*get_element(&participants, i), *get_element(&sorted_list, i)))
+        6:  417-block  0
+call    0 returned 6
+call    1 returned 6
+call    2 returned 6
+branch  3 taken 0 (fallthrough)
+branch  4 taken 6
+    #####:  418:            assert(false);
+    %%%%%:  418-block  0
+call    0 never executed
+        -:  419:
+        1:  420:    free_list(&sorted_list);
+        1:  420-block  0
+call    0 returned 1
+        -:  421:
+        1:  422:    sorted_list = create_list();
+call    0 returned 1
+       1*:  423:    assert(get_size(&sorted_list) == 0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  423-block  0
+call    3 never executed
+        1:  423-block  1
+        -:  424:
+        1:  425:    participant1 = create_participant("Ion", "Anghel", 40);
+        1:  425-block  0
+call    0 returned 1
+        1:  426:    participant3 = create_participant("Ana", "Georgescu", 100);
+call    0 returned 1
+        1:  427:    participant2 = create_participant("Rares","Rares", 60);
+call    0 returned 1
+        1:  428:    participant5 = create_participant("Ion", "Popescu", 60);
+call    0 returned 1
+        1:  429:    participant6 = create_participant("Ion","Popescu", 50);
+call    0 returned 1
+        1:  430:    participant7 = create_participant("Ana", "Zenobia", 90);
+call    0 returned 1
+        -:  431:
+        1:  432:    store(&sorted_list,participant3);
+call    0 returned 1
+        1:  433:    store(&sorted_list,participant7);
+call    0 returned 1
+        1:  434:    store(&sorted_list,participant2);
+call    0 returned 1
+        1:  435:    store(&sorted_list,participant5);
+call    0 returned 1
+        1:  436:    store(&sorted_list,participant6);
+call    0 returned 1
+        1:  437:    store(&sorted_list,participant1);
+call    0 returned 1
+        -:  438:
+        1:  439:    sort_list(&participants, "scor", true, err, &len);
+call    0 returned 1
+        -:  440:
+        7:  441:    for(int i = 0; i < size; i++)
+        6:  441-block  0
+        7:  441-block  1
+branch  0 taken 6
+branch  1 taken 1 (fallthrough)
+        6:  442:        if(!equal(*get_element(&participants, i), *get_element(&sorted_list, i)))
+        6:  442-block  0
+call    0 returned 6
+call    1 returned 6
+call    2 returned 6
+branch  3 taken 0 (fallthrough)
+branch  4 taken 6
+    #####:  443:            assert(false);
+    %%%%%:  443-block  0
+call    0 never executed
+        -:  444:
+        1:  445:    free_list(&sorted_list);
+        1:  445-block  0
+call    0 returned 1
+        -:  446:
+        1:  447:    sorted_list = create_list();
+call    0 returned 1
+       1*:  448:    assert(get_size(&sorted_list) == 0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  448-block  0
+call    3 never executed
+        1:  448-block  1
+        -:  449:
+        1:  450:    participant1 = create_participant("Ion", "Anghel", 40);
+        1:  450-block  0
+call    0 returned 1
+        1:  451:    participant3 = create_participant("Ana", "Georgescu", 100);
+call    0 returned 1
+        1:  452:    participant2 = create_participant("Rares","Rares", 60);
+call    0 returned 1
+        1:  453:    participant5 = create_participant("Ion", "Popescu", 60);
+call    0 returned 1
+        1:  454:    participant6 = create_participant("Ion","Popescu", 50);
+call    0 returned 1
+        1:  455:    participant7 = create_participant("Ana", "Zenobia", 90);
+call    0 returned 1
+        -:  456:
+        1:  457:    store(&sorted_list,participant1);
+call    0 returned 1
+        1:  458:    store(&sorted_list,participant6);
+call    0 returned 1
+        1:  459:    store(&sorted_list,participant2);
+call    0 returned 1
+        1:  460:    store(&sorted_list,participant5);
+call    0 returned 1
+        1:  461:    store(&sorted_list,participant7);
+call    0 returned 1
+        1:  462:    store(&sorted_list,participant3);
+call    0 returned 1
+        -:  463:
+        1:  464:    sort_list(&participants, "scor", false, err, &len);
+call    0 returned 1
+        -:  465:
+        7:  466:    for(int i = 0; i < size; i++)
+        6:  466-block  0
+        7:  466-block  1
+branch  0 taken 6
+branch  1 taken 1 (fallthrough)
+        6:  467:        if(!equal(*get_element(&participants, i), *get_element(&sorted_list, i)))
+        6:  467-block  0
+call    0 returned 6
+call    1 returned 6
+call    2 returned 6
+branch  3 taken 0 (fallthrough)
+branch  4 taken 6
+    #####:  468:            assert(false);
+    %%%%%:  468-block  0
+call    0 never executed
+        -:  469:
+        1:  470:    free_list(&sorted_list);
+        1:  470-block  0
+call    0 returned 1
+        -:  471:
+        1:  472:    sorted_list = create_list();
+call    0 returned 1
+       1*:  473:    assert(get_size(&sorted_list) == 0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  473-block  0
+call    3 never executed
+        1:  473-block  1
+        -:  474:
+        1:  475:    participant1 = create_participant("Ion", "Anghel", 40);
+        1:  475-block  0
+call    0 returned 1
+        1:  476:    participant3 = create_participant("Ana", "Georgescu", 100);
+call    0 returned 1
+        1:  477:    participant2 = create_participant("Rares","Rares", 60);
+call    0 returned 1
+        1:  478:    participant5 = create_participant("Ion", "Popescu", 60);
+call    0 returned 1
+        1:  479:    participant6 = create_participant("Ion","Popescu", 50);
+call    0 returned 1
+        1:  480:    participant7 = create_participant("Ana", "Zenobia", 90);
+call    0 returned 1
+        -:  481:
+        1:  482:    store(&sorted_list,participant7);
+call    0 returned 1
+        1:  483:    store(&sorted_list,participant2);
+call    0 returned 1
+        1:  484:    store(&sorted_list,participant5);
+call    0 returned 1
+        1:  485:    store(&sorted_list,participant6);
+call    0 returned 1
+        1:  486:    store(&sorted_list,participant3);
+call    0 returned 1
+        1:  487:    store(&sorted_list,participant1);
+call    0 returned 1
+        -:  488:
+        1:  489:    sort_list(&participants, "nume", true, err, &len);
+call    0 returned 1
+        -:  490:
+        7:  491:    for(int i = 0; i < size; i++)
+        6:  491-block  0
+        7:  491-block  1
+branch  0 taken 6
+branch  1 taken 1 (fallthrough)
+        6:  492:        if(!equal(*get_element(&participants, i), *get_element(&sorted_list, i)))
+        6:  492-block  0
+call    0 returned 6
+call    1 returned 6
+call    2 returned 6
+branch  3 taken 0 (fallthrough)
+branch  4 taken 6
+    #####:  493:            assert(false);
+    %%%%%:  493-block  0
+call    0 never executed
+        -:  494:
+        1:  495:    free_list(&sorted_list);
+        1:  495-block  0
+call    0 returned 1
+        -:  496:
+        1:  497:    sort_list(&participants, "jhad", true, err, &len);
+call    0 returned 1
+       1*:  498:    assert(len == 2); ///didn't set len back on one after checking the empty list error
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  498-block  0
+call    2 never executed
+        1:  498-block  1
+        -:  499:
+        1:  500:    free_list(&participants);
+        1:  500-block  0
+call    0 returned 1
+        1:  501:}
+        -:  502:
+function test_filter_participants called 1 returned 100% blocks executed 81%
+        1:  503:void test_filter_participants()
+        -:  504:{
+        -:  505:    int index;
+        -:  506:    char err[5][100];
+        1:  507:    int len = 0;
+        -:  508:    ElementsList participants, filtered_list;
+        1:  509:    participants = create_list();
+        1:  509-block  0
+call    0 returned 1
+        1:  510:    filtered_list = create_list();
+call    0 returned 1
+        -:  511:
+        -:  512:    ///check potential errors and set len back on 0 only after
+        1:  513:    filter_participants(&participants, &filtered_list, "scor", "20", err, &len);
+call    0 returned 1
+       1*:  514:    assert(len == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  514-block  0
+call    2 never executed
+        1:  514-block  1
+        -:  515:
+        -:  516:    Participant *participant1, *participant2, *participant3, *participant4, *participant5;
+        1:  517:    participant1 = create_participant("Ion","Popescu", 50);
+        1:  517-block  0
+call    0 returned 1
+        1:  518:    participant2 = create_participant("Ion", "Popescu", 60);
+call    0 returned 1
+        1:  519:    participant3 = create_participant("Ana", "Georgescu", 100);
+call    0 returned 1
+        1:  520:    participant4 = create_participant("Rares","Rares", 60);
+call    0 returned 1
+        1:  521:    participant5 = create_participant("Ion", "Anghel", 40);
+call    0 returned 1
+        1:  522:    store(&participants, participant1);
+call    0 returned 1
+        1:  523:    store(&participants, participant2);
+call    0 returned 1
+        1:  524:    store(&participants, participant3);
+call    0 returned 1
+        1:  525:    store(&participants, participant4);
+call    0 returned 1
+        1:  526:    store(&participants, participant5);
+call    0 returned 1
+        -:  527:
+        1:  528:    filter_participants(&participants, &filtered_list, "scor", "-1", err, &len);
+call    0 returned 1
+       1*:  529:    assert(len == 2);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  529-block  0
+call    2 never executed
+        1:  529-block  1
+        -:  530:
+        1:  531:    filter_participants(&participants, &filtered_list, "initiala", "0", err, &len);
+        1:  531-block  0
+call    0 returned 1
+       1*:  532:    assert(len == 3);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  532-block  0
+call    2 never executed
+        1:  532-block  1
+        -:  533:
+        1:  534:    filter_participants(&participants, &filtered_list, "scor", "101", err, &len);
+        1:  534-block  0
+call    0 returned 1
+       1*:  535:    assert(len == 4);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  535-block  0
+call    2 never executed
+        1:  535-block  1
+        -:  536:
+        1:  537:    len = 0;
+       1*:  538:    for(int i = 0; i < len; i++)
+        1:  538-block  0
+    %%%%%:  538-block  1
+        1:  538-block  2
+branch  0 taken 0
+branch  1 taken 1 (fallthrough)
+    #####:  539:        for(index = 0; index < strlen(err[i]); index++)
+    %%%%%:  539-block  0
+    %%%%%:  539-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:  540:            err[i][index] = '\0';
+    %%%%%:  540-block  0
+        -:  541:
+        1:  542:    filter_participants(&participants, &filtered_list, "scor", "70", err, &len);
+        1:  542-block  0
+call    0 returned 1
+        -:  543:
+       1*:  544:    assert(filtered_list.length == 4);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  544-block  0
+call    2 never executed
+        1:  544-block  1
+        5:  545:    for(index = 0; index < filtered_list.length; index++)
+        1:  545-block  0
+        4:  545-block  1
+        5:  545-block  2
+branch  0 taken 4
+branch  1 taken 1 (fallthrough)
+       4*:  546:        assert(get_score(get_element(&filtered_list, index)) < 70);
+        4:  546-block  0
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 0 (fallthrough)
+branch  3 taken 4
+    %%%%%:  546-block  1
+call    4 never executed
+        4:  546-block  2
+        -:  547:
+        1:  548:    free_list(&filtered_list);
+        1:  548-block  0
+call    0 returned 1
+        -:  549:
+        1:  550:    filtered_list = create_list();
+call    0 returned 1
+        -:  551:
+        1:  552:    filter_participants(&participants, &filtered_list, "initiala", "P", err, &len);
+call    0 returned 1
+       1*:  553:    assert(get_size(&filtered_list) == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  553-block  0
+call    3 never executed
+        1:  553-block  1
+        3:  554:    for(index = 0; index < filtered_list.length; index++)
+        1:  554-block  0
+        2:  554-block  1
+        3:  554-block  2
+branch  0 taken 2
+branch  1 taken 1 (fallthrough)
+       2*:  555:        assert(get_last_name(get_element(&filtered_list, index))[0] == 'P');
+        2:  555-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 0 (fallthrough)
+branch  3 taken 2
+    %%%%%:  555-block  1
+call    4 never executed
+        2:  555-block  2
+        -:  556:
+        1:  557:    free_list(&filtered_list);
+        1:  557-block  0
+call    0 returned 1
+        -:  558:
+        -:  559:
+        1:  560:    filtered_list = create_list();
+call    0 returned 1
+        -:  561:
+        1:  562:    filter_participants(&participants, &filtered_list, "initia", "Q", err, &len);
+call    0 returned 1
+       1*:  563:    assert(len == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  563-block  0
+call    2 never executed
+        1:  563-block  1
+        -:  564:
+        1:  565:    free_list(&filtered_list);
+        1:  565-block  0
+call    0 returned 1
+        -:  566:
+        -:  567:
+        1:  568:    free_list(&participants);
+call    0 returned 1
+        -:  569:
+        1:  570:}
+        -:  571:
+function test_functions called 1 returned 100% blocks executed 100%
+        1:  572:void test_functions()
+        -:  573:{
+        1:  574:    test_create_list();
+        1:  574-block  0
+call    0 returned 1
+        1:  575:    test_create_participant();
+call    0 returned 1
+        1:  576:    test_equal();
+call    0 returned 1
+        1:  577:    test_valid();
+call    0 returned 1
+        1:  578:    test_resize();
+call    0 returned 1
+        -:  579:
+        1:  580:    test_store();
+call    0 returned 1
+        1:  581:    test_find();
+call    0 returned 1
+        1:  582:    test_delete();
+call    0 returned 1
+        1:  583:    test_update();
+call    0 returned 1
+        -:  584:
+        1:  585:    test_add_participant();
+call    0 returned 1
+        1:  586:    test_delete_participant();
+call    0 returned 1
+        1:  587:    test_update_participant();
+call    0 returned 1
+        1:  588:    test_sort_list();
+call    0 returned 1
+        1:  589:    test_filter_participants();
+call    0 returned 1
+        1:  590:}

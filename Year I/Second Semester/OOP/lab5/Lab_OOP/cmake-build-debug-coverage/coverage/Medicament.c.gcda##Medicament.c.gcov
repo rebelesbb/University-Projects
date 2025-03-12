@@ -1,0 +1,153 @@
+        -:    0:Source:C:/Users/Bogdan Rebeles/Desktop/OOP/lab5/Lab_OOP/Medicament.c
+        -:    0:Graph:C:\Users\Bogdan Rebeles\Desktop\OOP\lab5\Lab_OOP\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Medicament.c.gcno
+        -:    0:Data:C:\Users\Bogdan Rebeles\Desktop\OOP\lab5\Lab_OOP\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Medicament.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "Medicament.h"
+        -:    2:#include <stdlib.h>
+        -:    3:#include <string.h>
+        -:    4:
+function createMed called 68 returned 100% blocks executed 100%
+       68:    5:Medicament* createMed(int cod, char nume[50], double conc, int cant)
+        -:    6:{
+        -:    7:    /*
+        -:    8:     * Returneaza un medicament cu codul, numele, concentratia si cantiatea data
+        -:    9:     * pre:
+        -:   10:     * cod: int, >= 0, codul
+        -:   11:     * nume: cstring, max 50 char, numele
+        -:   12:     * concentratie: double, > 0, concentratia
+        -:   13:     * cantitate: int, > 0, cantatea
+        -:   14:     *
+        -:   15:     * return: struct Medicament cu datele date
+        -:   16:     */
+       68:   17:    Medicament* med = malloc(sizeof(Medicament));
+       68:   18:    set_cod(med, cod);
+       68:   18-block  0
+call    0 returned 68
+       68:   19:    med->nume = (char*)malloc((strlen(nume) + 1) * sizeof(char));
+       68:   20:    set_nume(med, nume);
+call    0 returned 68
+       68:   21:    set_cantitate(med, cant);
+call    0 returned 68
+       68:   22:    set_concentratie(med, conc);
+call    0 returned 68
+       68:   23:    return med;
+        -:   24:}
+        -:   25:
+function get_cod called 312 returned 100% blocks executed 100%
+      312:   26:int get_cod(Medicament* med)
+        -:   27:{
+      312:   28:    return med->cod;
+      312:   28-block  0
+        -:   29:}
+        -:   30:
+function get_nume called 27 returned 100% blocks executed 100%
+       27:   31:char* get_nume(Medicament* med)
+        -:   32:{
+       27:   33:    return med->nume;
+       27:   33-block  0
+        -:   34:}
+        -:   35:
+function get_concentratie called 23 returned 100% blocks executed 100%
+       23:   36:double get_concentratie(Medicament* med)
+        -:   37:{
+       23:   38:    return med->concentratie;
+       23:   38-block  0
+        -:   39:}
+        -:   40:
+function get_cantitate called 52 returned 100% blocks executed 100%
+       52:   41:int get_cantitate(Medicament* med)
+        -:   42:{
+       52:   43:    return med->cantitate;
+       52:   43-block  0
+        -:   44:}
+        -:   45:
+function set_cod called 68 returned 100% blocks executed 100%
+       68:   46:void set_cod(Medicament* med, int cod)
+        -:   47:{
+       68:   48:    med->cod = cod;
+       68:   49:}
+        -:   50:
+function set_nume called 68 returned 100% blocks executed 100%
+       68:   51:void set_nume(Medicament* med, char* nume)
+        -:   52:{
+       68:   53:    if(sizeof(char) * (strlen(med->nume) + 1) < sizeof(char) * (strlen(nume) + 1))
+       68:   53-block  0
+branch  0 taken 15 (fallthrough)
+branch  1 taken 53
+       15:   54:        med->nume = (char*)realloc(med->nume, sizeof(char) * (strlen(nume) + 1));
+       15:   54-block  0
+       68:   55:    strcpy_s(med->nume,strlen(nume) + 1,nume);
+       68:   55-block  0
+call    0 returned 68
+       68:   56:}
+        -:   57:
+function set_concentratie called 68 returned 100% blocks executed 100%
+       68:   58:void set_concentratie(Medicament* med, double concentratie)
+        -:   59:{
+       68:   60:    med->concentratie = concentratie;
+       68:   61:}
+        -:   62:
+function set_cantitate called 69 returned 100% blocks executed 100%
+       69:   63:void set_cantitate(Medicament* med, int cantitate)
+        -:   64:{
+       69:   65:    med->cantitate = cantitate;
+       69:   66:}
+        -:   67:
+function copyMed called 19 returned 100% blocks executed 100%
+       19:   68:Medicament* copyMed(Medicament* med)
+        -:   69:{
+       19:   70:    Medicament* med_copy = createMed(get_cod(med),
+       19:   70-block  0
+call    0 returned 19
+call    1 returned 19
+call    2 returned 19
+call    3 returned 19
+call    4 returned 19
+        -:   71:                                     get_nume(med),
+        -:   72:                                     get_concentratie(med),
+        -:   73:                                     get_cantitate(med));
+       19:   74:    return med_copy;
+        -:   75:}
+        -:   76:
+function destroyMed called 63 returned 100% blocks executed 100%
+       63:   77:void destroyMed(Medicament* med)
+        -:   78:{
+       63:   79:    free(med->nume);
+       63:   80:    free(med);
+       63:   81:}
+        -:   82:
+function validateMed called 5 returned 100% blocks executed 100%
+        5:   83:int validateMed(Medicament* med) {
+        -:   84:    /*
+        -:   85:     * Valideaza medicamentul dat
+        -:   86:     * med: struct Medicament
+        -:   87:     * return: 0 daca totul e ok, 1 daca medicamentul e invalid
+        -:   88:     */
+        5:   89:    if (med->cantitate <= 0)
+        5:   89-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 4
+        1:   90:        return 1;
+        1:   90-block  0
+        4:   91:    if (med->cod < 0)
+        4:   91-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 3
+        1:   92:        return 1;
+        1:   92-block  0
+        3:   93:    if (med->concentratie < 0)
+        3:   93-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:   94:        return 1;
+        1:   94-block  0
+        2:   95:    if (strlen(med->nume) <= 0)
+        2:   95-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:   96:        return 1;
+        1:   96-block  0
+        -:   97:
+        1:   98:    return 0;
+        1:   98-block  0
+        -:   99:}

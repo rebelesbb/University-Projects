@@ -1,0 +1,9 @@
+# ninja log v5
+2	198	7351624438663025	CMakeFiles/lab2_4.dir/main.c.obj	6776793f28e5471b
+39	171	7351624438383045	CMakeFiles/lab2_4.dir/list.c.obj	deb516c4683d4d1e
+47	155	7351624438213026	CMakeFiles/lab2_4.dir/sort_function.c.obj	733b1c35e07abf36
+22	162	7351624438303069	CMakeFiles/lab2_4.dir/participants_functions.c.obj	e7935afb2b3291d7
+1	130	7411885124237359	build.ninja	304f38b5d095ad3c
+26	185	7351624438533044	CMakeFiles/lab2_4.dir/participants_tests.c.obj	5e837eb74ef7a639
+198	452	7351624441054407	lab2_4.exe	aea37f5e6c364e0
+31	170	7351624438383045	CMakeFiles/lab2_4.dir/participant.c.obj	5fabcf86e6f6f2d4

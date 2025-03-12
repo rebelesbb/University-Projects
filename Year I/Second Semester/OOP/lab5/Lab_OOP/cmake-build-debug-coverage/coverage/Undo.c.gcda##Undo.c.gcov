@@ -1,0 +1,56 @@
+        -:    0:Source:C:/Users/Bogdan Rebeles/Desktop/OOP/lab5/Lab_OOP/Undo.c
+        -:    0:Graph:C:\Users\Bogdan Rebeles\Desktop\OOP\lab5\Lab_OOP\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Undo.c.gcno
+        -:    0:Data:C:\Users\Bogdan Rebeles\Desktop\OOP\lab5\Lab_OOP\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Undo.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "Undo.h"
+        -:    2:#include <stdlib.h>
+        -:    3:
+        -:    4:/**
+        -:    5: * Stores the current state of a list
+        -:    6: * @param list: the list (MyList*)
+        -:    7: * @param undo_list: the lists that stores all previous
+        -:    8: *                   states of a list (MyList*)
+        -:    9: */
+function store_current_state called 4 returned 100% blocks executed 100%
+        4:   10:void store_current_state(MyList* list, MyList* undo_list)
+        -:   11:{
+        4:   12:    MyList* current_state = createList();
+        4:   12-block  0
+call    0 returned 4
+        4:   13:    copyElems(list, current_state, (CopyFunction) copyMed);
+call    0 returned 4
+        4:   14:    store(undo_list, current_state);
+call    0 returned 4
+        4:   15:}
+        -:   16:
+        -:   17:/**
+        -:   18: * Returns the previous state of a list
+        -:   19: * @param list: the list              (MyList*)
+        -:   20: * @param undo_list: the lists that stores all previous
+        -:   21: *                   states of a list (MyList*)
+        -:   22: * @return the previous state of a list (MyList*)
+        -:   23: */
+function undo called 2 returned 100% blocks executed 100%
+        2:   24:MyList* undo(MyList* list, MyList* undo_list)
+        -:   25:{
+        2:   26:    destroyList(list, (DestroyFunction) destroyMed);
+        2:   26-block  0
+call    0 returned 2
+        -:   27:
+        2:   28:    undo_list->lungime--;
+        -:   29:
+        2:   30:    return undo_list->elems[undo_list->lungime];
+        -:   31:}
+        -:   32:
+        -:   33:/**
+        -:   34: * Destroys a list that contains lists of meds
+        -:   35: * @param meds_list: a list of meds
+        -:   36: */
+function destroyUndoMeds called 2 returned 100% blocks executed 100%
+        2:   37:void destroyUndoMeds(MyList* meds_list)
+        -:   38:{
+        -:   39:    ///we basically just need to delete a list of meds within the undo list
+        2:   40:    destroyList(meds_list, (DestroyFunction) destroyMed);
+        2:   40-block  0
+call    0 returned 2
+        2:   41:}

@@ -1,0 +1,1523 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 40,
+                  "endLine": 18,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvalidPositionException::{ctor}",
+                  "decoratedName": "??0InvalidPositionException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 39,
+                  "endLine": 24,
+                  "endColumn": 49
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DuplicateMovieException::{ctor}",
+                  "decoratedName": "??0DuplicateMovieException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 46,
+                  "endLine": 30,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvalidDataException::{ctor}",
+                  "decoratedName": "??0InvalidDataException@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 34,
+                  "endLine": 36,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EmptyListException::{ctor}",
+                  "decoratedName": "??0EmptyListException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 41,
+                  "endLine": 42,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvalidFilterKeyException::{ctor}",
+                  "decoratedName": "??0InvalidFilterKeyException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 36,
+                  "endLine": 48,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvalidYearException::{ctor}",
+                  "decoratedName": "??0InvalidYearException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 37,
+                  "endLine": 54,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvalidTitleException::{ctor}",
+                  "decoratedName": "??0InvalidTitleException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 39,
+                  "endLine": 60,
+                  "endColumn": 49
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvalidSortKeyException::{ctor}",
+                  "decoratedName": "??0InvalidSortKeyException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/validator.h"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 25,
+                  "endLine": 9,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Validator::{ctor}",
+                  "decoratedName": "??0Validator@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move 'compareYearGenre' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "compareYearGenre",
+                  "decoratedName": "?compareYearGenre@@YA_NAEBVMovie@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move 'compareTitle' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "compareTitle",
+                  "decoratedName": "?compareTitle@@YA_NAEBVMovie@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move 'compareActor' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "compareActor",
+                  "decoratedName": "?compareActor@@YA_NAEBVMovie@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 60,
+                  "endLine": 143,
+                  "endColumn": 72
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MovieService::addDefault",
+                  "decoratedName": "?addDefault@MovieService@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 46,
+                  "endLine": 143,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MovieService::addDefault",
+                  "decoratedName": "?addDefault@MovieService@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 27,
+                  "endLine": 143,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MovieService::addDefault",
+                  "decoratedName": "?addDefault@MovieService@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 12,
+                  "endLine": 143,
+                  "endColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MovieService::addDefault",
+                  "decoratedName": "?addDefault@MovieService@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 60,
+                  "endLine": 143,
+                  "endColumn": 72
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MovieService::addDefault",
+                  "decoratedName": "?addDefault@MovieService@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 46,
+                  "endLine": 143,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MovieService::addDefault",
+                  "decoratedName": "?addDefault@MovieService@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 27,
+                  "endLine": 143,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MovieService::addDefault",
+                  "decoratedName": "?addDefault@MovieService@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 12,
+                  "endLine": 143,
+                  "endColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MovieService::addDefault",
+                  "decoratedName": "?addDefault@MovieService@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'MovieService::size' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MovieService::size",
+                  "decoratedName": "?size@MovieService@@QEBAHXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 161,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "__empty_global_delete",
+                  "decoratedName": "?__empty_global_delete@@YAXPEAX@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+                },
+                "region": {
+                  "startLine": 161,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "__empty_global_delete",
+                  "decoratedName": "?__empty_global_delete@@YAXPEAX_K@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'VIterator<Movie>::operator++' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VIterator<Movie>::++",
+                  "decoratedName": "??E?$VIterator@VMovie@@@@QEAAAEAV0@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'VIterator<Movie>::operator*' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 153,
+                  "startColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VIterator<Movie>::*",
+                  "decoratedName": "??D?$VIterator@VMovie@@@@QEAAAEAVMovie@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 3,
+                  "endLine": 154,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VIterator<Movie>::*",
+                  "decoratedName": "??D?$VIterator@VMovie@@@@QEAAAEAVMovie@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class DynamicVector<class Movie>', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::{ctor}",
+                  "decoratedName": "??0?$DynamicVector@VMovie@@@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator new[]()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 152
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::{ctor}",
+                  "decoratedName": "??0?$DynamicVector@VMovie@@@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 152
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::{ctor}",
+                  "decoratedName": "??0?$DynamicVector@VMovie@@@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator new[]()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 90
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::{ctor}",
+                  "decoratedName": "??0?$DynamicVector@VMovie@@@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 90
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::{ctor}",
+                  "decoratedName": "??0?$DynamicVector@VMovie@@@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26429",
+          "message": {
+            "text": "Symbol 'gt' is never tested for nullness, it can be marked as not_null (f.23)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::sort",
+                  "decoratedName": "?sort@?$DynamicVector@VMovie@@@@QEAAXP6A_NAEBVMovie@@0@Z@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 8,
+                  "endLine": 130,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::sort",
+                  "decoratedName": "?sort@?$DynamicVector@VMovie@@@@QEAAXP6A_NAEBVMovie@@0@Z@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 8,
+                  "endLine": 130,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::sort",
+                  "decoratedName": "?sort@?$DynamicVector@VMovie@@@@QEAAXP6A_NAEBVMovie@@0@Z@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26494",
+          "message": {
+            "text": "Variable 'j' is uninitialized. Always initialize an object (type.5)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::sort",
+                  "decoratedName": "?sort@?$DynamicVector@VMovie@@@@QEAAXP6A_NAEBVMovie@@0@Z@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "j"
+          }
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'gt' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 8,
+                  "endLine": 130,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::sort",
+                  "decoratedName": "?sort@?$DynamicVector@VMovie@@@@QEAAXP6A_NAEBVMovie@@0@Z@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 125,
+                            "startColumn": 34
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 127,
+                            "startColumn": 6
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 127,
+                            "startColumn": 9
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 128,
+                            "startColumn": 9
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 128,
+                            "startColumn": 16
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 129,
+                            "startColumn": 10
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 129,
+                            "startColumn": 21
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 130,
+                            "startColumn": 10
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer '(this->DynamicVector<Movie>::elements)' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 5,
+                  "endLine": 133,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::sort",
+                  "decoratedName": "?sort@?$DynamicVector@VMovie@@@@QEAAXP6A_NAEBVMovie@@0@Z@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 125,
+                            "startColumn": 34
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 127,
+                            "startColumn": 6
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 127,
+                            "startColumn": 9
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 128,
+                            "startColumn": 9
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 128,
+                            "startColumn": 16
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 129,
+                            "startColumn": 10
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 129,
+                            "startColumn": 21
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 130,
+                            "startColumn": 10
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 130,
+                            "startColumn": 10
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 132,
+                            "startColumn": 10
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 132,
+                            "startColumn": 14
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 133,
+                            "startColumn": 17
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::{dtor}",
+                  "decoratedName": "??1?$DynamicVector@VMovie@@@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 57,
+                            "startColumn": 30
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 2
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 2
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 2
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'VIterator<Movie>::VIterator<Movie>' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VIterator<Movie>::{ctor}",
+                  "decoratedName": "??0?$VIterator@VMovie@@@@QEAA@AEBV?$DynamicVector@VMovie@@@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'VIterator<Movie>::VIterator<Movie>' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 147,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VIterator<Movie>::{ctor}",
+                  "decoratedName": "??0?$VIterator@VMovie@@@@QEAA@AEBV?$DynamicVector@VMovie@@@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33520.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "e06858ef68098381c87c14ce2f4d284cd6ab46c6ba79e879965fc68037b78e44"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/validator.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "78891a9208d79f42cb7322508547a216341ed9c58f71b2ebd13f3ef9e5632499"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/movie_service.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "ab58cc52cd7e4aa76eb355db91cf0c1222044695d05e7763588df2b5575d841b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "20c9613a5a3f27d8e0290f946b809db086bc659a774eee60dcdf98b9b621fea4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/bogdan rebeles/desktop/lab6_7/lab6_7/movie_service.h"
+          },
+          "hashes": {
+            "sha-256": "e57b3984d737957e8da5f77f165a94cf1eeec21551102eb87cda1212e2a875f0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/bogdan rebeles/desktop/lab6_7/lab6_7/movie_repo.h"
+          },
+          "hashes": {
+            "sha-256": "3bea050925eba7f815eae94588bc67d4fb2c19ff854a235cbea05f34ecf522e3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/bogdan rebeles/desktop/lab6_7/lab6_7/movie.h"
+          },
+          "hashes": {
+            "sha-256": "8e4da8fa067b03541e89e90c91cec89a3c277cd76c2930e297033e72abedce88"
+          }
+        }
+      ]
+    }
+  ]
+}

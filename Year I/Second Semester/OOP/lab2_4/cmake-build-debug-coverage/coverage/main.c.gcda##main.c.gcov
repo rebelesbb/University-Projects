@@ -1,0 +1,408 @@
+        -:    0:Source:C:/Users/Bogdan Rebeles/Desktop/OOP/lab2_4/main.c
+        -:    0:Graph:C:\Users\Bogdan Rebeles\Desktop\OOP\lab2_4\cmake-build-debug-coverage\CMakeFiles\lab2_4.dir\main.c.gcno
+        -:    0:Data:C:\Users\Bogdan Rebeles\Desktop\OOP\lab2_4\cmake-build-debug-coverage\CMakeFiles\lab2_4.dir\main.c.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdio.h>
+        -:    2:#include "participants_functions.h"
+        -:    3:#include "participants_tests.h"
+        -:    4:#define _CRTDBG_MAP_ALLOC
+        -:    5:#include <stdlib.h>
+        -:    6:#include <crtdbg.h>
+        -:    7:#include <stdbool.h>
+        -:    8:#include <string.h>
+        -:    9:
+function print_menu called 1 returned 100% blocks executed 100%
+        1:   10:void print_menu()
+        -:   11:{
+        1:   12:    printf("1.%s\n2.%s\n3.%s\n4.%s\n5.%s\n6.%s\n7.%s\n","Afisare lista participanti","Adaugare participant",
+        1:   12-block  0
+call    0 returned 1
+        -:   13:           "Stergere participant", "Actualizare date participant", "Filtrare lista",
+        -:   14:           "Sortare lista", "Iesire");
+        1:   15:}
+        -:   16:
+        -:   17:/**
+        -:   18: * Prints the error messages.
+        -:   19: */
+function print_errors called 0 returned 0% blocks executed 0%
+    #####:   20:void print_errors(char err[5][100], int len)
+        -:   21:{
+    #####:   22:    for(int l = 0; l < len; l++)
+    %%%%%:   22-block  0
+    %%%%%:   22-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:   23:        printf("%s\n", err[l]);
+    %%%%%:   23-block  0
+call    0 never executed
+    #####:   24:}
+        -:   25:
+        -:   26:/**
+        -:   27: * Prints a participant
+        -:   28: */
+function print_participant called 0 returned 0% blocks executed 0%
+    #####:   29:void print_participant(Participant* participant, int position)
+        -:   30:{
+    #####:   31:    printf("%d. %s %s | %d\n", position, get_last_name(participant), get_first_name(participant),
+    %%%%%:   31-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -:   32:           get_score(participant));
+    #####:   33:}
+        -:   34:
+        -:   35:/**
+        -:   36: * Prints the list of participants
+        -:   37: */
+function print_participants_list called 0 returned 0% blocks executed 0%
+    #####:   38:void print_participants_list(ElementsList participants)
+        -:   39:{
+    #####:   40:    if(get_size(&participants) > 0)
+    %%%%%:   40-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    #####:   41:        for(int index = 0; index < get_size(&participants); index ++)
+    %%%%%:   41-block  0
+    %%%%%:   41-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   42:            print_participant(get_element(&participants, index), index + 1);
+    %%%%%:   42-block  0
+call    0 never executed
+call    1 never executed
+        -:   43:            //printf("%s %s | %d\n", get_first_name(&participants.nr[index]), participants.nr[index].last_name, participants.nr[index].score);
+    #####:   44:    else printf("Nu exita participanti.\n");
+    %%%%%:   44-block  0
+call    0 never executed
+    #####:   45:}
+        -:   46:
+function add_participant_ui called 0 returned 0% blocks executed 0%
+    #####:   47:void add_participant_ui(ElementsList *participants)
+        -:   48:{
+        -:   49:    char first_name[30], last_name[30], err[5][100];
+    #####:   50:    int score, len = 0;
+        -:   51:
+    #####:   52:    printf("Introduceti numele:");
+    %%%%%:   52-block  0
+call    0 never executed
+    #####:   53:    scanf("%s", last_name);
+call    0 never executed
+        -:   54:
+    #####:   55:    printf("Introduceti prenumele:");
+call    0 never executed
+    #####:   56:    scanf("%s", first_name);
+call    0 never executed
+        -:   57:
+    #####:   58:    printf("%s", "Introduceti scorul:");
+call    0 never executed
+    #####:   59:    scanf("%d", &score);
+call    0 never executed
+        -:   60:
+    #####:   61:    add_participant(participants, first_name, last_name, score, err, &len);
+call    0 never executed
+    #####:   62:    if(len)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   63:        print_errors(err, len);
+    %%%%%:   63-block  0
+call    0 never executed
+    #####:   64:}
+        -:   65:
+function delete_participant_ui called 0 returned 0% blocks executed 0%
+    #####:   66:void delete_participant_ui(ElementsList *participants)
+        -:   67:{
+        -:   68:    char first_name[30], last_name[30], err[5][100];
+    #####:   69:    int score, len = 0;
+        -:   70:
+    #####:   71:    printf("Introduceti numele:");
+    %%%%%:   71-block  0
+call    0 never executed
+    #####:   72:    scanf("%s", last_name);
+call    0 never executed
+        -:   73:
+    #####:   74:    printf("Introduceti prenumele:");
+call    0 never executed
+    #####:   75:    scanf("%s", first_name);
+call    0 never executed
+        -:   76:
+    #####:   77:    printf("%s", "Introduceti scorul:");
+call    0 never executed
+    #####:   78:    scanf("%d", &score);
+call    0 never executed
+        -:   79:
+    #####:   80:    delete_participant(participants, first_name, last_name, score, err, &len);
+call    0 never executed
+    #####:   81:    if(len)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   82:        print_errors(err, len);
+    %%%%%:   82-block  0
+call    0 never executed
+    #####:   83:}
+        -:   84:
+function update_participant_ui called 0 returned 0% blocks executed 0%
+    #####:   85:void update_participant_ui(ElementsList *participants)
+        -:   86:{
+        -:   87:    char err[5][100];
+    #####:   88:    int len = 0, position;
+        -:   89:
+    #####:   90:    print_participants_list(*participants);
+    %%%%%:   90-block  0
+call    0 never executed
+        -:   91:
+    #####:   92:    printf("Introduceti numarul participantului");
+call    0 never executed
+    #####:   93:    scanf("%d", &position);
+call    0 never executed
+        -:   94:
+        -:   95:    char new_first_name[30], new_last_name[30];
+        -:   96:    int new_score;
+        -:   97:
+    #####:   98:    printf("Introduceti datele noi sau '-1' daca nu doriti modificarea.\n");
+call    0 never executed
+    #####:   99:    printf("Introduceti numele nou:");
+call    0 never executed
+    #####:  100:    scanf("%s", new_last_name);
+call    0 never executed
+        -:  101:
+    #####:  102:    printf("Introduceti prenumele nou:");
+call    0 never executed
+    #####:  103:    scanf("%s", new_first_name);
+call    0 never executed
+        -:  104:
+    #####:  105:    printf("%s", "Introduceti scorul nou:");
+call    0 never executed
+    #####:  106:    scanf("%d", &new_score);
+call    0 never executed
+        -:  107:
+    #####:  108:    update_participant(participants, position - 1, new_first_name, new_last_name, new_score, err, &len);
+call    0 never executed
+    #####:  109:    if(len)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  110:        print_errors(err, len);
+    %%%%%:  110-block  0
+call    0 never executed
+    #####:  111:}
+        -:  112:
+function sort_list_ui called 0 returned 0% blocks executed 0%
+    #####:  113:void sort_list_ui(ElementsList *participants)
+        -:  114:{
+        -:  115:    char key[10], reversed[3], err[5][100];
+    #####:  116:    int len = 0;
+        -:  117:
+    #####:  118:    printf("Introduceti criteriul de sortare (nume/scor):\n>");
+    %%%%%:  118-block  0
+call    0 never executed
+    #####:  119:    scanf("%s", key);
+call    0 never executed
+    #####:  120:    printf("Efectuare sortare\n0.Crescatoare     1.Descrescatoare\n>");
+call    0 never executed
+    #####:  121:    scanf("%s", reversed);
+call    0 never executed
+        -:  122:
+    #####:  123:    if(reversed[0] == '0')
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  124:        sort_list(participants, key, false, err, &len);
+    %%%%%:  124-block  0
+call    0 never executed
+    #####:  125:    else sort_list(participants, key, true, err, &len);
+    %%%%%:  125-block  0
+call    0 never executed
+        -:  126:
+    #####:  127:    if(len)
+    %%%%%:  127-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  128:        print_errors(err, len);
+    %%%%%:  128-block  0
+call    0 never executed
+    #####:  129:    else print_participants_list(*participants);
+    %%%%%:  129-block  0
+call    0 never executed
+    #####:  130:}
+        -:  131:
+function filter_participants_ui called 0 returned 0% blocks executed 0%
+    #####:  132:void filter_participants_ui(ElementsList *participants)
+        -:  133:{
+    #####:  134:    char key[10], err[5][100], value[4] ="\n";
+    #####:  135:    int len = 0;
+    #####:  136:    ElementsList filtered_list = create_list();
+    %%%%%:  136-block  0
+call    0 never executed
+        -:  137:
+    #####:  138:    printf("Introduceti criteriul de filtrare (scor/initiala):\n>");
+call    0 never executed
+    #####:  139:    scanf("%s", key);
+call    0 never executed
+        -:  140:
+    #####:  141:    if(strcmp(key,"scor") == 0)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  142:        printf("Introduceti scorul:");
+    %%%%%:  142-block  0
+call    0 never executed
+    #####:  143:    else if(strcmp(key, "initiala") == 0)
+    %%%%%:  143-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  144:        printf("Introduceti initiala:");
+    %%%%%:  144-block  0
+call    0 never executed
+        -:  145:
+    #####:  146:    scanf("%s", value);
+    %%%%%:  146-block  0
+call    0 never executed
+        -:  147:
+    #####:  148:    filter_participants(participants, &filtered_list, key, value, err, &len);
+call    0 never executed
+        -:  149:
+    #####:  150:    if(len)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  151:        print_errors(err, len);
+    %%%%%:  151-block  0
+call    0 never executed
+        -:  152:    else
+        -:  153:    {
+    #####:  154:        if(strcmp(key, "scor") == 0)
+    %%%%%:  154-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+        -:  155:        {
+    #####:  156:            if(get_size(&filtered_list)) {
+    %%%%%:  156-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+        -:  157:
+    #####:  158:                printf("%s%d%s\n", "Participantii cu scorul mai mic decat ", atoi(value), " sunt:");
+    %%%%%:  158-block  0
+call    0 never executed
+call    1 never executed
+    #####:  159:                print_participants_list(filtered_list);
+call    0 never executed
+        -:  160:
+    #####:  161:            } else printf("%s%d\n", "Nu exista participanti cu scorul mai mic decat ", atoi(value));
+    %%%%%:  161-block  0
+call    0 never executed
+call    1 never executed
+        -:  162:        }
+    #####:  163:        else if(strcmp(key, "initiala") == 0)
+    %%%%%:  163-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+        -:  164:        {
+    #####:  165:            if(get_size(&filtered_list)){
+    %%%%%:  165-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+        -:  166:
+    #####:  167:                printf("%s%s%s\n", "Participantii a caror nume are initiala ", value, " sunt:");
+    %%%%%:  167-block  0
+call    0 never executed
+    #####:  168:                print_participants_list(filtered_list);
+call    0 never executed
+        -:  169:
+    #####:  170:            } else printf("%s%s\n", "Nu exista participanti a caror nume are initiala ", value);
+    %%%%%:  170-block  0
+call    0 never executed
+        -:  171:        }
+        -:  172:    }
+    #####:  173:    free_list(&filtered_list);
+    %%%%%:  173-block  0
+call    0 never executed
+    #####:  174:}
+        -:  175:
+function run called 1 returned 100% blocks executed 33%
+        1:  176:int run()
+        -:  177:{
+        1:  178:    ElementsList participants = create_list();
+        1:  178-block  0
+call    0 returned 1
+        -:  179:
+        -:  180:    int option;
+        -:  181:    while(true)
+        -:  182:    {
+        1:  183:        print_menu();
+        1:  183-block  0
+call    0 returned 1
+        1:  184:        printf("Introduceti optiunea:");
+call    0 returned 1
+        1:  185:        scanf("%d", &option);
+call    0 returned 1
+        1:  186:        switch (option) {
+branch  0 taken 0
+branch  1 taken 0
+branch  2 taken 0
+branch  3 taken 0
+branch  4 taken 0
+branch  5 taken 0
+branch  6 taken 1
+branch  7 taken 0
+    #####:  187:            case 1:
+    #####:  188:                print_participants_list(participants);
+    %%%%%:  188-block  0
+call    0 never executed
+    #####:  189:                break;
+    #####:  190:            case 2:
+    #####:  191:                add_participant_ui(&participants);
+    %%%%%:  191-block  0
+call    0 never executed
+    #####:  192:                break;
+    #####:  193:            case 3:
+    #####:  194:                delete_participant_ui(&participants);
+    %%%%%:  194-block  0
+call    0 never executed
+    #####:  195:                break;
+    #####:  196:            case 4:
+    #####:  197:                update_participant_ui(&participants);
+    %%%%%:  197-block  0
+call    0 never executed
+    #####:  198:                break;
+    #####:  199:            case 5:
+    #####:  200:                filter_participants_ui(&participants);
+    %%%%%:  200-block  0
+call    0 never executed
+    #####:  201:                break;
+    #####:  202:            case 6:
+    #####:  203:                sort_list_ui(&participants);
+    %%%%%:  203-block  0
+call    0 never executed
+    #####:  204:                break;
+        1:  205:            case 7:
+        1:  206:                free_list(&participants);
+        1:  206-block  0
+call    0 returned 1
+        -:  207:                _CrtDumpMemoryLeaks();
+        1:  208:                return 0;
+    #####:  209:            default:
+    #####:  210:                printf("Optiune invalida.\n");
+    %%%%%:  210-block  0
+call    0 never executed
+    #####:  211:                break;
+        -:  212:        }
+    #####:  213:        printf("\n");
+    %%%%%:  213-block  0
+call    0 never executed
+        -:  214:    }
+        -:  215:}
+        -:  216:
+function main called 1 returned 100% blocks executed 100%
+        1:  217:int main() {
+        -:  218:
+        1:  219:    test_functions();
+        1:  219-block  0
+call    0 returned 1
+        -:  220:    _CrtDumpMemoryLeaks();
+        -:  221:
+        1:  222:    run();
+call    0 returned 1
+        -:  223:
+        1:  224:    return 0;
+        -:  225:}

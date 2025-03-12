@@ -1,0 +1,2223 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>all_tests.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'testDomain()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>Tests::{ctor}</FUNCTION>
+    <DECORATED>??0Tests@@QEAA@XZ</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>all_tests.cpp</FILENAME>
+      <LINE>6</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'testRepo()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>Tests::{ctor}</FUNCTION>
+    <DECORATED>??0Tests@@QEAA@XZ</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>all_tests.cpp</FILENAME>
+      <LINE>7</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'testService()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>Tests::{ctor}</FUNCTION>
+    <DECORATED>??0Tests@@QEAA@XZ</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie.h</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor should not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Movie::{ctor}</FUNCTION>
+    <DECORATED>??0Movie@@QEAA@XZ</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>validator.h</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>Validator::{ctor}</FUNCTION>
+    <DECORATED>??0Validator@@QEAA@XZ</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_exceptions.h</FILENAME>
+      <LINE>18</LINE>
+      <COLUMN>47</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>InvalidPositionException::{ctor}</FUNCTION>
+    <DECORATED>??0InvalidPositionException@@QEAA@XZ</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_exceptions.h</FILENAME>
+      <LINE>24</LINE>
+      <COLUMN>46</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>DuplicateMovieException::{ctor}</FUNCTION>
+    <DECORATED>??0DuplicateMovieException@@QEAA@XZ</DECORATED>
+    <FUNCLINE>24</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_exceptions.h</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>53</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>InvalidDataException::{ctor}</FUNCTION>
+    <DECORATED>??0InvalidDataException@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>30</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_exceptions.h</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>EmptyListException::{ctor}</FUNCTION>
+    <DECORATED>??0EmptyListException@@QEAA@XZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_exceptions.h</FILENAME>
+      <LINE>42</LINE>
+      <COLUMN>48</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>InvalidFilterKeyException::{ctor}</FUNCTION>
+    <DECORATED>??0InvalidFilterKeyException@@QEAA@XZ</DECORATED>
+    <FUNCLINE>42</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_exceptions.h</FILENAME>
+      <LINE>48</LINE>
+      <COLUMN>43</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>InvalidYearException::{ctor}</FUNCTION>
+    <DECORATED>??0InvalidYearException@@QEAA@XZ</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_exceptions.h</FILENAME>
+      <LINE>54</LINE>
+      <COLUMN>44</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>InvalidTitleException::{ctor}</FUNCTION>
+    <DECORATED>??0InvalidTitleException@@QEAA@XZ</DECORATED>
+    <FUNCLINE>54</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_exceptions.h</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>46</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>InvalidSortKeyException::{ctor}</FUNCTION>
+    <DECORATED>??0InvalidSortKeyException@@QEAA@XZ</DECORATED>
+    <FUNCLINE>60</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>domain_tests.cpp</FILENAME>
+      <LINE>6</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'test_create_movie' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>test_create_movie</FUNCTION>
+    <DECORATED>?test_create_movie@@YAXXZ</DECORATED>
+    <FUNCLINE>6</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>domain_tests.cpp</FILENAME>
+      <LINE>19</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'test_validator' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>test_validator</FUNCTION>
+    <DECORATED>?test_validator@@YAXXZ</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>domain_tests.cpp</FILENAME>
+      <LINE>58</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>__empty_global_delete</FUNCTION>
+    <DECORATED>?__empty_global_delete@@YAXPEAX@Z</DECORATED>
+    <FUNCLINE>58</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>__empty_global_delete</FUNCTION>
+    <DECORATED>?__empty_global_delete@@YAXPEAX@Z</DECORATED>
+    <FUNCLINE>23</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class DynamicVector&lt;class Movie&gt;', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$DynamicVector@VMovie@@@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>151</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator new[]()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$DynamicVector@VMovie@@@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>151</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$DynamicVector@VMovie@@@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>89</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator new[]()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$DynamicVector@VMovie@@@@QEAA@XZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>89</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$DynamicVector@VMovie@@@@QEAA@XZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>59</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26823</DEFECTCODE>
+    <DESCRIPTION>Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::{dtor}</FUNCTION>
+    <DECORATED>??1?$DynamicVector@VMovie@@@@QEAA@XZ</DECORATED>
+    <FUNCLINE>57</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>57</LINE>
+        <COLUMN>29</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>59</LINE>
+        <COLUMN>1</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>59</LINE>
+        <COLUMN>1</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>59</LINE>
+        <COLUMN>1</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie.cpp</FILENAME>
+      <LINE>6</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Movie::get_year' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Movie::get_year</FUNCTION>
+    <DECORATED>?get_year@Movie@@QEBAHXZ</DECORATED>
+    <FUNCLINE>6</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie.cpp</FILENAME>
+      <LINE>34</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>__empty_global_delete</FUNCTION>
+    <DECORATED>?__empty_global_delete@@YAXPEAX@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_repo.cpp</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'MovieRepository::delete_' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>MovieRepository::delete_</FUNCTION>
+    <DECORATED>?delete_@MovieRepository@@QEAAXH@Z</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_repo.cpp</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'MovieRepository::modify' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>MovieRepository::modify</FUNCTION>
+    <DECORATED>?modify@MovieRepository@@QEAAXHAEBVMovie@@@Z</DECORATED>
+    <FUNCLINE>30</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_repo.cpp</FILENAME>
+      <LINE>35</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'MovieRepository::getAll' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>MovieRepository::getAll</FUNCTION>
+    <DECORATED>?getAll@MovieRepository@@QEBAAEBV?$DynamicVector@VMovie@@@@XZ</DECORATED>
+    <FUNCLINE>35</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_repo.cpp</FILENAME>
+      <LINE>40</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'MovieRepository::getMovie' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>MovieRepository::getMovie</FUNCTION>
+    <DECORATED>?getMovie@MovieRepository@@QEBAAEBVMovie@@H@Z</DECORATED>
+    <FUNCLINE>40</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_repo.cpp</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'size()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>MovieRepository::size</FUNCTION>
+    <DECORATED>?size@MovieRepository@@QEBAHXZ</DECORATED>
+    <FUNCLINE>45</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_repo.cpp</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>MovieRepository::size</FUNCTION>
+    <DECORATED>?size@MovieRepository@@QEBAHXZ</DECORATED>
+    <FUNCLINE>45</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_repo.cpp</FILENAME>
+      <LINE>49</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>__empty_global_delete</FUNCTION>
+    <DECORATED>?__empty_global_delete@@YAXPEAX@Z</DECORATED>
+    <FUNCLINE>49</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>156</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'VIterator&lt;Movie&gt;::operator++' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>VIterator&lt;Movie&gt;::++</FUNCTION>
+    <DECORATED>??E?$VIterator@VMovie@@@@QEAAAEAV0@XZ</DECORATED>
+    <FUNCLINE>156</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>153</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'VIterator&lt;Movie&gt;::operator*' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>VIterator&lt;Movie&gt;::*</FUNCTION>
+    <DECORATED>??D?$VIterator@VMovie@@@@QEAAAEAVMovie@@XZ</DECORATED>
+    <FUNCLINE>153</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>154</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>VIterator&lt;Movie&gt;::*</FUNCTION>
+    <DECORATED>??D?$VIterator@VMovie@@@@QEAAAEAVMovie@@XZ</DECORATED>
+    <FUNCLINE>153</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>80</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'operator new[]()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::push_back</FUNCTION>
+    <DECORATED>?push_back@?$DynamicVector@VMovie@@@@QEAAXAEBVMovie@@@Z</DECORATED>
+    <FUNCLINE>75</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>80</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::push_back</FUNCTION>
+    <DECORATED>?push_back@?$DynamicVector@VMovie@@@@QEAAXAEBVMovie@@@Z</DECORATED>
+    <FUNCLINE>75</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>80</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>26400</DEFECTCODE>
+    <DESCRIPTION>Do not assign the result of an allocation or a function call with an owner&lt;T&gt; return value to a raw pointer, use owner&lt;T&gt; instead (i.11).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::push_back</FUNCTION>
+    <DECORATED>?push_back@?$DynamicVector@VMovie@@@@QEAAXAEBVMovie@@@Z</DECORATED>
+    <FUNCLINE>75</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>85</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26823</DEFECTCODE>
+    <DESCRIPTION>Dereferencing a possibly null pointer 'allotemp.2' (lifetime.1).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::push_back</FUNCTION>
+    <DECORATED>?push_back@?$DynamicVector@VMovie@@@@QEAAXAEBVMovie@@@Z</DECORATED>
+    <FUNCLINE>75</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>33</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>77</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>79</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>80</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>80</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>80</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>80</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>80</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>80</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>83</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>85</LINE>
+        <COLUMN>2</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>85</LINE>
+        <COLUMN>2</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>85</LINE>
+        <COLUMN>2</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'DynamicVector&lt;Movie&gt;::size' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::size</FUNCTION>
+    <DECORATED>?size@?$DynamicVector@VMovie@@@@QEBAHXZ</DECORATED>
+    <FUNCLINE>99</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>121</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::at</FUNCTION>
+    <DECORATED>?at@?$DynamicVector@VMovie@@@@QEBAAEBVMovie@@H@Z</DECORATED>
+    <FUNCLINE>119</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>149</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'VIterator&lt;Movie&gt;::VIterator&lt;Movie&gt;' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>VIterator&lt;Movie&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$VIterator@VMovie@@@@QEAA@AEBV?$DynamicVector@VMovie@@@@H@Z</DECORATED>
+    <FUNCLINE>149</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>147</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'VIterator&lt;Movie&gt;::VIterator&lt;Movie&gt;' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>VIterator&lt;Movie&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$VIterator@VMovie@@@@QEAA@AEBV?$DynamicVector@VMovie@@@@@Z</DECORATED>
+    <FUNCLINE>147</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>80</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'compareYearGenre' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>compareYearGenre</FUNCTION>
+    <DECORATED>?compareYearGenre@@YA_NAEBVMovie@@0@Z</DECORATED>
+    <FUNCLINE>80</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>89</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'compareTitle' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>compareTitle</FUNCTION>
+    <DECORATED>?compareTitle@@YA_NAEBVMovie@@0@Z</DECORATED>
+    <FUNCLINE>89</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>96</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'compareActor' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>compareActor</FUNCTION>
+    <DECORATED>?compareActor@@YA_NAEBVMovie@@0@Z</DECORATED>
+    <FUNCLINE>96</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>143</LINE>
+      <COLUMN>71</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>MovieService::addDefault</FUNCTION>
+    <DECORATED>?addDefault@MovieService@@QEAAXXZ</DECORATED>
+    <FUNCLINE>128</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>143</LINE>
+      <COLUMN>56</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>MovieService::addDefault</FUNCTION>
+    <DECORATED>?addDefault@MovieService@@QEAAXXZ</DECORATED>
+    <FUNCLINE>128</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>143</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>MovieService::addDefault</FUNCTION>
+    <DECORATED>?addDefault@MovieService@@QEAAXXZ</DECORATED>
+    <FUNCLINE>128</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>143</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>MovieService::addDefault</FUNCTION>
+    <DECORATED>?addDefault@MovieService@@QEAAXXZ</DECORATED>
+    <FUNCLINE>128</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>143</LINE>
+      <COLUMN>71</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>MovieService::addDefault</FUNCTION>
+    <DECORATED>?addDefault@MovieService@@QEAAXXZ</DECORATED>
+    <FUNCLINE>128</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>143</LINE>
+      <COLUMN>56</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>MovieService::addDefault</FUNCTION>
+    <DECORATED>?addDefault@MovieService@@QEAAXXZ</DECORATED>
+    <FUNCLINE>128</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>143</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>MovieService::addDefault</FUNCTION>
+    <DECORATED>?addDefault@MovieService@@QEAAXXZ</DECORATED>
+    <FUNCLINE>128</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>143</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>MovieService::addDefault</FUNCTION>
+    <DECORATED>?addDefault@MovieService@@QEAAXXZ</DECORATED>
+    <FUNCLINE>128</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>156</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'MovieService::size' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>MovieService::size</FUNCTION>
+    <DECORATED>?size@MovieService@@QEBAHXZ</DECORATED>
+    <FUNCLINE>156</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>movie_service.cpp</FILENAME>
+      <LINE>161</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>__empty_global_delete</FUNCTION>
+    <DECORATED>?__empty_global_delete@@YAXPEAX@Z</DECORATED>
+    <FUNCLINE>161</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>125</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26429</DEFECTCODE>
+    <DESCRIPTION>Symbol 'gt' is never tested for nullness, it can be marked as not_null (f.23).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::sort</FUNCTION>
+    <DECORATED>?sort@?$DynamicVector@VMovie@@@@QEAAXP6A_NAEBVMovie@@0@Z@Z</DECORATED>
+    <FUNCLINE>125</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>130</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::sort</FUNCTION>
+    <DECORATED>?sort@?$DynamicVector@VMovie@@@@QEAAXP6A_NAEBVMovie@@0@Z@Z</DECORATED>
+    <FUNCLINE>125</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>127</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26494</DEFECTCODE>
+    <DESCRIPTION>Variable 'j' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::sort</FUNCTION>
+    <DECORATED>?sort@?$DynamicVector@VMovie@@@@QEAAXP6A_NAEBVMovie@@0@Z@Z</DECORATED>
+    <FUNCLINE>125</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>j</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>130</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26823</DEFECTCODE>
+    <DESCRIPTION>Dereferencing a possibly null pointer 'gt' (lifetime.1).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::sort</FUNCTION>
+    <DECORATED>?sort@?$DynamicVector@VMovie@@@@QEAAXP6A_NAEBVMovie@@0@Z@Z</DECORATED>
+    <FUNCLINE>125</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>125</LINE>
+        <COLUMN>33</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>127</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>127</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>129</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>129</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>130</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>133</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26823</DEFECTCODE>
+    <DESCRIPTION>Dereferencing a possibly null pointer '(this-&gt;DynamicVector&lt;Movie&gt;::elements)' (lifetime.1).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::sort</FUNCTION>
+    <DECORATED>?sort@?$DynamicVector@VMovie@@@@QEAAXP6A_NAEBVMovie@@0@Z@Z</DECORATED>
+    <FUNCLINE>125</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>125</LINE>
+        <COLUMN>33</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>127</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>127</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>129</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>129</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>130</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>130</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>132</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>132</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>133</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>repo_tests.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'testStore' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>testStore</FUNCTION>
+    <DECORATED>?testStore@@YAXXZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>repo_tests.cpp</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'testDelete' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>testDelete</FUNCTION>
+    <DECORATED>?testDelete@@YAXXZ</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>repo_tests.cpp</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'testFind' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>testFind</FUNCTION>
+    <DECORATED>?testFind@@YAXXZ</DECORATED>
+    <FUNCLINE>37</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>repo_tests.cpp</FILENAME>
+      <LINE>52</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'testModify' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>testModify</FUNCTION>
+    <DECORATED>?testModify@@YAXXZ</DECORATED>
+    <FUNCLINE>52</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>repo_tests.cpp</FILENAME>
+      <LINE>74</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>__empty_global_delete</FUNCTION>
+    <DECORATED>?__empty_global_delete@@YAXPEAX@Z</DECORATED>
+    <FUNCLINE>74</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>57</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class DynamicVector&lt;class Movie&gt;', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::{dtor}</FUNCTION>
+    <DECORATED>??1?$DynamicVector@VMovie@@@@QEAA@XZ</DECORATED>
+    <FUNCLINE>57</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>6</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'testAddMovie' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>testAddMovie</FUNCTION>
+    <DECORATED>?testAddMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>6</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>34</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'testDeleteMovie' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>testDeleteMovie</FUNCTION>
+    <DECORATED>?testDeleteMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'testUpdateMovie' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>81</LINE>
+      <COLUMN>79</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>81</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>81</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>82</LINE>
+      <COLUMN>50</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>82</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>82</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>56</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>85</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>89</LINE>
+      <COLUMN>57</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>89</LINE>
+      <COLUMN>40</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>89</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>58</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>107</LINE>
+      <COLUMN>56</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>107</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>81</LINE>
+      <COLUMN>79</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>81</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>81</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>82</LINE>
+      <COLUMN>50</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>82</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>82</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>56</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>85</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>89</LINE>
+      <COLUMN>57</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>89</LINE>
+      <COLUMN>40</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>89</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>58</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>107</LINE>
+      <COLUMN>56</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>107</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testUpdateMovie</FUNCTION>
+    <DECORATED>?testUpdateMovie@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>115</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'testFilterMovies' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>158</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26486</DEFECTCODE>
+    <DESCRIPTION>Don't pass a pointer that may be invalid to a function. Parameter 0 '@filtered_list' in call to 'Movie::get_year' may be invalid (lifetime.3).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>service_tests.cpp</FILENAME>
+        <LINE>131</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>159</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26486</DEFECTCODE>
+    <DESCRIPTION>Don't pass a pointer that may be invalid to a function. Parameter 0 '@filtered_list' in call to 'Movie::get_year' may be invalid (lifetime.3).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>service_tests.cpp</FILENAME>
+        <LINE>131</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>124</LINE>
+      <COLUMN>79</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>124</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>124</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>125</LINE>
+      <COLUMN>50</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>125</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>125</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>124</LINE>
+      <COLUMN>79</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>124</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>124</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>125</LINE>
+      <COLUMN>50</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>125</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>125</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFilterMovies</FUNCTION>
+    <DECORATED>?testFilterMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>115</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>167</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'testFindMovie' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>173</LINE>
+      <COLUMN>79</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>173</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>173</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>174</LINE>
+      <COLUMN>50</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>174</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>174</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>173</LINE>
+      <COLUMN>79</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>173</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>173</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>174</LINE>
+      <COLUMN>50</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>174</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>174</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>testFindMovie</FUNCTION>
+    <DECORATED>?testFindMovie@@YAXAEAVMovieService@@@Z</DECORATED>
+    <FUNCLINE>167</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>192</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'testSortMovies' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>testSortMovies</FUNCTION>
+    <DECORATED>?testSortMovies@@YAXVMovieService@@@Z</DECORATED>
+    <FUNCLINE>192</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>service_tests.cpp</FILENAME>
+      <LINE>258</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>__empty_global_delete</FUNCTION>
+    <DECORATED>?__empty_global_delete@@YAXPEAX@Z</DECORATED>
+    <FUNCLINE>258</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>51</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::=</FUNCTION>
+    <DECORATED>??4?$DynamicVector@VMovie@@@@QEAAXAEBV0@@Z</DECORATED>
+    <FUNCLINE>46</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>48</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26823</DEFECTCODE>
+    <DESCRIPTION>Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1).</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::=</FUNCTION>
+    <DECORATED>??4?$DynamicVector@VMovie@@@@QEAAXAEBV0@@Z</DECORATED>
+    <FUNCLINE>46</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>46</LINE>
+        <COLUMN>33</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>48</LINE>
+        <COLUMN>1</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>48</LINE>
+        <COLUMN>1</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>48</LINE>
+        <COLUMN>1</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>ui.cpp</FILENAME>
+      <LINE>215</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>__empty_global_delete</FUNCTION>
+    <DECORATED>?__empty_global_delete@@YAXPEAX@Z</DECORATED>
+    <FUNCLINE>215</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_validator.cpp</FILENAME>
+      <LINE>6</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'invalidYearError' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>invalidYearError</FUNCTION>
+    <DECORATED>?invalidYearError@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ</DECORATED>
+    <FUNCLINE>6</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_validator.cpp</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'invalidTitleError' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>invalidTitleError</FUNCTION>
+    <DECORATED>?invalidTitleError@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_validator.cpp</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'invalidGenreError' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>invalidGenreError</FUNCTION>
+    <DECORATED>?invalidGenreError@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_validator.cpp</FILENAME>
+      <LINE>21</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'invalidActorError' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>invalidActorError</FUNCTION>
+    <DECORATED>?invalidActorError@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ</DECORATED>
+    <FUNCLINE>21</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_validator.cpp</FILENAME>
+      <LINE>57</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>Validator::validateActor</FUNCTION>
+    <DECORATED>?validateActor@Validator@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>46</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_validator.cpp</FILENAME>
+      <LINE>57</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26458</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>Validator::validateActor</FUNCTION>
+    <DECORATED>?validateActor@Validator@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>46</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>_validator.cpp</FILENAME>
+      <LINE>86</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>__empty_global_delete</FUNCTION>
+    <DECORATED>?__empty_global_delete@@YAXPEAX@Z</DECORATED>
+    <FUNCLINE>86</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>validator.h</FILENAME>
+      <LINE>6</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move 'Validator' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION></FUNCTION>
+    <DECORATED></DECORATED>
+    <FUNCLINE>0</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>validator.h</FILENAME>
+      <LINE>48</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6389</DEFECTCODE>
+    <DESCRIPTION>Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file.</DESCRIPTION>
+    <FUNCTION>__empty_global_delete</FUNCTION>
+    <DECORATED>?__empty_global_delete@@YAXPEAX@Z</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

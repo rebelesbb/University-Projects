@@ -1,0 +1,20 @@
+﻿  all_tests.cpp
+  cart.cpp
+  cart_tests.cpp
+  domain_tests.cpp
+  file_repo_tests.cpp
+  from_file_repo.cpp
+  main.cpp
+  movie.cpp
+  movie_repo.cpp
+  movie_service.cpp
+  repo_lab.cpp
+  repo_lab_tests.cpp
+  repo_tests.cpp
+  service_tests.cpp
+  test_undo.cpp
+  ui.cpp
+  _validator.cpp
+  validator.h
+  Generating Code...
+  lab6_7.vcxproj -> C:\Users\Bogdan Rebeles\Desktop\OOP\lab6_7\x64\Debug\lab6_7.exe

@@ -1,0 +1,2722 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 40,
+                  "endLine": 18,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvalidPositionException::{ctor}",
+                  "decoratedName": "??0InvalidPositionException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 39,
+                  "endLine": 24,
+                  "endColumn": 49
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DuplicateMovieException::{ctor}",
+                  "decoratedName": "??0DuplicateMovieException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 46,
+                  "endLine": 30,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvalidDataException::{ctor}",
+                  "decoratedName": "??0InvalidDataException@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 34,
+                  "endLine": 36,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EmptyListException::{ctor}",
+                  "decoratedName": "??0EmptyListException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 41,
+                  "endLine": 42,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvalidFilterKeyException::{ctor}",
+                  "decoratedName": "??0InvalidFilterKeyException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 36,
+                  "endLine": 48,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvalidYearException::{ctor}",
+                  "decoratedName": "??0InvalidYearException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 37,
+                  "endLine": 54,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvalidTitleException::{ctor}",
+                  "decoratedName": "??0InvalidTitleException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 39,
+                  "endLine": 60,
+                  "endColumn": 49
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvalidSortKeyException::{ctor}",
+                  "decoratedName": "??0InvalidSortKeyException@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/validator.h"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 25,
+                  "endLine": 9,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Validator::{ctor}",
+                  "decoratedName": "??0Validator@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move 'testAddMovie' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testAddMovie",
+                  "decoratedName": "?testAddMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move 'testDeleteMovie' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testDeleteMovie",
+                  "decoratedName": "?testDeleteMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move 'testUpdateMovie' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 63,
+                  "endLine": 81,
+                  "endColumn": 80
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 36,
+                  "endLine": 81,
+                  "endColumn": 53
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 16,
+                  "endLine": 81,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 43,
+                  "endLine": 82,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 26,
+                  "endLine": 82,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 15,
+                  "endLine": 82,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 49,
+                  "endLine": 84,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 32,
+                  "endLine": 84,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 21,
+                  "endLine": 84,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 50,
+                  "endLine": 89,
+                  "endColumn": 58
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 33,
+                  "endLine": 89,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 22,
+                  "endLine": 89,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 51,
+                  "endLine": 98,
+                  "endColumn": 59
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 34,
+                  "endLine": 98,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 23,
+                  "endLine": 98,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 49,
+                  "endLine": 107,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 22,
+                  "endLine": 107,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 63,
+                  "endLine": 81,
+                  "endColumn": 80
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 36,
+                  "endLine": 81,
+                  "endColumn": 53
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 16,
+                  "endLine": 81,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 43,
+                  "endLine": 82,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 26,
+                  "endLine": 82,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 15,
+                  "endLine": 82,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 49,
+                  "endLine": 84,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 32,
+                  "endLine": 84,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 21,
+                  "endLine": 84,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 50,
+                  "endLine": 89,
+                  "endColumn": 58
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 33,
+                  "endLine": 89,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 22,
+                  "endLine": 89,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 51,
+                  "endLine": 98,
+                  "endColumn": 59
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 34,
+                  "endLine": 98,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 23,
+                  "endLine": 98,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 49,
+                  "endLine": 107,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 22,
+                  "endLine": 107,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testUpdateMovie",
+                  "decoratedName": "?testUpdateMovie@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move 'testFilterMovies' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26486",
+          "message": {
+            "text": "Don't pass a pointer that may be invalid to a function. Parameter 0 '@filtered_list' in call to 'Movie::get_year' may be invalid (lifetime.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 158,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                          },
+                          "region": {
+                            "startLine": 131,
+                            "startColumn": 17
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26486",
+          "message": {
+            "text": "Don't pass a pointer that may be invalid to a function. Parameter 0 '@filtered_list' in call to 'Movie::get_year' may be invalid (lifetime.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                          },
+                          "region": {
+                            "startLine": 131,
+                            "startColumn": 17
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 63,
+                  "endLine": 124,
+                  "endColumn": 80
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 36,
+                  "endLine": 124,
+                  "endColumn": 53
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 16,
+                  "endLine": 124,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 43,
+                  "endLine": 125,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 26,
+                  "endLine": 125,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 15,
+                  "endLine": 125,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 63,
+                  "endLine": 124,
+                  "endColumn": 80
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 36,
+                  "endLine": 124,
+                  "endColumn": 53
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 16,
+                  "endLine": 124,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 43,
+                  "endLine": 125,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 26,
+                  "endLine": 125,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 15,
+                  "endLine": 125,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFilterMovies",
+                  "decoratedName": "?testFilterMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move 'testFindMovie' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 167,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 63,
+                  "endLine": 173,
+                  "endColumn": 80
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 36,
+                  "endLine": 173,
+                  "endColumn": 53
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 16,
+                  "endLine": 173,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 43,
+                  "endLine": 174,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 26,
+                  "endLine": 174,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 15,
+                  "endLine": 174,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 63,
+                  "endLine": 173,
+                  "endColumn": 80
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 36,
+                  "endLine": 173,
+                  "endColumn": 53
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 16,
+                  "endLine": 173,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 43,
+                  "endLine": 174,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 26,
+                  "endLine": 174,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26458",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 15,
+                  "endLine": 174,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testFindMovie",
+                  "decoratedName": "?testFindMovie@@YAXAEAVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move 'testSortMovies' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 192,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testSortMovies",
+                  "decoratedName": "?testSortMovies@@YAXVMovieService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 258,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "__empty_global_delete",
+                  "decoratedName": "?__empty_global_delete@@YAXPEAX@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6389",
+          "message": {
+            "text": "Move '__empty_global_delete' to anonymous namespace or put a forward declaration in a common header included in this file."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+                },
+                "region": {
+                  "startLine": 258,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "__empty_global_delete",
+                  "decoratedName": "?__empty_global_delete@@YAXPEAX_K@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class DynamicVector<class Movie>', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::{ctor}",
+                  "decoratedName": "??0?$DynamicVector@VMovie@@@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator new[]()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 152
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::{ctor}",
+                  "decoratedName": "??0?$DynamicVector@VMovie@@@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 152
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::{ctor}",
+                  "decoratedName": "??0?$DynamicVector@VMovie@@@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'operator new[]()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 90
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::{ctor}",
+                  "decoratedName": "??0?$DynamicVector@VMovie@@@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 90
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::{ctor}",
+                  "decoratedName": "??0?$DynamicVector@VMovie@@@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::=",
+                  "decoratedName": "??4?$DynamicVector@VMovie@@@@QEAAXAEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::=",
+                  "decoratedName": "??4?$DynamicVector@VMovie@@@@QEAAXAEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 46,
+                            "startColumn": 34
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 48,
+                            "startColumn": 2
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 48,
+                            "startColumn": 2
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 48,
+                            "startColumn": 2
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'DynamicVector<Movie>::size' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::size",
+                  "decoratedName": "?size@?$DynamicVector@VMovie@@@@QEBAHXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 2,
+                  "endLine": 121,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::at",
+                  "decoratedName": "?at@?$DynamicVector@VMovie@@@@QEBAAEBVMovie@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26823",
+          "message": {
+            "text": "Dereferencing a possibly null pointer 'allotemp.1' (lifetime.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DynamicVector<Movie>::{dtor}",
+                  "decoratedName": "??1?$DynamicVector@VMovie@@@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 57,
+                            "startColumn": 30
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 2
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 2
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 2
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33520.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/_exceptions.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "e06858ef68098381c87c14ce2f4d284cd6ab46c6ba79e879965fc68037b78e44"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/validator.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "78891a9208d79f42cb7322508547a216341ed9c58f71b2ebd13f3ef9e5632499"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/service_tests.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "064ccba2fb41aadb9d9a7a5dcb40bdca9474cb2584a29d9831e4c8aae8e4345f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Bogdan Rebeles/Desktop/lab6_7/lab6_7/dynamic_vector.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "20c9613a5a3f27d8e0290f946b809db086bc659a774eee60dcdf98b9b621fea4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/bogdan rebeles/desktop/lab6_7/lab6_7/movie_service.h"
+          },
+          "hashes": {
+            "sha-256": "e57b3984d737957e8da5f77f165a94cf1eeec21551102eb87cda1212e2a875f0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/bogdan rebeles/desktop/lab6_7/lab6_7/movie_repo.h"
+          },
+          "hashes": {
+            "sha-256": "3bea050925eba7f815eae94588bc67d4fb2c19ff854a235cbea05f34ecf522e3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/bogdan rebeles/desktop/lab6_7/lab6_7/movie.h"
+          },
+          "hashes": {
+            "sha-256": "8e4da8fa067b03541e89e90c91cec89a3c277cd76c2930e297033e72abedce88"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/bogdan rebeles/desktop/lab6_7/lab6_7/all_tests.h"
+          },
+          "hashes": {
+            "sha-256": "83ef6d00c0b0347f87b2f79a39532caddb79af5b0488c9af42bdd417ffc515d5"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+        -:    0:Source:C:/Users/Bogdan Rebeles/Desktop/OOP/lab2_4/list.c
+        -:    0:Graph:C:\Users\Bogdan Rebeles\Desktop\OOP\lab2_4\cmake-build-debug-coverage\CMakeFiles\lab2_4.dir\list.c.gcno
+        -:    0:Data:C:\Users\Bogdan Rebeles\Desktop\OOP\lab2_4\cmake-build-debug-coverage\CMakeFiles\lab2_4.dir\list.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "participant.h"
+        -:    2:#include "sort_function.h"
+        -:    3:#include "participants_functions.h"
+        -:    4:#include <ctype.h>
+        -:    5:#include <string.h>
+        -:    6:#include "list.h"
+        -:    7:#include "stdlib.h"
+        -:    8:
+        -:    9:
+        -:   10:/**
+        -:   11: * Creates an empty list of participants.
+        -:   12: * @return the list (ElementsList)
+        -:   13: */
+function create_list called 20 returned 100% blocks executed 100%
+       20:   14:ElementsList create_list()
+        -:   15:{
+        -:   16:    ElementsList new_list;
+       20:   17:    new_list.capacity = 10;
+       20:   18:    new_list.nr = (Element **)malloc(new_list.capacity * sizeof(Element *));
+       20:   19:    new_list.length = 0;
+       20:   20:    return new_list;
+       20:   20-block  0
+        -:   21:}
+        -:   22:
+        -:   23:/**
+        -:   24: * Extends the capacity of a list.
+        -:   25: * @param some_list: the list of elements (ElementsList)
+        -:   26: */
+function resize called 2 returned 100% blocks executed 100%
+        2:   27:void resize(ElementsList *some_list)
+        -:   28:{
+        2:   29:    some_list->capacity = 2 * some_list->capacity;
+        2:   30:    int new_capacity = some_list->capacity;
+        2:   31:    some_list->nr = (Element **)realloc(some_list->nr, sizeof(Element *) * new_capacity);
+        2:   32:}
+        -:   33:
+        -:   34:/**
+        -:   35: * Frees the memory allocated for a list.
+        -:   36: * @param some_list: the list of elements (ElementsList)
+        -:   37: */
+function free_list called 20 returned 100% blocks executed 100%
+       20:   38:void free_list(ElementsList* some_list)
+        -:   39:{
+        -:   40:    int index;
+       82:   41:    for(index = 0; index < some_list->length; index++) {
+       20:   41-block  0
+       82:   41-block  1
+branch  0 taken 62
+branch  1 taken 20 (fallthrough)
+       62:   42:        free_participant(some_list->nr[index]);
+       62:   42-block  0
+call    0 returned 62
+        -:   43:    }
+       20:   44:    free(some_list->nr);
+       20:   45:}
+        -:   46:
+function get_size called 190 returned 100% blocks executed 100%
+      190:   47:int get_size(ElementsList *some_list)
+        -:   48:{
+      190:   49:    return some_list->length;
+      190:   49-block  0
+        -:   50:}
+        -:   51:
+function get_capacity called 1 returned 100% blocks executed 100%
+        1:   52:int get_capacity(ElementsList *some_list)
+        -:   53:{
+        1:   54:    return some_list->capacity;
+        1:   54-block  0
+        -:   55:}
+        -:   56:
+function get_element called 237 returned 100% blocks executed 100%
+      237:   57:Element * get_element(ElementsList *some_list, int index)
+        -:   58:{
+      237:   59:    return some_list->nr[index];
+      237:   59-block  0
+        -:   60:}
+        -:   61:
+        -:   62:
+        -:   63:/**
+        -:   64: * Stores an element in the list
+        -:   65: * @param list: the list of participants (ElementsList)
+        -:   66: * @param element: the participant that we want to store (Element)
+        -:   67: */
+function store called 68 returned 100% blocks executed 100%
+       68:   68:void store(ElementsList *list, Participant* element)
+        -:   69:{
+       68:   70:    if(list->length == list->capacity)
+       68:   70-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 67
+        1:   71:        resize(list);
+        1:   71-block  0
+call    0 returned 1
+       68:   72:    list->nr[list->length] = element;
+       68:   73:    list->length++;
+       68:   74:}
+        -:   75:
+        -:   76:/**
+        -:   77: * Finds if an element exists in a list.
+        -:   78: * @param list: the list of elements (ElementsList)
+        -:   79: * @param element: the element we search for (Element)
+        -:   80: * @return if the participant is in the list
+        -:   81: *            -> the position of the participant in the list
+        -:   82: *         else ->  -1
+        -:   83: *       : (int)
+        -:   84: */
+function find called 19 returned 100% blocks executed 100%
+       19:   85:int find(ElementsList *list, Element element)
+        -:   86:{
+       19:   87:    int len = get_size(list);
+       19:   87-block  0
+call    0 returned 19
+        -:   88:
+       32:   89:    for(int index = 0; index < len; index++)
+       13:   89-block  0
+       32:   89-block  1
+branch  0 taken 25
+branch  1 taken 7 (fallthrough)
+       25:   90:        if(equal(*get_element(list, index), element))
+       25:   90-block  0
+call    0 returned 25
+call    1 returned 25
+branch  2 taken 12 (fallthrough)
+branch  3 taken 13
+       12:   91:            return index;
+       12:   91-block  0
+        -:   92:
+        7:   93:    return -1;
+        7:   93-block  0
+        -:   94:}
+        -:   95:
+        -:   96:/**
+        -:   97: * Deletes an element from the list.
+        -:   98: * @param list: the list of elements (ElementsList)
+        -:   99: * @param position: the position of the element in the list (int)
+        -:  100: */
+function delete called 6 returned 100% blocks executed 100%
+        6:  101:void delete(ElementsList *list, int position)
+        -:  102:{
+        6:  103:    int index, len = get_size(list);
+        6:  103-block  0
+call    0 returned 6
+        6:  104:    free_participant(get_element(list, position));
+call    0 returned 6
+call    1 returned 6
+       11:  105:    for(index = position; index < len - 1; index++)
+       11:  105-block  0
+branch  0 taken 5
+branch  1 taken 6 (fallthrough)
+        5:  106:        list->nr[index] = list->nr[index + 1];
+        5:  106-block  0
+        6:  107:    list->length--;
+        6:  108:}
+        -:  109:
+        -:  110:/**
+        -:  111: * Updates an element from the list.
+        -:  112: * @param list: the list of elements (ElementsList)
+        -:  113: * @param participant: the element we want to update (Element)
+        -:  114: * @param position: the position of the element in the list (int)
+        -:  115: */
+function update called 3 returned 100% blocks executed 100%
+        3:  116:void update(ElementsList *list, Element *updated_element, int position)
+        -:  117:{
+        3:  118:    free_participant(list->nr[position]);
+        3:  118-block  0
+call    0 returned 3
+        3:  119:    list->nr[position] = updated_element;
+        3:  120:}

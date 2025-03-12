@@ -1,0 +1,817 @@
+        -:    0:Source:C:/Users/Bogdan Rebeles/Desktop/OOP/lab5/Lab_OOP/Testing.c
+        -:    0:Graph:C:\Users\Bogdan Rebeles\Desktop\OOP\lab5\Lab_OOP\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Testing.c.gcno
+        -:    0:Data:C:\Users\Bogdan Rebeles\Desktop\OOP\lab5\Lab_OOP\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Testing.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "Testing.h"
+        -:    2:#include "List.h"
+        -:    3:#include "Medicament.h"
+        -:    4:#include "Undo.h"
+        -:    5:#include <stdlib.h>
+        -:    6:#include <assert.h>
+        -:    7:#include <string.h>
+        -:    8:#include <stdio.h>
+        -:    9:
+function test_create_list called 1 returned 100% blocks executed 83%
+        1:   10:void test_create_list()
+        -:   11:{
+        1:   12:    MyList* list = createList();
+        1:   12-block  0
+call    0 returned 1
+        -:   13:
+       1*:   14:    assert(list->lungime == 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   14-block  0
+call    2 never executed
+        1:   14-block  1
+        -:   15:
+        1:   16:    destroyList(list, (DestroyFunction) free); //????
+        1:   16-block  0
+call    0 returned 1
+        1:   17:}
+        -:   18:
+function test_create_med called 1 returned 100% blocks executed 72%
+        1:   19:void test_create_med()
+        -:   20:{
+        1:   21:    Medicament* med = createMed(1, "hello", 0.2, 20);
+        1:   21-block  0
+call    0 returned 1
+        1:   22:    Medicament* med2 = createMed(2, "hi", 0.4, 12);
+call    0 returned 1
+       1*:   23:    assert(med->cod == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   23-block  0
+call    2 never executed
+        1:   23-block  1
+       1*:   24:    assert(med->concentratie == 0.2);
+        1:   24-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   24-block  1
+call    2 never executed
+        1:   24-block  2
+       1*:   25:    assert(med->cantitate == 20);
+        1:   25-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   25-block  1
+call    2 never executed
+        1:   25-block  2
+       1*:   26:    assert(strcmp(med->nume, "hello") == 0);
+        1:   26-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   26-block  1
+call    2 never executed
+        1:   26-block  2
+       1*:   27:    assert(med2->cod == 2);
+        1:   27-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   27-block  1
+call    2 never executed
+        1:   27-block  2
+       1*:   28:    assert(med2->concentratie == 0.4);
+        1:   28-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   28-block  1
+call    2 never executed
+        1:   28-block  2
+       1*:   29:    assert(med2->cantitate == 12);
+        1:   29-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   29-block  1
+call    2 never executed
+        1:   29-block  2
+       1*:   30:    assert(strcmp(med2->nume, "hi") == 0);
+        1:   30-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   30-block  1
+call    2 never executed
+        1:   30-block  2
+        -:   31:
+        1:   32:    destroyMed(med);
+        1:   32-block  0
+call    0 returned 1
+        1:   33:    destroyMed(med2);
+call    0 returned 1
+        1:   34:}
+        -:   35:
+function test_add_medicament called 1 returned 100% blocks executed 83%
+        1:   36:void test_add_medicament()
+        -:   37:{
+        -:   38:
+        1:   39:    MyList* list = createList();
+        1:   39-block  0
+call    0 returned 1
+        1:   40:    Medicament* med1 = createMed(1, "hello10", 0.2, 20);
+call    0 returned 1
+        1:   41:    add_medicament(med1, list);
+call    0 returned 1
+        -:   42:
+       1*:   43:    assert(list->lungime == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   43-block  0
+call    2 never executed
+        1:   43-block  1
+       1*:   44:    assert(get_cod(get_element(list, 0)) == med1->cod);
+        1:   44-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:   44-block  1
+call    4 never executed
+        1:   44-block  2
+        -:   45:
+        1:   46:    Medicament* med2 = createMed(1, "hello10", 0.2, 20);
+        1:   46-block  0
+call    0 returned 1
+        1:   47:    add_medicament(med2, list);
+call    0 returned 1
+       1*:   48:    assert(list->lungime == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   48-block  0
+call    2 never executed
+        1:   48-block  1
+        -:   49:
+        1:   50:    destroyList(list, (DestroyFunction) destroyMed);
+        1:   50-block  0
+call    0 returned 1
+        -:   51:
+        1:   52:}
+        -:   53:
+function test_validate called 1 returned 100% blocks executed 84%
+        1:   54:void test_validate()
+        -:   55:{
+        1:   56:    Medicament* med1 = createMed(1, "hello", 0.2, 20);
+        1:   56-block  0
+call    0 returned 1
+        1:   57:    Medicament* med2 = createMed(1, "hello", 0.2, 0);
+call    0 returned 1
+        1:   58:    Medicament* med3 = createMed(-1, "hello", 0.2, 5);
+call    0 returned 1
+        1:   59:    Medicament* med4 = createMed(5, "", 0.2, 5);
+call    0 returned 1
+        1:   60:    Medicament* med5 = createMed(5, "", -0.5, 5);
+call    0 returned 1
+        -:   61:
+       1*:   62:    assert(validateMed(med1) == 0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   62-block  0
+call    3 never executed
+        1:   62-block  1
+       1*:   63:    assert(validateMed(med2) == 1);
+        1:   63-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   63-block  1
+call    3 never executed
+        1:   63-block  2
+       1*:   64:    assert(validateMed(med3) == 1);
+        1:   64-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   64-block  1
+call    3 never executed
+        1:   64-block  2
+       1*:   65:    assert(validateMed(med4) == 1);
+        1:   65-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   65-block  1
+call    3 never executed
+        1:   65-block  2
+       1*:   66:    assert(validateMed(med5) == 1);
+        1:   66-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   66-block  1
+call    3 never executed
+        1:   66-block  2
+        -:   67:
+        1:   68:    destroyMed(med1);
+        1:   68-block  0
+call    0 returned 1
+        1:   69:    destroyMed(med2);
+call    0 returned 1
+        1:   70:    destroyMed(med3);
+call    0 returned 1
+        1:   71:    destroyMed(med4);
+call    0 returned 1
+        1:   72:    destroyMed(med5);
+call    0 returned 1
+        1:   73:}
+        -:   74:
+function test_delete_medicament called 1 returned 100% blocks executed 84%
+        1:   75:void test_delete_medicament()
+        -:   76:{
+        1:   77:    MyList* list = createList();
+        1:   77-block  0
+call    0 returned 1
+        1:   78:    Medicament* med1 = createMed(1, "hello6", 0.2, 20);
+call    0 returned 1
+        1:   79:    Medicament* med2 = createMed(2, "hello7", 0.2, 5);
+call    0 returned 1
+        1:   80:    add_medicament(med1, list);
+call    0 returned 1
+        1:   81:    add_medicament(med2, list);
+call    0 returned 1
+        -:   82:
+        1:   83:    delete_medicament(1, list);
+call    0 returned 1
+        -:   84:
+       1*:   85:    assert(list->lungime == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   85-block  0
+call    2 never executed
+        1:   85-block  1
+       1*:   86:    assert(get_cod(list->elems[0]) == med2->cod);
+        1:   86-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   86-block  1
+call    3 never executed
+        1:   86-block  2
+        -:   87:
+        1:   88:    delete_medicament(2, list);
+        1:   88-block  0
+call    0 returned 1
+       1*:   89:    assert(list->lungime == 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   89-block  0
+call    2 never executed
+        1:   89-block  1
+        -:   90:
+        -:   91:
+        1:   92:    destroyList(list, (DestroyFunction) destroyMed);
+        1:   92-block  0
+call    0 returned 1
+        1:   93:}
+        -:   94:
+function test_modify_medicament called 1 returned 100% blocks executed 81%
+        1:   95:void test_modify_medicament()
+        -:   96:{
+        1:   97:    MyList* list = createList();
+        1:   97-block  0
+call    0 returned 1
+        -:   98:
+        1:   99:    Medicament* med1 = createMed(1, "hello5", 0.2, 20);
+call    0 returned 1
+        1:  100:    Medicament* med2 = createMed(2, "hello4", 0.2, 5);
+call    0 returned 1
+        1:  101:    add_medicament(med1, list);
+call    0 returned 1
+        1:  102:    add_medicament(med2, list);
+call    0 returned 1
+        -:  103:
+        1:  104:    modify_medicament(1, 0.3, "hi", list);
+call    0 returned 1
+        1:  105:    modify_medicament(2, 0.4, "no", list);
+call    0 returned 1
+        1:  106:    modify_medicament(3,0.2,"hello",list);
+call    0 returned 1
+        -:  107:
+       1*:  108:    assert(get_cod(list->elems[0]) == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  108-block  0
+call    3 never executed
+        1:  108-block  1
+       1*:  109:    assert(get_concentratie(list->elems[0]) == 0.3);
+        1:  109-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  109-block  1
+call    3 never executed
+        1:  109-block  2
+       1*:  110:    assert(get_cantitate(list->elems[0]) == 20);
+        1:  110-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  110-block  1
+call    3 never executed
+        1:  110-block  2
+       1*:  111:    assert(strcmp(get_nume(list->elems[0]), "hi") == 0);
+        1:  111-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  111-block  1
+call    3 never executed
+        1:  111-block  2
+        -:  112:
+       1*:  113:    assert(get_cod(list->elems[1]) == 2);
+        1:  113-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  113-block  1
+call    3 never executed
+        1:  113-block  2
+       1*:  114:    assert(get_concentratie(list->elems[1]) == 0.4);
+        1:  114-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  114-block  1
+call    3 never executed
+        1:  114-block  2
+       1*:  115:    assert(get_cantitate(list->elems[1]) == 5);
+        1:  115-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  115-block  1
+call    3 never executed
+        1:  115-block  2
+       1*:  116:    assert(strcmp(get_nume(list->elems[1]), "no") == 0);
+        1:  116-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  116-block  1
+call    3 never executed
+        1:  116-block  2
+        -:  117:
+        1:  118:    destroyList(list, (DestroyFunction) destroyMed);
+        1:  118-block  0
+call    0 returned 1
+        1:  119:}
+        -:  120:
+function test_sort_meds called 1 returned 100% blocks executed 82%
+        1:  121:void test_sort_meds()
+        -:  122:{
+        1:  123:    MyList* list = createList();
+        1:  123-block  0
+call    0 returned 1
+        -:  124:
+        1:  125:    Medicament* med1 = createMed(1, "hello3", 0.2, 20);
+call    0 returned 1
+        1:  126:    Medicament* med2 = createMed(2, "aaa", 0.2, 25);
+call    0 returned 1
+        1:  127:    Medicament* med3 = createMed(3, "zzz", 0.2, 1);
+call    0 returned 1
+        1:  128:    Medicament* med4 = createMed(4, "ads",0.1,1);
+call    0 returned 1
+        1:  129:    add_medicament(med1, list);
+call    0 returned 1
+        1:  130:    add_medicament(med2, list);
+call    0 returned 1
+        1:  131:    add_medicament(med3, list);
+call    0 returned 1
+        -:  132:
+        1:  133:    MyList* res1 = sort_meds(list, (CompareFunction) compare_nume);
+call    0 returned 1
+        1:  134:    MyList* res2 = sort_meds(list, (CompareFunction) compare_cantitate_cresc);
+call    0 returned 1
+        1:  135:    MyList* res3 = sort_meds(list, (CompareFunction) compare_cantitate_descresc);
+call    0 returned 1
+        -:  136:
+       1*:  137:    assert(get_cod(res1->elems[0]) == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  137-block  0
+call    3 never executed
+        1:  137-block  1
+       1*:  138:    assert(get_cod(res1->elems[1]) == 1);
+        1:  138-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  138-block  1
+call    3 never executed
+        1:  138-block  2
+       1*:  139:    assert(get_cod(res1->elems[2]) == 3);
+        1:  139-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  139-block  1
+call    3 never executed
+        1:  139-block  2
+        -:  140:
+       1*:  141:    assert(get_cod(res2->elems[0]) == 3);
+        1:  141-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  141-block  1
+call    3 never executed
+        1:  141-block  2
+       1*:  142:    assert(get_cod(res2->elems[1]) == 1);
+        1:  142-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  142-block  1
+call    3 never executed
+        1:  142-block  2
+       1*:  143:    assert(get_cod(res2->elems[2]) == 2);
+        1:  143-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  143-block  1
+call    3 never executed
+        1:  143-block  2
+        -:  144:
+       1*:  145:    assert(get_cod(res3->elems[0]) == 2);
+        1:  145-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  145-block  1
+call    3 never executed
+        1:  145-block  2
+       1*:  146:    assert(get_cod(res3->elems[1]) == 1);
+        1:  146-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  146-block  1
+call    3 never executed
+        1:  146-block  2
+       1*:  147:    assert(get_cod(res3->elems[2]) == 3);
+        1:  147-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  147-block  1
+call    3 never executed
+        1:  147-block  2
+        -:  148:
+        1:  149:    add_medicament(med4, list);
+        1:  149-block  0
+call    0 returned 1
+        1:  150:    MyList* res4 = sort_meds(list, (CompareFunction) compare_cantitate_concentratie);
+call    0 returned 1
+       1*:  151:    assert(get_cod(res4->elems[0]) == 4);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  151-block  0
+call    3 never executed
+        1:  151-block  1
+       1*:  152:    assert(get_cod(res4->elems[1]) == 3);
+        1:  152-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  152-block  1
+call    3 never executed
+        1:  152-block  2
+        -:  153:
+        1:  154:    destroyList(list, (DestroyFunction) destroyMed);
+        1:  154-block  0
+call    0 returned 1
+        1:  155:    destroyList(res1, (DestroyFunction) destroyMed);
+call    0 returned 1
+        1:  156:    destroyList(res2, (DestroyFunction) destroyMed);
+call    0 returned 1
+        1:  157:    destroyList(res3, (DestroyFunction) destroyMed);
+call    0 returned 1
+        -:  158:
+        1:  159:}
+        -:  160:
+function test_expand called 1 returned 100% blocks executed 90%
+        1:  161:void test_expand()
+        -:  162:{
+        1:  163:    MyList* list = createList();
+        1:  163-block  0
+call    0 returned 1
+        -:  164:
+        1:  165:    Medicament* med1 = createMed(1, "hello", 0.2, 20);
+call    0 returned 1
+        1:  166:    Medicament* med2 = createMed(2, "aaa", 0.2, 5);
+call    0 returned 1
+        1:  167:    Medicament* med3 = createMed(3, "zzz", 0.2, 1);
+call    0 returned 1
+        1:  168:    add_medicament(med1, list);
+call    0 returned 1
+        1:  169:    add_medicament(med2, list);
+call    0 returned 1
+        1:  170:    add_medicament(med3, list);
+call    0 returned 1
+        -:  171:
+       1*:  172:    assert(list->capacitate == 10);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  172-block  0
+call    2 never executed
+        1:  172-block  1
+        -:  173:
+        -:  174:
+       21:  175:    for (int i = 0; i < 20; i++) {
+        1:  175-block  0
+       21:  175-block  1
+branch  0 taken 20
+branch  1 taken 1 (fallthrough)
+       20:  176:        Medicament* med = createMed((i + 1) * 13, "hello", 0.2, 20);
+       20:  176-block  0
+call    0 returned 20
+       20:  177:        add_medicament(med, list);
+call    0 returned 20
+        -:  178:    }
+        -:  179:
+       1*:  180:    assert(list->capacitate == 40);
+        1:  180-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  180-block  1
+call    2 never executed
+        1:  180-block  2
+        -:  181:
+        -:  182:
+        1:  183:    destroyList(list, (DestroyFunction) destroyMed);
+        1:  183-block  0
+call    0 returned 1
+        -:  184:
+        1:  185:}
+        -:  186:
+function test_filter_meds called 1 returned 100% blocks executed 82%
+        1:  187:void test_filter_meds()
+        -:  188:{
+        1:  189:    MyList* list = createList();
+        1:  189-block  0
+call    0 returned 1
+        -:  190:
+        1:  191:    Medicament* med1 = createMed(1, "hello2", 0.2, 20);
+call    0 returned 1
+        1:  192:    Medicament* med2 = createMed(2, "aaa", 0.2, 5);
+call    0 returned 1
+        1:  193:    Medicament* med3 = createMed(3, "zzz", 0.2, 1);
+call    0 returned 1
+        1:  194:    add_medicament(med1, list);
+call    0 returned 1
+        1:  195:    add_medicament(med2, list);
+call    0 returned 1
+        1:  196:    add_medicament(med3, list);
+call    0 returned 1
+        -:  197:
+        1:  198:    MyList* res1 = filter_meds(list, 2, 'a');
+call    0 returned 1
+        1:  199:    MyList* res2 = filter_meds(list, 2, 'f');
+call    0 returned 1
+        1:  200:    MyList* res3 = filter_meds(list, 1, 10);
+call    0 returned 1
+        1:  201:    MyList* res4 = filter_meds(list, 3, 5);
+call    0 returned 1
+        -:  202:
+       1*:  203:    assert(res1->lungime == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  203-block  0
+call    2 never executed
+        1:  203-block  1
+       1*:  204:    assert(get_cod(res1->elems[0]) == 2);
+        1:  204-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  204-block  1
+call    3 never executed
+        1:  204-block  2
+        -:  205:
+       1*:  206:    assert(res2->lungime == 0);
+        1:  206-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  206-block  1
+call    2 never executed
+        1:  206-block  2
+        -:  207:
+       1*:  208:    assert(res3->lungime == 2);
+        1:  208-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  208-block  1
+call    2 never executed
+        1:  208-block  2
+       1*:  209:    assert(get_cod(res3->elems[0]) == 2);
+        1:  209-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  209-block  1
+call    3 never executed
+        1:  209-block  2
+       1*:  210:    assert(get_cod(res3->elems[1]) == 3);
+        1:  210-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  210-block  1
+call    3 never executed
+        1:  210-block  2
+        -:  211:
+       1*:  212:    assert(res4->lungime == 1);
+        1:  212-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  212-block  1
+call    2 never executed
+        1:  212-block  2
+       1*:  213:    assert(get_cod(res4->elems[0])== 1);
+        1:  213-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  213-block  1
+call    3 never executed
+        1:  213-block  2
+        1:  214:    destroyList(list, (DestroyFunction) destroyMed);
+        1:  214-block  0
+call    0 returned 1
+        1:  215:    destroyList(res1, (DestroyFunction) destroyMed);
+call    0 returned 1
+        1:  216:    destroyList(res2, (DestroyFunction) destroyMed);
+call    0 returned 1
+        1:  217:    destroyList(res3, (DestroyFunction) destroyMed);
+call    0 returned 1
+        -:  218:
+        1:  219:}
+        -:  220:
+function test_undo_functions called 1 returned 100% blocks executed 78%
+        1:  221:void test_undo_functions()
+        -:  222:{
+        1:  223:    MyList *list = createList();
+        1:  223-block  0
+call    0 returned 1
+        1:  224:    MyList *undo_list = createList();
+call    0 returned 1
+        -:  225:
+        1:  226:    Medicament* med1 = createMed(1, "hello2", 0.2, 20);
+call    0 returned 1
+        1:  227:    Medicament* med2 = createMed(2, "aaa", 0.2, 5);
+call    0 returned 1
+        -:  228:
+        -:  229:
+       1*:  230:    assert(undo_list->lungime == 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  230-block  0
+call    2 never executed
+        1:  230-block  1
+       1*:  231:    assert(list->lungime == 0);
+        1:  231-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  231-block  1
+call    2 never executed
+        1:  231-block  2
+        -:  232:
+        1:  233:    store_current_state(list, undo_list);
+        1:  233-block  0
+call    0 returned 1
+        1:  234:    add_medicament(med1, list);
+call    0 returned 1
+       1*:  235:    assert(undo_list->lungime == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  235-block  0
+call    2 never executed
+        1:  235-block  1
+       1*:  236:    assert(list->lungime == 1);
+        1:  236-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  236-block  1
+call    2 never executed
+        1:  236-block  2
+        -:  237:
+        1:  238:    store_current_state(list, undo_list);
+        1:  238-block  0
+call    0 returned 1
+        1:  239:    add_medicament(med2, list);
+call    0 returned 1
+       1*:  240:    assert(undo_list->lungime == 2);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  240-block  0
+call    2 never executed
+        1:  240-block  1
+       1*:  241:    assert(list->lungime == 2);
+        1:  241-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  241-block  1
+call    2 never executed
+        1:  241-block  2
+        -:  242:
+        1:  243:    list = undo(list, undo_list);
+        1:  243-block  0
+call    0 returned 1
+       1*:  244:    assert(list->lungime == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  244-block  0
+call    2 never executed
+        1:  244-block  1
+       1*:  245:    assert(undo_list->lungime == 1);
+        1:  245-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  245-block  1
+call    2 never executed
+        1:  245-block  2
+        -:  246:
+        1:  247:    list = undo(list, undo_list);
+        1:  247-block  0
+call    0 returned 1
+       1*:  248:    assert(list->lungime == 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  248-block  0
+call    2 never executed
+        1:  248-block  1
+       1*:  249:    assert(undo_list->lungime == 0);
+        1:  249-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  249-block  1
+call    2 never executed
+        1:  249-block  2
+        -:  250:
+        1:  251:    Medicament *med3 = createMed(3, "hello2", 0.2, 20);
+        1:  251-block  0
+call    0 returned 1
+        1:  252:    Medicament *med4 = createMed(4, "hello2", 0.2, 20);
+call    0 returned 1
+        -:  253:
+        1:  254:    store_current_state(list, undo_list);
+call    0 returned 1
+        1:  255:    add_medicament(med3, list);
+call    0 returned 1
+        1:  256:    store_current_state(list, undo_list);
+call    0 returned 1
+        1:  257:    add_medicament(med4, list);
+call    0 returned 1
+        -:  258:
+       1*:  259:    assert(list->lungime == 2);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  259-block  0
+call    2 never executed
+        1:  259-block  1
+       1*:  260:    assert(undo_list->lungime == 2);
+        1:  260-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  260-block  1
+call    2 never executed
+        1:  260-block  2
+        -:  261:
+        1:  262:    destroyList(list, (DestroyFunction) destroyMed);
+        1:  262-block  0
+call    0 returned 1
+        1:  263:    destroyList(undo_list, (DestroyFunction) destroyUndoMeds);
+call    0 returned 1
+        1:  264:}
+        -:  265:
+function test_all called 1 returned 100% blocks executed 100%
+        1:  266:void test_all()
+        -:  267:{
+        1:  268:    test_create_list();
+        1:  268-block  0
+call    0 returned 1
+        1:  269:    test_create_med();
+call    0 returned 1
+        1:  270:    test_expand();
+call    0 returned 1
+        1:  271:    test_validate();
+call    0 returned 1
+        -:  272:
+        1:  273:    test_add_medicament();
+call    0 returned 1
+        1:  274:    test_delete_medicament();
+call    0 returned 1
+        1:  275:    test_modify_medicament();
+call    0 returned 1
+        1:  276:    test_sort_meds();
+call    0 returned 1
+        1:  277:    test_filter_meds();
+call    0 returned 1
+        -:  278:
+        1:  279:    test_undo_functions();
+call    0 returned 1
+        1:  280:}

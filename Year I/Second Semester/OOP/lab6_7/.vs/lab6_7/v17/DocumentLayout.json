@@ -1,0 +1,419 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\_exceptions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\_exceptions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\ui.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\ui.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\domain_tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\domain_tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\from_file_repo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\from_file_repo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\undo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\undo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\repo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo_lab_tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\repo_lab_tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo_lab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\repo_lab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\all_tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\all_tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\all_tests.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\all_tests.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\cart.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\cart.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo_tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\repo_tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo_lab.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\repo_lab.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie_repo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\movie_repo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie_service.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\movie_service.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\ui.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\ui.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie_repo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\movie_repo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie_service.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\movie_service.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\service_tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\service_tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\validator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\validator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\movie.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\file_repo_tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\file_repo_tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\test_undo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B26F021F-30E2-4777-870B-9800E7A98AA9}|lab6_7\\lab6_7.vcxproj|solutionrelative:lab6_7\\test_undo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\include\\memory||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 191,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "domain_tests.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\domain_tests.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\domain_tests.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\domain_tests.cpp",
+              "RelativeToolTip": "lab6_7\\domain_tests.cpp",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-01T14:23:58.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_exceptions.h",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\_exceptions.h",
+              "RelativeDocumentMoniker": "lab6_7\\_exceptions.h",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\_exceptions.h",
+              "RelativeToolTip": "lab6_7\\_exceptions.h",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-24T10:10:55.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "cart.h",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\cart.h",
+              "RelativeDocumentMoniker": "lab6_7\\cart.h",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\cart.h",
+              "RelativeToolTip": "lab6_7\\cart.h",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-24T10:02:51.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "repo_lab.h",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo_lab.h",
+              "RelativeDocumentMoniker": "lab6_7\\repo_lab.h",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo_lab.h",
+              "RelativeToolTip": "lab6_7\\repo_lab.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-24T09:39:01.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "repo.h",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo.h",
+              "RelativeDocumentMoniker": "lab6_7\\repo.h",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo.h",
+              "RelativeToolTip": "lab6_7\\repo.h",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-23T17:21:33.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "undo.h",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\undo.h",
+              "RelativeDocumentMoniker": "lab6_7\\undo.h",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\undo.h",
+              "RelativeToolTip": "lab6_7\\undo.h",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-23T17:22:38.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\main.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\main.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\main.cpp",
+              "RelativeToolTip": "lab6_7\\main.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-24T09:20:36.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ui.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\ui.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\ui.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\ui.cpp",
+              "RelativeToolTip": "lab6_7\\ui.cpp",
+              "ViewState": "AQIAAB0BAAAAAAAAAAAAAIcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-24T10:39:07.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "repo_lab.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo_lab.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\repo_lab.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo_lab.cpp",
+              "RelativeToolTip": "lab6_7\\repo_lab.cpp",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-24T09:46:16.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "from_file_repo.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\from_file_repo.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\from_file_repo.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\from_file_repo.cpp",
+              "RelativeToolTip": "lab6_7\\from_file_repo.cpp",
+              "ViewState": "AQIAABAAAAAAAAAAAAAvwDIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-23T16:26:06.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "repo_lab_tests.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo_lab_tests.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\repo_lab_tests.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo_lab_tests.cpp",
+              "RelativeToolTip": "lab6_7\\repo_lab_tests.cpp",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAcwBgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-24T10:44:04.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "all_tests.h",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\all_tests.h",
+              "RelativeDocumentMoniker": "lab6_7\\all_tests.h",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\all_tests.h",
+              "RelativeToolTip": "lab6_7\\all_tests.h",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAvwA4AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-24T10:44:58.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "service_tests.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\service_tests.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\service_tests.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\service_tests.cpp",
+              "RelativeToolTip": "lab6_7\\service_tests.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-24T09:52:41.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "movie.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\movie.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie.cpp",
+              "RelativeToolTip": "lab6_7\\movie.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-24T09:29:00.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "memory",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\include\\memory",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\include\\memory",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\include\\memory",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\include\\memory",
+              "ViewState": "AQIAAF4NAAAAAAAAAAArwGkNAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-24T09:21:01.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ui.h",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\ui.h",
+              "RelativeDocumentMoniker": "lab6_7\\ui.h",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\ui.h",
+              "RelativeToolTip": "lab6_7\\ui.h",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-24T09:20:30.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "movie_service.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie_service.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\movie_service.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie_service.cpp",
+              "RelativeToolTip": "lab6_7\\movie_service.cpp",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAUwC0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-23T17:30:56.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "movie_service.h",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie_service.h",
+              "RelativeDocumentMoniker": "lab6_7\\movie_service.h",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie_service.h",
+              "RelativeToolTip": "lab6_7\\movie_service.h",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAvwBUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-23T17:22:43.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "validator.h",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\validator.h",
+              "RelativeDocumentMoniker": "lab6_7\\validator.h",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\validator.h",
+              "RelativeToolTip": "lab6_7\\validator.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-23T17:02:15.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "test_undo.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\test_undo.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\test_undo.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\test_undo.cpp",
+              "RelativeToolTip": "lab6_7\\test_undo.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-23T16:30:41.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "movie_repo.h",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie_repo.h",
+              "RelativeDocumentMoniker": "lab6_7\\movie_repo.h",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie_repo.h",
+              "RelativeToolTip": "lab6_7\\movie_repo.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-23T16:30:12.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "movie_repo.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie_repo.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\movie_repo.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\movie_repo.cpp",
+              "RelativeToolTip": "lab6_7\\movie_repo.cpp",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAcwBIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-23T16:30:02.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "all_tests.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\all_tests.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\all_tests.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\all_tests.cpp",
+              "RelativeToolTip": "lab6_7\\all_tests.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-23T16:25:53.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "repo_tests.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo_tests.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\repo_tests.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\repo_tests.cpp",
+              "RelativeToolTip": "lab6_7\\repo_tests.cpp",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-23T16:24:50.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "file_repo_tests.cpp",
+              "DocumentMoniker": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\file_repo_tests.cpp",
+              "RelativeDocumentMoniker": "lab6_7\\file_repo_tests.cpp",
+              "ToolTip": "C:\\Users\\Bogdan Rebeles\\Desktop\\OOP\\lab6_7\\lab6_7\\file_repo_tests.cpp",
+              "RelativeToolTip": "lab6_7\\file_repo_tests.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-23T16:17:34.015Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

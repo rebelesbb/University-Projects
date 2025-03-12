@@ -1,0 +1,154 @@
+        -:    0:Source:C:/Users/Bogdan Rebeles/Desktop/OOP/lab2_4/participant.c
+        -:    0:Graph:C:\Users\Bogdan Rebeles\Desktop\OOP\lab2_4\cmake-build-debug-coverage\CMakeFiles\lab2_4.dir\participant.c.gcno
+        -:    0:Data:C:\Users\Bogdan Rebeles\Desktop\OOP\lab2_4\cmake-build-debug-coverage\CMakeFiles\lab2_4.dir\participant.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "participant.h"
+        -:    2:#include "string.h"
+        -:    3:#include "stdlib.h"
+        -:    4:
+        -:    5:/**
+        -:    6: * Creates a participant
+        -:    7: * @param first_name: participant's first name  (char*)
+        -:    8: * @param last_name: participant's last name    (char*)
+        -:    9: * @param score: participant's score            (char*)
+        -:   10: * @return the created participant (Participant)
+        -:   11: */
+function create_participant called 99 returned 100% blocks executed 100%
+       99:   12:Participant* create_participant(char first_name[], char last_name[], int score)
+        -:   13:{
+       99:   14:    Participant* new_participant = (Participant*)malloc(sizeof(Participant));
+        -:   15:
+       99:   16:    new_participant->last_name = (char*) malloc((1 + strlen(last_name))*sizeof(char));
+       99:   17:    new_participant->first_name = (char*) malloc((1 + strlen(first_name))*sizeof(char));
+        -:   18:
+       99:   19:    set_last_name(new_participant, last_name);
+       99:   19-block  0
+call    0 returned 99
+       99:   20:    set_first_name(new_participant, first_name);
+call    0 returned 99
+       99:   21:    set_score(new_participant,score);
+call    0 returned 99
+        -:   22:
+       99:   23:    return new_participant;
+        -:   24:}
+        -:   25:
+function set_first_name called 101 returned 100% blocks executed 100%
+      101:   26:void set_first_name(Participant *participant, char name[])
+        -:   27:{
+        -:   28:    ///in case the new name has a greater length than the current first_name
+      101:   29:    if((strlen(name) + 1) * sizeof(char) > (strlen(participant->first_name) + 1) * sizeof(char))
+      101:   29-block  0
+branch  0 taken 31 (fallthrough)
+branch  1 taken 70
+       31:   30:        participant->first_name = (char*) realloc(participant->first_name, (strlen(name) + 1) * sizeof(char));
+       31:   30-block  0
+      101:   31:    strcpy(participant->first_name, name);
+        -:   32:
+      101:   33:}
+        -:   34:
+function set_last_name called 99 returned 100% blocks executed 100%
+       99:   35:void set_last_name(Participant *participant, char name[])
+        -:   36:{
+        -:   37:    ///in case the new name has a greater length than the current last_name
+       99:   38:    if((strlen(name) + 1) * sizeof(char) > (strlen(participant->last_name) + 1) * sizeof(char))
+       99:   38-block  0
+branch  0 taken 45 (fallthrough)
+branch  1 taken 54
+       45:   39:        participant->last_name = (char*) realloc(participant->last_name, (strlen(name) + 1) * sizeof(char));
+       45:   39-block  0
+       99:   40:    strcpy(participant->last_name,name);
+       99:   41:}
+        -:   42:
+function set_score called 100 returned 100% blocks executed 100%
+      100:   43:void set_score(Participant *participant, int score)
+        -:   44:{
+      100:   45:    participant->score = score;
+      100:   46:}
+        -:   47:
+function get_first_name called 172 returned 100% blocks executed 100%
+      172:   48:char* get_first_name(Participant *participant)
+        -:   49:{
+      172:   50:    return participant->first_name;
+      172:   50-block  0
+        -:   51:}
+        -:   52:
+function get_last_name called 193 returned 100% blocks executed 100%
+      193:   53:char* get_last_name(Participant *participant)
+        -:   54:{
+      193:   55:    return participant->last_name;
+      193:   55-block  0
+        -:   56:}
+        -:   57:
+function get_score called 204 returned 100% blocks executed 100%
+      204:   58:int get_score(Participant *participant)
+        -:   59:{
+      204:   60:    return participant->score;
+      204:   60-block  0
+        -:   61:}
+        -:   62:
+        -:   63:/**
+        -:   64: * Checks if two names are equal
+        -:   65: * @name1: a name (char*)
+        -:   66: * @name2: a name (char*)
+        -:   67: * @return true if the two names are equal
+        -:   68: *         false otherwise
+        -:   69: */
+function equal_name called 131 returned 100% blocks executed 100%
+      131:   70:bool equal_name(char name1[], char name2[])
+        -:   71:{
+      131:   72:    if(strcmp(name1,name2) == 0)
+      131:   72-block  0
+branch  0 taken 108 (fallthrough)
+branch  1 taken 23
+      108:   73:        return true;
+      108:   73-block  0
+       23:   74:    return false;
+       23:   74-block  0
+        -:   75:}
+        -:   76:
+        -:   77:/**
+        -:   78: * Checks if two participants are equal
+        -:   79: * @param participant1: a participant (Participant)
+        -:   80: * @param participant2: a participant (Participant)
+        -:   81: * @return true if the two participants have:
+        -:   82: *            -the same first name
+        -:   83: *            -the same last name
+        -:   84: *            -the same score
+        -:   85: *         false otherwise
+        -:   86: */
+function equal called 77 returned 100% blocks executed 100%
+       77:   87:bool equal(Participant participant1, Participant participant2)
+        -:   88:{
+       77:   89:    if(equal_name(get_first_name(&participant1), get_first_name(&participant2))
+       77:   89-block  0
+call    0 returned 77
+call    1 returned 77
+call    2 returned 77
+branch  3 taken 54 (fallthrough)
+branch  4 taken 23
+       54:   90:       && equal_name(get_last_name(&participant1), get_last_name(&participant2))
+       54:   90-block  0
+call    0 returned 54
+call    1 returned 54
+call    2 returned 54
+branch  3 taken 54 (fallthrough)
+branch  4 taken 0
+       54:   91:       && get_score(&participant2) == get_score(&participant1))
+       54:   91-block  0
+call    0 returned 54
+call    1 returned 54
+branch  2 taken 49 (fallthrough)
+branch  3 taken 5
+       49:   92:        return true;
+       49:   92-block  0
+       28:   93:    return false;
+       28:   93-block  0
+        -:   94:}
+        -:   95:
+function free_participant called 99 returned 100% blocks executed 100%
+       99:   96:void free_participant(Participant *participant)
+        -:   97:{
+       99:   98:    free(participant->first_name);
+       99:   99:    free(participant->last_name);
+       99:  100:    free(participant);
+       99:  101:}

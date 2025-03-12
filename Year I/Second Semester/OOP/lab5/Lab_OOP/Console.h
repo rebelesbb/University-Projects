@@ -1,0 +1,4 @@
+#ifndef UNTITLED_CONSOLE_H
+#define UNTITLED_CONSOLE_H
+void run();
+#endif //UNTITLED_CONSOLE_H

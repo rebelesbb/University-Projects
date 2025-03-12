@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+      <FILENAME>dynamic_vector.h</FILENAME>
+      <LINE>42</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Reading invalid data from 'elements'.</DESCRIPTION>
+    <FUNCTION>DynamicVector&lt;Movie&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$DynamicVector@VMovie@@@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>39</LINE>
+        <COLUMN>106</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>39</LINE>
+        <COLUMN>130</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>39</LINE>
+        <COLUMN>151</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>41</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>41</LINE>
+        <COLUMN>27</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume 'index&lt;other.length')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>42</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>41</LINE>
+        <COLUMN>43</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'index' may equal 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>41</LINE>
+        <COLUMN>27</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Continue this loop, (assume 'index&lt;other.length')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>42</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'index' is an Output from 'Movie::=' (declared at c:\users\bogdan rebeles\desktop\lab6_7\lab6_7\movie.h:29)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\Bogdan Rebeles\Desktop\lab6_7\lab6_7\</FILEPATH>
+        <FILENAME>dynamic_vector.h</FILENAME>
+        <LINE>42</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Invalid read from 'elements[1]', (readable range is 0 to 0)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

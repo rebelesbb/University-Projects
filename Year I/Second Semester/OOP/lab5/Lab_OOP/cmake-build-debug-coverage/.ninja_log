@@ -1,0 +1,8 @@
+# ninja log v5
+0	152	7332381966214472	CMakeFiles/untitled.dir/main.c.obj	d1112a6856c65d93
+7	121	7332381965899747	CMakeFiles/untitled.dir/Undo.c.obj	2672e635082696f2
+13	139	7332381966076467	CMakeFiles/untitled.dir/Medicament.c.obj	632ef1b8b0df648a
+9	153	7332381966224426	CMakeFiles/untitled.dir/Console.c.obj	2e4ac505b7ddddc3
+2	154	7332384176162193	CMakeFiles/untitled.dir/List.c.obj	b7eef6d8e3ac0c25
+128	200	7332389255690818	untitled.exe	7bf091c915fdbff4
+2	121	7332389254937032	CMakeFiles/untitled.dir/Testing.c.obj	1446ddef84c8bac7

@@ -1,0 +1,600 @@
+        -:    0:Source:C:/Users/Bogdan Rebeles/Desktop/OOP/lab2_4/participants_functions.c
+        -:    0:Graph:C:\Users\Bogdan Rebeles\Desktop\OOP\lab2_4\cmake-build-debug-coverage\CMakeFiles\lab2_4.dir\participants_functions.c.gcno
+        -:    0:Data:C:\Users\Bogdan Rebeles\Desktop\OOP\lab2_4\cmake-build-debug-coverage\CMakeFiles\lab2_4.dir\participants_functions.c.gcda
+        -:    0:Runs:1
+        -:    1:#include <string.h>
+        -:    2:#include <ctype.h>
+        -:    3:#include <stdlib.h>
+        -:    4:#include "participants_functions.h"
+        -:    5:#include "sort_function.h"
+        -:    6:#include "participant.h"
+        -:    7:#include "list.h"
+        -:    8:
+        -:    9:///error messages
+function duplicate_participant_error called 2 returned 100% blocks executed 100%
+        2:   10:char* duplicate_participant_error()
+        -:   11:{
+        2:   12:    return "Participantul exista deja in lista.";
+        2:   12-block  0
+        -:   13:}
+        -:   14:
+function invalid_score_error called 6 returned 100% blocks executed 100%
+        6:   15:char* invalid_score_error()
+        -:   16:{
+        6:   17:    return "Scorul este invalid.";
+        6:   17-block  0
+        -:   18:}
+        -:   19:
+function invalid_fname_error called 4 returned 100% blocks executed 100%
+        4:   20:char* invalid_fname_error()
+        -:   21:{
+        4:   22:    return "Prenumele trebuie sa contina doar litere.";
+        4:   22-block  0
+        -:   23:}
+function invalid_lname_error called 4 returned 100% blocks executed 100%
+        4:   24:char* invalid_lname_error()
+        -:   25:{
+        4:   26:    return "Numele trebuie sa contina doar litere.";
+        4:   26-block  0
+        -:   27:}
+        -:   28:
+function participant_not_found_error called 1 returned 100% blocks executed 100%
+        1:   29:char* participant_not_found_error()
+        -:   30:{
+        1:   31:    return "Participantul nu exista in lista.\n";
+        1:   31-block  0
+        -:   32:}
+        -:   33:
+function invalid_sort_key_error called 1 returned 100% blocks executed 100%
+        1:   34:char* invalid_sort_key_error()
+        -:   35:{
+        1:   36:    return "Criteriu de sortare invalid. (Criterii valide: nume/scor)\n";
+        1:   36-block  0
+        -:   37:}
+        -:   38:
+function invalid_filter_key_error called 1 returned 100% blocks executed 100%
+        1:   39:char* invalid_filter_key_error()
+        -:   40:{
+        1:   41:    return "Criteriu de filtrare invalid. (Criterii valide: scor/initiala)\n";
+        1:   41-block  0
+        -:   42:}
+        -:   43:
+function invalid_char_error called 1 returned 100% blocks executed 100%
+        1:   44:char* invalid_char_error()
+        -:   45:{
+        1:   46:    return "Valoarea introdusa nu este un caracter valid. (Caractere valide: A-Z)\n";
+        1:   46-block  0
+        -:   47:}
+        -:   48:
+function empty_list_error called 4 returned 100% blocks executed 100%
+        4:   49:char* empty_list_error()
+        -:   50:{
+        4:   51:    return "Lista de participanti este goala.";
+        4:   51-block  0
+        -:   52:}
+        -:   53:
+        -:   54:///validator
+        -:   55:
+        -:   56:/**
+        -:   57: * Validates a participant while collecting the errors.
+        -:   58: * @param participants: a list of participants (ElementsList)
+        -:   59: * @param participant: a participant (Participant)
+        -:   60: * @param err: a list of errors (char**)
+        -:   61: * @param len: the length of the list of errors (int)
+        -:   62: * @return true if the participant hasn't been added to the list yet
+        -:   63: *                 the first and last name of the participant contain only letters
+        -:   64: *                  the score is between 0 and 100
+        -:   65: *          false otherwise
+        -:   66: *        : (bool)
+        -:   67: */
+function valid called 10 returned 100% blocks executed 100%
+       10:   68:bool valid(ElementsList *participants, Participant new_participant, char err[5][100], int *len)
+        -:   69:{
+       10:   70:    (*len) = 0;
+       16:   71:    for(int p = 0; p < participants->length ; p++)
+       10:   71-block  0
+        6:   71-block  1
+       16:   71-block  2
+branch  0 taken 8
+branch  1 taken 8 (fallthrough)
+        8:   72:        if(equal(*participants->nr[p], new_participant)) {
+        8:   72-block  0
+call    0 returned 8
+branch  1 taken 2 (fallthrough)
+branch  2 taken 6
+        2:   73:            strcpy(err[*len], duplicate_participant_error());
+        2:   73-block  0
+call    0 returned 2
+        2:   74:            (*len)++;
+        2:   75:            break;
+        -:   76:        }
+        -:   77:
+       10:   78:    if(get_score(&new_participant) < 0 || get_score(&new_participant) > 100) {
+       10:   78-block  0
+call    0 returned 10
+branch  1 taken 9 (fallthrough)
+branch  2 taken 1
+        9:   78-block  1
+call    3 returned 9
+branch  4 taken 3 (fallthrough)
+branch  5 taken 6
+        4:   79:        strcpy(err[*len],invalid_score_error());
+        4:   79-block  0
+call    0 returned 4
+        4:   80:        (*len)++;
+        -:   81:    }
+        -:   82:
+       10:   83:    char* first_name = get_first_name(&new_participant);
+       10:   83-block  0
+call    0 returned 10
+       65:   84:    for(int l = 0; l < strlen(first_name); l++)
+       55:   84-block  0
+       65:   84-block  1
+branch  0 taken 59
+branch  1 taken 6 (fallthrough)
+       59:   85:        if(isalpha(first_name[l]) == 0)
+       59:   85-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 55
+        -:   86:        {
+        4:   87:            strcpy(err[*len],invalid_fname_error());
+        4:   87-block  0
+call    0 returned 4
+        4:   88:            (*len)++;
+        4:   89:            break;
+        -:   90:        }
+        -:   91:
+       10:   92:    char* last_name = get_last_name(&new_participant);
+       10:   92-block  0
+call    0 returned 10
+       59:   93:    for(int l = 0; l < strlen(last_name); l++)
+       49:   93-block  0
+       59:   93-block  1
+branch  0 taken 53
+branch  1 taken 6 (fallthrough)
+       53:   94:        if(isalpha(last_name[l]) == 0)
+       53:   94-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 49
+        -:   95:        {
+        4:   96:            strcpy(err[*len],invalid_lname_error());
+        4:   96-block  0
+call    0 returned 4
+        4:   97:            (*len)++;
+        4:   98:            break;
+        -:   99:        }
+        -:  100:
+       10:  101:    if(*len)
+       10:  101-block  0
+branch  0 taken 6 (fallthrough)
+branch  1 taken 4
+        6:  102:        return false;
+        6:  102-block  0
+        4:  103:    return true;
+        4:  103-block  0
+        -:  104:}
+        -:  105:
+        -:  106:///service functions
+        -:  107:
+        -:  108:/**
+        -:  109: * Compares the last name of two participants
+        -:  110: * @param participant1: a participant (Participant)
+        -:  111: * @param participant2: a participant (Participant)
+        -:  112: * @param reversed: used in case of descending sort (bool)
+        -:  113: * @return the result of the comparison, based on reversed
+        -:  114: */
+function cmpLastName called 30 returned 100% blocks executed 100%
+       30:  115:bool cmpLastName(Participant* participant1, Participant* participant2, bool reversed)
+        -:  116:{
+        -:  117:    bool result;
+       30:  118:    if (strcmp(get_last_name(participant1), get_last_name(participant2)) > 0)
+       30:  118-block  0
+call    0 returned 30
+call    1 returned 30
+branch  2 taken 9 (fallthrough)
+branch  3 taken 21
+        9:  119:        result = true;
+        9:  119-block  0
+       21:  120:    else result = false;
+       21:  120-block  0
+       30:  121:    if(reversed)
+       30:  121-block  0
+branch  0 taken 15 (fallthrough)
+branch  1 taken 15
+       15:  122:        return !result;
+       15:  122-block  0
+       15:  123:    else return result;
+       15:  123-block  0
+        -:  124:}
+        -:  125:
+        -:  126:/**
+        -:  127: * Compares the score of two participants
+        -:  128: * @param participant1: a participant (Participant)
+        -:  129: * @param participant2: a participant (Participant)
+        -:  130: * @param reversed: used in case of descending sort (bool)
+        -:  131: * @return the result of the comparison, based on reversed
+        -:  132: */
+function cmpScore called 30 returned 100% blocks executed 100%
+       30:  133:bool cmpScore(Participant* participant1, Participant* participant2, bool reversed)
+        -:  134:{
+        -:  135:    bool result;
+       30:  136:    if (get_score(participant1) > get_score(participant2))
+       30:  136-block  0
+call    0 returned 30
+call    1 returned 30
+branch  2 taken 16 (fallthrough)
+branch  3 taken 14
+       16:  137:        result = true;
+       16:  137-block  0
+       14:  138:    else result = false;
+       14:  138-block  0
+       30:  139:    if(reversed)
+       30:  139-block  0
+branch  0 taken 15 (fallthrough)
+branch  1 taken 15
+       15:  140:        return !result;
+       15:  140-block  0
+       15:  141:    else return result;
+       15:  141-block  0
+        -:  142:}
+        -:  143:
+        -:  144:/**
+        -:  145: * Checks if a participant's data meets certain criteria
+        -:  146: * @param key: the criteria: score/initial of last name (char*)
+        -:  147: * @param value: the value of the key (char*)
+        -:  148: * @return based on the key and its value, true if
+        -:  149: *      - score < value
+        -:  150: *      - initial == value
+        -:  151: *      : (bool)
+        -:  152: */
+function filter_key called 10 returned 100% blocks executed 100%
+       10:  153:bool filter_key(Participant *participant, char key[], char value[])
+        -:  154:{
+       10:  155:    if(strcmp(key, "scor") == 0) {
+       10:  155-block  0
+branch  0 taken 5 (fallthrough)
+branch  1 taken 5
+        5:  156:        int score_key = atoi(value);
+        5:  156-block  0
+call    0 returned 5
+        5:  157:        if(get_score(participant) < score_key)
+call    0 returned 5
+branch  1 taken 4 (fallthrough)
+branch  2 taken 1
+        4:  158:            return true;
+        4:  158-block  0
+        1:  159:        return false;
+        1:  159-block  0
+        -:  160:    }
+        -:  161:    else{ /// key == initial
+        5:  162:        value = strupr(value);
+        5:  162-block  0
+call    0 returned 5
+        5:  163:        if(get_last_name(participant)[0] == value[0])
+call    0 returned 5
+branch  1 taken 2 (fallthrough)
+branch  2 taken 3
+        2:  164:            return true;
+        2:  164-block  0
+        3:  165:        return false;
+        3:  165-block  0
+        -:  166:    }
+        -:  167:}
+        -:  168:
+        -:  169:/**
+        -:  170: * Adds a valid participant to the list of participants
+        -:  171: * @param participants: the list of participants (ElementsList)
+        -:  172: * @param first_name: the first name of the participant to be deleted (char*)
+        -:  173: * @param last_name: the last name of the participant to be deleted (char*)
+        -:  174: * @param score: the score of the participant to be deleted (char*)
+        -:  175: * @param err: a list of errors (char**)
+        -:  176: * @param len: the length of the list of errors
+        -:  177: */
+function add_participant called 4 returned 100% blocks executed 100%
+        4:  178:void add_participant(ElementsList *participants, char first_name[], char last_name[], int score , char err[5][100], int *len)
+        -:  179:{
+        -:  180:    Participant *new_participant;
+        4:  181:    new_participant = create_participant(first_name, last_name, score);
+        4:  181-block  0
+call    0 returned 4
+        -:  182:
+        4:  183:    if(valid(participants,*new_participant, err, len))
+call    0 returned 4
+branch  1 taken 2 (fallthrough)
+branch  2 taken 2
+        2:  184:        store(participants, new_participant);
+        2:  184-block  0
+call    0 returned 2
+        2:  185:    else free_participant(new_participant);
+        2:  185-block  0
+call    0 returned 2
+        4:  186:}
+        -:  187:
+        -:  188:/**
+        -:  189: * Deletes a participant previously added in the list of participants
+        -:  190: * participants: the list of participants (ElementsList)
+        -:  191: * @param first_name: the first name of the participant to be deleted (char*)
+        -:  192: * @param last_name: the last name of the participant to be deleted (char*)
+        -:  193: * @param score: the score of the participant to be deleted (char*)
+        -:  194: * @param err: a list of errors (char**)
+        -:  195: * @param len: the length of the list of errors
+        -:  196: */
+function delete_participant called 5 returned 100% blocks executed 100%
+        5:  197:void delete_participant(ElementsList *participants, char first_name[], char last_name[], int score, char err[5][100], int* len)
+        -:  198:{
+        5:  199:    Participant *participant = create_participant(first_name, last_name, score);
+        5:  199-block  0
+call    0 returned 5
+        5:  200:    int index = find(participants, *participant);
+call    0 returned 5
+        5:  201:    free_participant(participant);
+call    0 returned 5
+        -:  202:
+        5:  203:    if(get_size(participants) == 0)  // if the list is empty
+call    0 returned 5
+branch  1 taken 1 (fallthrough)
+branch  2 taken 4
+        -:  204:    {
+        1:  205:        strcpy(err[*len], empty_list_error());
+        1:  205-block  0
+call    0 returned 1
+        1:  206:        (*len)++;
+        -:  207:    }
+        4:  208:    else if(index == -1){  // if the participant can't be found
+        4:  208-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 3
+        1:  209:        strcpy(err[*len],participant_not_found_error());
+        1:  209-block  0
+call    0 returned 1
+        1:  210:        (*len)++;
+        -:  211:    }
+        -:  212:    else
+        3:  213:        delete(participants,index);
+        3:  213-block  0
+call    0 returned 3
+        5:  214:}
+        -:  215:
+        -:  216:/**
+        -:  217: * Updates a participant previously added in the list, only if the
+        -:  218: * updated data is valid
+        -:  219: * @param participants: the list of participants  (ElementsList)
+        -:  220: * @param position: the position of the participant in the list (int)
+        -:  221: * @param new_first_name: updated first name (char*)
+        -:  222: * @param new_last_name: updated last name   (char*)
+        -:  223: * @param new_score: updated score (int)
+        -:  224: * @param err: a list of errors (char**)
+        -:  225: * @param len: the length of the error list (int)
+        -:  226: */
+function update_participant called 4 returned 100% blocks executed 100%
+        4:  227:void update_participant(ElementsList *participants, int position,
+        -:  228:                        char new_first_name[], char new_last_name[], int new_score, char err[5][100], int *len)
+        -:  229:{
+        4:  230:    if(!get_size(participants)) // if the list is empty
+        4:  230-block  0
+call    0 returned 4
+branch  1 taken 1 (fallthrough)
+branch  2 taken 3
+        -:  231:    {
+        1:  232:        strcpy(err[*len], empty_list_error());
+        1:  232-block  0
+call    0 returned 1
+        1:  233:        (*len)++;
+        -:  234:    }
+        -:  235:    else {
+        -:  236:        Participant *participant, *updated_participant;
+        3:  237:        participant = get_element(participants, position);
+        3:  237-block  0
+call    0 returned 3
+        -:  238:        char first_name[50], last_name[50];
+        -:  239:        int score;
+        -:  240:
+        -:  241:        ///checks which data needs to be updated
+        3:  242:        if (strcmp(new_first_name, "-1") == 0)
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:  243:            strcpy(first_name, get_first_name(participant));
+        1:  243-block  0
+call    0 returned 1
+        2:  244:        else strcpy(first_name, new_first_name);
+        2:  244-block  0
+        -:  245:
+        3:  246:        if (strcmp(new_last_name, "-1") == 0)
+        3:  246-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:  247:            strcpy(last_name, get_last_name(participant));
+        1:  247-block  0
+call    0 returned 1
+        2:  248:        else strcpy(last_name, new_last_name);
+        2:  248-block  0
+        -:  249:
+        3:  250:        if (new_score == -1)
+        3:  250-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:  251:            score = get_score(participant);
+        1:  251-block  0
+call    0 returned 1
+        2:  252:        else score = new_score;
+        2:  252-block  0
+        -:  253:
+        3:  254:        updated_participant = create_participant(first_name, last_name, score);
+        3:  254-block  0
+call    0 returned 3
+        -:  255:
+        3:  256:        if (!equal(*updated_participant, *participant)) {
+call    0 returned 3
+branch  1 taken 2 (fallthrough)
+branch  2 taken 1
+        2:  257:            if (valid(participants, *updated_participant, err, len)) {
+        2:  257-block  0
+call    0 returned 2
+branch  1 taken 1 (fallthrough)
+branch  2 taken 1
+        1:  258:                update(participants, updated_participant, position);
+        1:  258-block  0
+call    0 returned 1
+        1:  259:            } else free_participant(updated_participant);
+        1:  259-block  0
+call    0 returned 1
+        1:  260:        } else free_participant(updated_participant);
+        1:  260-block  0
+call    0 returned 1
+        -:  261:    }
+        4:  262:}
+        -:  263:
+        -:  264:/**
+        -:  265: * Sorts the list of participants based on key (name/score)
+        -:  266: * ascending or descending
+        -:  267: * !!Modifies the list
+        -:  268: * @param participants: the list of participants (ElementsList)
+        -:  269: * @param key: the sorting key: name/score (char*)
+        -:  270: * @param reversed: if true, the list is sorted descending (bool)
+        -:  271: * @param err: a list of errors (char**)
+        -:  272: * @param len: the length of the list od errors (int)
+        -:  273: */
+function sort_list called 6 returned 100% blocks executed 100%
+        6:  274:void sort_list(ElementsList *participants, char key[], bool reversed, char err[5][100], int* len)
+        -:  275:{
+        6:  276:    if(!get_size(participants)) // if the list is empty
+        6:  276-block  0
+call    0 returned 6
+branch  1 taken 1 (fallthrough)
+branch  2 taken 5
+        -:  277:    {
+        1:  278:        strcpy(err[*len], empty_list_error());
+        1:  278-block  0
+call    0 returned 1
+        1:  279:        (*len)++;
+        -:  280:    }
+        5:  281:    else if (!(strcmp(key,"nume") == 0 || strcmp(key, "scor") == 0)) { // if the key isn't valid
+        5:  281-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 2
+        3:  281-block  1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 2
+        1:  282:        strcpy(err[*len], invalid_sort_key_error());
+        1:  282-block  0
+call    0 returned 1
+        1:  283:        (*len)++;
+        -:  284:    }
+        -:  285:    else{
+        4:  286:        if(strcmp(key, "nume") == 0)
+        4:  286-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 2
+        2:  287:            sort(participants, cmpLastName, reversed);
+        2:  287-block  0
+call    0 returned 2
+        2:  288:        else sort(participants, cmpScore, reversed);
+        2:  288-block  0
+call    0 returned 2
+        -:  289:    }
+        -:  290:
+        6:  291:}
+        -:  292:
+        -:  293:/**
+        -:  294: * Filters a list of participants, returning a list of the participants that meet certain criteria
+        -:  295: * !!Doesn't modify the list
+        -:  296: * @param participants: a list of participants (ElementsList)
+        -:  297: * @param filtered_list: the list of filtered participants (ElementsList)
+        -:  298: * @param key: the criterion (char*)
+        -:  299: * @param value: the key's value (char*)
+        -:  300: * @param err: a list of errors (char*)
+        -:  301: * @param len: the length of the error list (int*)
+        -:  302: */
+function filter_participants called 7 returned 100% blocks executed 100%
+        7:  303:void filter_participants(ElementsList* participants, ElementsList *filtered_list, char key[], char value[], char err[][100], int *len)
+        -:  304:{
+        -:  305:
+        7:  306:    if(!get_size(participants)) // if the list is empty
+        7:  306-block  0
+call    0 returned 7
+branch  1 taken 1 (fallthrough)
+branch  2 taken 6
+        -:  307:    {
+        1:  308:        strcpy(err[*len], empty_list_error());
+        1:  308-block  0
+call    0 returned 1
+        1:  309:        (*len)++;
+        -:  310:    }
+        6:  311:    else if(strcmp(key,"scor") == 0 || strcmp(key,"initiala") == 0) {
+        6:  311-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 3
+        3:  311-block  1
+branch  2 taken 2 (fallthrough)
+branch  3 taken 1
+       10:  312:         if(strcmp(key, "scor") == 0 && (atoi(value) < 0 || atoi(value) > 100)) // if the score isn't valid
+        5:  312-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 2
+        3:  312-block  1
+call    2 returned 3
+branch  3 taken 2 (fallthrough)
+branch  4 taken 1
+        2:  312-block  2
+call    5 returned 2
+branch  6 taken 1 (fallthrough)
+branch  7 taken 1
+        5:  312-block  3
+        -:  313:         {
+        2:  314:             strcpy(err[*len], invalid_score_error());
+        2:  314-block  0
+call    0 returned 2
+        2:  315:             (*len)++;
+        3:  316:         } else if(strcmp(key, "initiala") == 0 && !isalpha(value[0])) // if the initial isn't valid
+        3:  316-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 1
+        2:  316-block  1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 1
+        -:  317:         {
+        1:  318:             strcpy(err[*len], invalid_char_error());
+        1:  318-block  0
+call    0 returned 1
+        1:  319:             (*len)++;
+        -:  320:         }
+        -:  321:        else {
+       12:  322:             for (int index = 0; index < get_size(participants); index++)
+        2:  322-block  0
+       10:  322-block  1
+       12:  322-block  2
+call    0 returned 12
+branch  1 taken 10
+branch  2 taken 2 (fallthrough)
+       10:  323:                 if (filter_key(get_element(participants, index), key, value)) {
+       10:  323-block  0
+call    0 returned 10
+call    1 returned 10
+branch  2 taken 6 (fallthrough)
+branch  3 taken 4
+        -:  324:
+        6:  325:                     Participant *participant_copy, *participant = get_element(participants, index);
+        6:  325-block  0
+call    0 returned 6
+        -:  326:
+        6:  327:                     participant_copy = create_participant(get_first_name(participant),
+call    0 returned 6
+call    1 returned 6
+call    2 returned 6
+call    3 returned 6
+        -:  328:                                                           get_last_name(participant),
+        -:  329:                                                           get_score(participant));
+        -:  330:
+        6:  331:                     store(filtered_list, participant_copy);
+call    0 returned 6
+        -:  332:                 }
+        -:  333:         }
+        -:  334:     }
+        -:  335:     else // if the key isn't valid
+        -:  336:     {
+        1:  337:         strcpy(err[*len], invalid_filter_key_error());
+        1:  337-block  0
+call    0 returned 1
+        1:  338:         (*len)++;
+        -:  339:     }
+        7:  340:}

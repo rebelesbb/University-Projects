@@ -1,0 +1,45 @@
+        -:    0:Source:C:/Users/Bogdan Rebeles/Desktop/OOP/lab2_4/sort_function.c
+        -:    0:Graph:C:\Users\Bogdan Rebeles\Desktop\OOP\lab2_4\cmake-build-debug-coverage\CMakeFiles\lab2_4.dir\sort_function.c.gcno
+        -:    0:Data:C:\Users\Bogdan Rebeles\Desktop\OOP\lab2_4\cmake-build-debug-coverage\CMakeFiles\lab2_4.dir\sort_function.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "sort_function.h"
+        -:    2:
+        -:    3:/**
+        -:    4: * Sorts a list
+        -:    5: * @param some_list: the list (ElementsList)
+        -:    6: * @param cmpF: the compare function  (CompareFunction)
+        -:    7: * @param reversed: flags descending sort (bool)
+        -:    8: */
+function sort called 4 returned 100% blocks executed 100%
+        4:    9:void sort(ElementsList* some_list, CompareFunction cmpF, bool reversed)
+        -:   10:{
+        -:   11:    int i,j;
+       28:   12:    for(i = 0; i < get_size(some_list); i++)
+        4:   12-block  0
+       24:   12-block  1
+       28:   12-block  2
+call    0 returned 28
+branch  1 taken 24
+branch  2 taken 4 (fallthrough)
+       84:   13:        for(j = i + 1; j < get_size(some_list); j++){
+       24:   13-block  0
+       60:   13-block  1
+       84:   13-block  2
+call    0 returned 84
+branch  1 taken 60
+branch  2 taken 24 (fallthrough)
+        -:   14:            Element* aux;
+       60:   15:            if(cmpF(get_element(some_list, i), get_element(some_list, j), reversed)){
+       60:   15-block  0
+call    0 returned 60
+call    1 returned 60
+call    2 returned 60
+branch  3 taken 37 (fallthrough)
+branch  4 taken 23
+       37:   16:                aux = some_list->nr[i];
+       37:   17:                some_list->nr[i] = some_list->nr[j];
+       37:   18:                some_list->nr[j] = aux;
+       37:   18-block  0
+        -:   19:            }
+        -:   20:        }
+        4:   21:}
